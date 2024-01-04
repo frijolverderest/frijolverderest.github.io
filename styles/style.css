@@ -587,7 +587,6 @@ hr {
 .our-menu img {
     height: 100%;
     width: 100%;
-    padding: 10px;
     border-radius: 10px;
     display: block;
     transition: all 0.2s ease;
@@ -686,25 +685,7 @@ hr {
 
 
 /* Estilos de la tarjeta de plato */
-.platep {
-    position: relative;
-    width: 300px;
-    cursor: pointer;
-    background-color: #fff;
-    margin:5px;
-}
 
-.platep-img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.platep-details {
-    padding: 10px;
-    background-color: #f9f9f9;
-    border-radius: 0 0 8px 8px;
-}
 
 /* Estilos del modal */
 
@@ -720,6 +701,35 @@ hr {
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.9);
 }
+/* Estilos de la tarjeta de plato */
+.platep {
+    position: relative;
+    width: 300px;
+    cursor: pointer;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.platep-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+
+
+
+
+
+.modal-overlay {
+    position: relative;
+}
+
+
+
+
+
 
 .modal-content {
     position: relative;
@@ -729,17 +739,31 @@ hr {
     max-width: 800px;
     max-height: 80%;
     border-radius: 8px;
-    background-color: #fff;
-    padding: 20px;
+    background-color: #5e5e5e9c;
+  
     box-sizing: border-box;
+    margin-top: 50px;
+    overflow: hidden; /* Para evitar que la imagen sobresalga */
 }
 
 .modal-img {
-    width: 100%;
-    height: auto;
+    max-height: calc(100vh - 150px); /* Ajusta según el tamaño del encabezado y el botón de cierre */
+    width: auto;
+    max-width: 100%;
     border-radius: 8px;
+    padding: 0;
 }
 
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 36px;
+    cursor: pointer;
+    color: #000;
+    z-index: 9999;
+}
 .plate-description {
     position: absolute;
     top: 50%;
@@ -749,33 +773,50 @@ hr {
     color: #000;
 }
 
-.modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 800px;
-    max-height: 80%;
-    border-radius: 8px;
-}
+
 
 .modal-details {
     background-color: #fff;
     padding: 20px;
 }
 
-.close {
-    color: #fff;
-    position: absolute;
-    top: 10px;
-    right: 25px;
-    font-size: 36px;
-    font-weight: bold;
-    cursor: pointer;
-}
+
 
 .close:hover,
 .close:focus {
     color: #ccc;
     text-decoration: none;
     cursor: pointer;
+}
+
+/* Estilos personalizados */
+.platep-details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(20, 20, 20, 0.801);
+    transition: 0.3s;
+    color : #ffffff;
+}
+
+.platep:hover .platep-details {
+    background-color: rgba(255, 255, 255, 0.9);
+    color : #000000;
+}
+
+.plate-description {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    gap: 10px
 }
