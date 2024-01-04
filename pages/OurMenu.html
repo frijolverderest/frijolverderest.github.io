@@ -72,7 +72,7 @@
         </div>
     </nav>
 
-    <div class="container-body">
+    <div class="container-body-menu">
         <!-- Seccion Hero -->
         <section class="hero align-items-stretch"
             style="background-image: url('../files/desenfoqueMadera.png'); background-size: cover;">
@@ -111,8 +111,35 @@
                 <div class="container text-center proyectos-contenedor">
                     <div class="row">
                         <!-- plate 1 -->
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="plate">
+                        <div class="platep" onclick="showDetails('p1')">
+                            <img class="platep-img" src="../files/imgOurMenu/p1.jpeg" alt="Plato 1">
+                            <div class="platep-details">
+                                <h3>Pan de Waffle</h3>
+                                <p>Descripción breve del plato...</p>
+                            </div>
+                        </div>
+                        
+                       <!-- Agregar esto en tu HTML existente -->
+<div class="modal" id="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-img" id="modal-img" src="" alt="Plato">
+        <div class="plate-description" id="modal-details">
+            <h2>Nombre del plato</h2>
+            <p>Descripción larga del plato...</p>
+        </div>
+    </div>
+</div>
+
+                        
+
+
+
+
+
+
+
+                            <div class="plateTest">
                                 <img class="card-img-top" src="../files/imgOurMenu/p1.jpeg" width="100"
                                     alt="Proyecto 1">
                                 <div class="overlay">
@@ -127,7 +154,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        
                         <!-- plate 2 -->
                         <div class="col-12 col-md-6 col-lg-4">
                             <div class="plate">
