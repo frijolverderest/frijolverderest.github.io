@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Metadatos -->
+    <meta charset="utf-8">
+    <meta name="author" content="James Soscue">
+    <meta name="description" content="Restaurante Frijol Verde">
+    <meta name="keywords" content="restaurante, frijol, verde, almuerzo, desayuno, domicilio">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Titulo -->
+    <title>Frijol Verde</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../files/iconFrijol.png">
+    <!-- Bootstrap CDN  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- CSS estilos personalizados-->
+    <link rel="stylesheet" href="../styles/style.css">
+    <!-- JS estilos personalizados-->
+    <script src="../scripts/actions.js"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html" id="logo-container">
+                <img src="../files/iconFrijol.png" alt="Icono" id="navbar-icon" width="40" class="pull-left">
+                <span id="navbar-title" class="pull-left"> Frijol Verde</span>
+            </a>
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#menu-dia">Menu Del Dia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ourMenu.html">Nuestra Carta</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <!-- Opciones del menú desplegable -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contáctanos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Sobre Nosotros</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-body">
+        <!-- Seccion Hero -->
+        <section class="hero align-items-stretch"
+            style="background-image: url('../files/desenfoqueMadera.png'); background-size: cover;">
+            <div class="hero-principal d-flex flex-column justify-content-center align-items-center py-2 my-2">
+                <div class="parallax">
+                    <img class="hero-imagen rounded-circle img-fluid" src="../files/iconFrijol.png" alt="img">
+                </div>
+                <h1 id="hola-nombre">Frijol Verde</h1>
+
+                <div class="d-grid gap-2">
+                    <a href="ourMenu.html" class="btn btn-primary" type="button">
+                        <i class="bi bi-list"></i> Nuestra carta
+                    </a>
+
+                    <a href="../index.html#menu-dia" class="btn btn-primary" type="button">
+                        <i class="bi bi-card-text"></i> Menu Del Dia
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Menu -->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1 class="seccion-titulo">Nuestra Carta</h1>
+                </div>
+            </div>
+            <!-- Menu entradas -->
+            <section id="menuEntradas" class="our-menu seccion-clara d-flex flex-column">
+                <h2 class="seccion-titulo texto-negro">Entradas</h2>
+                <h3 class="seccion-descripcion">Description our menu..</h3>
+                <!-- Galeria de platos -->
+                <div class="container text-center proyectos-contenedor">
+                    <div class="row">
+                        <!-- plate 1 -->
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="plate">
+                                <img class="card-img-top" src="../files/imgOurMenu/p1.jpeg" width="100"
+                                    alt="Proyecto 1">
+                                <div class="overlay">
+                                    <p>PAN DE WAFFLE</p>
+                                    <div class="iconos-contenedor">
+                                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                                            <i class="bi bi-github"></i>
+                                        </a>
+                                        <a href="#" target="_blank" rel="noopener noreferrer">
+                                            <i class="bi bi-laptop"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- plate 2 -->
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="plate">
+                                <img class="card-img-top" src="../files/imgOurMenu/p2.jpeg" width="100"
+                                    alt="Proyecto 1">
+                                <div class="overlay">
+                                    <p>ABORRAJADOS</p>
+                                    <div class="iconos-contenedor">
+                                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                                            <i class="bi bi-github"></i>
+                                        </a>
+                                        <a href="#" target="_blank" rel="noopener noreferrer">
+                                            <i class="bi bi-laptop"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- plate 3 -->
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="plate">
+                                <img class="card-img-top" src="../files/imgOurMenu/p3.jpeg" width="100"
+                                    alt="Proyecto 1">
+                                <div class="overlay">
+                                    <p>SALCHIPAPA</p>
+                                    <div class="iconos-contenedor">
+                                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                                            <i class="bi bi-github"></i>
+                                        </a>
+                                        <a href="https://www.freecodecamp.org/espanol/" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <i class="bi bi-laptop"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
+            <!-- Menu con frijol -->
+
+            <section id="menuConFrijol" class="our-menu seccion-clara d-flex flex-column">
+                <h2 class="seccion-titulo texto-negro">Con Frijol</h2>
+                <h3 class="seccion-descripcion">Description our menu..</h3>
+                <!-- Galeria de platos -->
+                <div class="container text-center proyectos-contenedor">
+                    <div class="row">
+                        <!-- plate 1 -->
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="plate">
+                                <img class="card-img-top" src="../files/imgOurMenu/p1.jpeg" width="100"
+                                    alt="Proyecto 1">
+                                <div class="overlay">
+                                    <p>PLATO MONTAÑERO</p>
+                                    <div class="iconos-contenedor">
+                                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                                            <i class="bi bi-github"></i>
+                                        </a>
+                                        <a href="#" target="_blank" rel="noopener noreferrer">
+                                            <i class="bi bi-laptop"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- plate 2 -->
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="plate">
+                                <img class="card-img-top" src="../files/imgOurMenu/p2.jpeg" width="100"
+                                    alt="Proyecto 1">
+                                <div class="overlay">
+                                    <p>COSTICAZUELA</p>
+                                    <div class="iconos-contenedor">
+                                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                                            <i class="bi bi-github"></i>
+                                        </a>
+                                        <a href="#" target="_blank" rel="noopener noreferrer">
+                                            <i class="bi bi-laptop"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- plate 3 -->
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="plate">
+                                <img class="card-img-top" src="../files/imgOurMenu/p3.jpeg" width="100"
+                                    alt="Proyecto 1">
+                                <div class="overlay">
+                                    <p>CAZUELA DE FRIJOL</p>
+                                    <div class="iconos-contenedor">
+                                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                                            <i class="bi bi-github"></i>
+                                        </a>
+                                        <a href="https://www.freecodecamp.org/espanol/" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <i class="bi bi-laptop"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Proyecto 4 -->
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="plate">
+                                <img class="card-img-top" src="../files/imgOurMenu/p3.jpeg" width="100"
+                                    alt="Proyecto 1">
+                                <div class="overlay">
+                                    <p>BANDEJA PAISA</p>
+                                    <div class="iconos-contenedor">
+                                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                                            <i class="bi bi-github"></i>
+                                        </a>
+                                        <a href="#" target="_blank" rel="noopener noreferrer">
+                                            <i class="bi bi-laptop"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Menu Del rio -->
+
+            <section id="menuDelRio" class="our-menu seccion-clara d-flex flex-column">
+                <h2 class="seccion-titulo texto-negro">Menú Del Rio</h2>
+                <h3 class="seccion-descripcion">Description our menu..</h3>
+                <!-- Galeria de platos -->
+                <div class="container text-center proyectos-contenedor">
+                    <div class="row">
+                        <!-- plate 1 -->
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="plate">
+                                <img class="card-img-top" src="../files/imgOurMenu/p1.jpeg" width="100"
+                                    alt="Proyecto 1">
+                                <div class="overlay">
+                                    <p>TRUCHA EN CHAMPIÑONES</p>
+                                    <div class="iconos-contenedor">
+                                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                                            <i class="bi bi-github"></i>
+                                        </a>
+                                        <a href="#" target="_blank" rel="noopener noreferrer">
+                                            <i class="bi bi-laptop"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- plate 2 -->
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="plate">
+                                <img class="card-img-top" src="../files/imgOurMenu/p2.jpeg" width="100"
+                                    alt="Proyecto 1">
+                                <div class="overlay">
+                                    <p>TRUCHA FRITA</p>
+                                    <div class="iconos-contenedor">
+                                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                                            <i class="bi bi-github"></i>
+                                        </a>
+                                        <a href="#" target="_blank" rel="noopener noreferrer">
+                                            <i class="bi bi-laptop"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- plate 3 -->
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="plate">
+                                <img class="card-img-top" src="../files/imgOurMenu/p3.jpeg" width="100"
+                                    alt="Proyecto 1">
+                                <div class="overlay">
+                                    <p>TILAPIA FRITA</p>
+                                    <div class="iconos-contenedor">
+                                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                                            <i class="bi bi-github"></i>
+                                        </a>
+                                        <a href="https://www.freecodecamp.org/espanol/" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <i class="bi bi-laptop"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Carnes -->
+
+            <section id="menuCarnes" class="our-menu seccion-clara d-flex flex-column">
+                <h2 class="seccion-titulo texto-negro">Carnes</h2>
+                <h3 class="seccion-descripcion">Descrition our menu..</h3>
+                <!-- Galeria de platos -->
+                <div class="container text-center pproyectos-contenedor">
+                    <div class="row">
+                        <!-- plate 1 -->
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="plate">
+                                <img class="card-img-top" src="../files/imgOurMenu/p1.jpeg" width="100"
+                                    alt="Proyecto 1">
+                                <div class="overlay">
+                                    <p>CHULETA VALLUNA</p>
+                                    <div class="iconos-contenedor">
+                                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                                            <i class="bi bi-github"></i>
+                                        </a>
+                                        <a href="#" target="_blank" rel="noopener noreferrer">
+                                            <i class="bi bi-laptop"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- plate 2 -->
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="plate">
+                                <img class="card-img-top" src="../files/imgOurMenu/p2.jpeg" width="100"
+                                    alt="Proyecto 1">
+                                <div class="overlay">
+                                    <p>COSTILLITAS BBQ</p>
+                                    <div class="iconos-contenedor">
+                                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                                            <i class="bi bi-github"></i>
+                                        </a>
+                                        <a href="#" target="_blank" rel="noopener noreferrer">
+                                            <i class="bi bi-laptop"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- plate 3 -->
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="plate">
+                                <img class="card-img-top" src="../files/imgOurMenu/p3.jpeg" width="100"
+                                    alt="Proyecto 1">
+                                <div class="overlay">
+                                    <p>CHURRASCO</p>
+                                    <div class="iconos-contenedor">
+                                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                                            <i class="bi bi-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- plate 4 -->
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="plate">
+                                <img class="card-img-top" src="../files/imgOurMenu/p3.jpeg" width="100"
+                                    alt="Proyecto 1">
+                                <div class="overlay">
+                                    <p>PARRILLA MIXTA
+                                    </p>
+                                    <div class="iconos-contenedor">
+                                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                                            <i class="bi bi-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- plate 5 -->
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="plate">
+                                <img class="card-img-top" src="../files/imgOurMenu/p3.jpeg" width="100"
+                                    alt="Proyecto 1">
+                                <div class="overlay">
+                                    <p>PECHUGA HAWAIANA
+                                    </p>
+                                    <div class="iconos-contenedor">
+                                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                                            <i class="bi bi-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- plate 6 -->
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="plate">
+                                <img class="card-img-top" src="../files/imgOurMenu/p3.jpeg" width="100"
+                                    alt="Proyecto 1">
+                                <div class="overlay">
+                                    <p>PECHUGA SUPREMA
+                                    </p>
+                                    <div class="iconos-contenedor">
+                                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                                            <i class="bi bi-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- plate 7 -->
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="plate">
+                                <img class="card-img-top" src="../files/imgOurMenu/p3.jpeg" width="100"
+                                    alt="Proyecto 1">
+                                <div class="overlay">
+                                    <p>PECHUGA EN SALSA DE
+                                        CHAMPIÑONES
+                                    </p>
+                                    <div class="iconos-contenedor">
+                                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                                            <i class="bi bi-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- plate 8 -->
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="plate">
+                                <img class="card-img-top" src="../files/imgOurMenu/p3.jpeg" width="100"
+                                    alt="Proyecto 1">
+                                <div class="overlay">
+                                    <p>LENGUA EN SALSA DE
+                                        CHAMPIÑONES
+                                    </p>
+                                    <div class="iconos-contenedor">
+                                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                                            <i class="bi bi-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- plate 9 -->
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="plate">
+                                <img class="card-img-top" src="../files/imgOurMenu/p3.jpeg" width="100"
+                                    alt="Proyecto 1">
+                                <div class="overlay">
+                                    <p>LENGUA CRIOLLA
+                                    </p>
+                                    <div class="iconos-contenedor">
+                                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                                            <i class="bi bi-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Pie de pagina (footer) -->
+            <footer class="seccion-clara d-flex flex-column align-items-center justify-content-center">
+
+                <div class="container-footer">
+                    <div class="column">
+                        <h1 class="seccion-titulo">Contáctanos</h1>
+
+                        <div class="seccion-contact">
+                            <a class="bi bi-telephone" href="tel:6028352715" target="_blank" rel="noopener noreferrer">
+                                <p>6028352715</p>
+                            </a>
+                        </div>
+                        <div class="seccion-contact">
+                            <a class="bi bi-whatsapp" href="https://wa.me/573013290099/" target="_blank"
+                                rel="noopener noreferrer">
+                                <p>+57 301 329 0099</p>
+                            </a>
+                        </div>
+
+
+
+                    </div>
+                    <div class="column">
+                        <h1 class="seccion-titulo">Ubicación</h1>
+
+                        <div class="seccion-contact">
+                            <a class="bi bi-pin-map" href="https://maps.app.goo.gl/C9k7hQXihKUYHDuR8" target="_blank"
+                                rel="noopener noreferrer">
+                                <p>Calle 9N #8N - 21 Prados del Norte <br> Popayán - Cauca </p>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="column">
+                        <h1 class="seccion-titulo">Horario de atención</h1>
+
+                        <div class="seccion-contact">
+                            <a class="bi bi-clock" href="https://maps.app.goo.gl/C9k7hQXihKUYHDuR8" target="_blank"
+                                rel="noopener noreferrer">
+                                <p>Lunes a Domingo 7:30 am - 4:00 pm </p>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <h1 class="seccion-titulo">Nuestras Redes Sociales</h1>
+
+                <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+                    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-tiktok"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                    <a href="tel:+1234567890" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-telephone"></i>
+                    </a>
+
+                    <a href="mailto:" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-envelope"></i>
+                    </a>
+
+                </div>
+
+                <div class="derechos-de-autor">
+                    <p>Todos los derechos reservados.<br>2023 &copy; Frijol Verde. </p>
+                </div>
+            </footer>
+            <div class="desarrollador">
+                <p>Product Brand: Work in Progress, Page developed by James Soscue &copy;</p>
+            </div>
+
+
+</html>

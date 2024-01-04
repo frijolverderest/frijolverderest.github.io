@@ -1,0 +1,662 @@
+/* barra de navegación */
+/* Establece la posición fija para la barra de navegación */
+.navbar-fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Agrega un margen superior al contenido principal */
+.container-body {
+    margin-top: 50px;
+    /* Ajusta el valor según el alto de la barra de navegación */
+}
+
+
+#navbar-title {
+    font-size: 1.2vw;
+    padding-right: 1vw;
+}
+
+.navbar.navbar-inverse {
+    background-color: #000000;
+    border-radius: 0%;
+    margin: 0%;
+}
+
+
+.navbar-brand {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.navbar-brand :hover {
+    font-size: 1.05em;
+}
+
+#navbar-icon {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 10px;
+    padding-top: 5px;
+    scale: 1.2;
+}
+
+#navbar-title {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-top: 10px;
+    color: #ffffff;
+}
+
+#logo-container {
+    padding: 5px 0;
+    vertical-align: top;
+
+}
+
+.nav-link {
+    font-size: 1.2vw;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-link {
+        font-size: 1em;
+    }
+
+    #navbar-title {
+        font-size: 1em;
+    }
+
+}
+
+/* Estilos generales */
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2.8rem;
+    font-family: 'Rubik Dirt', cursive;
+    color: #020202;
+}
+
+.seccion-oscura {
+    color: white;
+    background-color: #1b1b32;
+    padding: 10px;
+}
+
+
+
+
+/* Seccion Hero */
+.hero {
+    background-size: cover;
+    min-height: relative;
+    text-align: center;
+    margin: 0%;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    height: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.parallax {
+    transform: translateY(0);
+    transition: transform 0.3s;
+}
+
+#hola-nombre {
+    font-size: 4vw;
+    font-family: 'Rubik Dirt', cursive;
+    color: #000000;
+
+}
+
+.hero-imagen {
+    width: 15vw;
+    margin: 20px;
+    border-radius: 10%;
+    border: 2px solid #000000;
+    box-shadow: 5px 5px 25px #0e3000;
+    background-color: #ffffff7a;
+}
+
+.hero-imagen:hover {
+    filter: none;
+    transform: scale(1.1) rotate(0deg);
+    transition: all 0.5s;
+}
+
+.hero-principal h2 {
+    font-size: 1.5rem;
+    color: #383946;
+}
+
+/* Estilos CSS personalizados para los botones */
+.btn.btn-primary {
+    background-color: #a5d12a;
+    color: #000000;
+    border-color: #688519;
+    box-shadow: 5px 5px 20px #0e3000;
+    width: auto;
+    height: 4vh;
+    margin: 10px;
+    padding: 0 10px;
+    line-height: 4vh;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-style: bold;
+}
+
+
+.btn.btn-primary:hover {
+    background-color: #b5e62f;
+    color: #000000;
+    border-color: #495e11;
+}
+
+/* Cambiar el fondo y el color del texto del botón secundario */
+.btn.btn-secondary {
+    background-color: #33cc33;
+    color: #ffffff;
+}
+
+/* Agregar estilos adicionales según sea necesario */
+
+
+@media screen and (max-width: 768px) {
+
+    .hero {
+        height: 70vh;
+    }
+
+    .hero-imagen {
+        width: 200px;
+    }
+}
+
+#menu-dia {
+    padding: 10px;
+    margin: 0%;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.contenedor-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+}
+
+.seccion-titulo {
+    font-size: 3vw;
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.menu-dia-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 20px 10px 10px 20px;
+    padding: 3vh 2vh 2vh 3vh;
+    border-radius: 5vw;
+    background-color: #ffffff54;
+    box-shadow: 5px 5px 25px #0e3000;
+
+}
+
+.contenedor-menu-dia {
+    background-color: #66ac17;
+    border-radius: 10%;
+    height: auto;
+    width: 30vw;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: top;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 5px 5px 25px #0e3000;
+    transform: rotate(3deg);
+    transform-origin: center;
+    border: 2px solid #000000;
+    margin: 5px;
+}
+
+.btn-domi {
+    width: auto;
+    height: 4vh;
+    margin: 10px;
+    font-size: 2vw;
+    padding: 1.5vw;
+    line-height: 2.5vw;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-style: bold;
+}
+
+
+
+
+.contenedor-menu-dia:hover {
+    filter: none;
+    transform: scale(1.1) rotate(0deg);
+    transition: all 0.5s;
+    margin: 20px 10px 10px 20px;
+
+}
+
+.menu-item-name {
+    font-size: 2vw;
+    margin: 5px;
+    font-family: 'Rubik Dirt', cursive;
+    color: #2b2929;
+
+}
+
+hr {
+    border: 1px solid #000;
+    width: 70%;
+}
+
+.menu-imagen {
+    width: 40vh;
+    margin-right: 1vw;
+    border-radius: 10%;
+    box-shadow: 5px 5px 25px #0e3000;
+    background-color: #ffffff7a;
+}
+
+@media screen and (max-width: 768px) {
+
+    .menu-dia-box {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 20px 10px 10px 20px;
+        padding: 3vh 2vh 2vh 3vh;
+        border-radius: 5vw;
+        background-color: #ffffff54;
+        box-shadow: 5px 5px 25px #0e3000;
+    }
+
+    .contenedor-menu-dia {
+        background-color: #66ac17;
+        border-radius: 10%;
+        height: auto;
+        width: 80vw;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: top;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 5px 5px 25px #0e3000;
+        transform: rotate(3deg);
+        transform-origin: center;
+        border: 2px solid #000000;
+        margin: 5px;
+    }
+
+    .menu-item-name {
+        font-size: 2vh;
+        margin: 5px;
+        font-family: 'Rubik Dirt', cursive;
+        color: #2b2929;
+
+    }
+
+    .menu-imagen {
+        width: 35vh;
+        margin-right: 1vw;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        border-radius: 10%;
+        box-shadow: 5px 5px 25px #0e3000;
+        background-color: #ffffff7a;
+    }
+
+    .btn-domi {
+        width: auto;
+        height: 4vh;
+        margin: 10px;
+        font-size: 2vh;
+        padding: 0 5px;
+        line-height: 2.5vw;
+    }
+
+    .seccion-titulo {
+        font-size: 3vh;
+    }
+
+}
+
+
+
+/* Pie de pagina (footer) */
+.seccion-clara {
+    background-color: #b8b3b3;
+    color: #020202;
+    text-align: center;
+}
+
+.container-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+}
+
+
+.column {
+    width: 30%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+
+}
+
+.column p {
+    font-size: 2vw;
+    color: #000000;
+    transition: all 0.2s ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0%;
+    margin-left: 2vw;
+}
+
+.column a {
+    font-size: 2vw;
+    color: #000000;
+    transition: all 0.2s ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2vw;
+
+}
+
+.seccion-contact {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: left;
+}
+
+
+
+
+.iconos-redes-sociales {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.iconos-redes-sociales a {
+    width: 4vw;
+    height: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw;
+    margin: 1vw;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+    text-align: center;
+}
+
+.iconos-redes-sociales a:hover {
+    color: white;
+    border: 1px solid #8db325;
+    transform: scale(1.1) rotate(0deg);
+    transition: all 0.2s;
+}
+
+.iconos-redes-sociales i {
+    color: #000000;
+    font-size: 2vw;
+    /* Aumenta el tamaño del icono para que se adapte mejor a los cambios de pantalla */
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover i {
+    color: #83a722;
+}
+
+.derechos-de-autor {
+    font-size: 2vw;
+    color: #4d4b4b;
+    font-style: italic;
+    padding: 20px;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+    .seccion-clara .container-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: left;
+        padding-top: 10px;
+        text-align: left;
+
+    }
+
+    .column {
+        width: 100%;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: left;
+        text-align: left;
+
+    }
+
+    .column p {
+        font-size: 1.5vh;
+        color: #000000;
+        transition: all 0.2s ease-in;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 2vw;
+    }
+
+    .column a {
+        font-size: 2vh;
+        color: #000000;
+        transition: all 0.2s ease-in;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1vw;
+    }
+
+
+    .iconos-redes-sociales a {
+        width: 4vh;
+        height: 4vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1vh;
+        margin: 1vh;
+        border: 1px solid #000000;
+        border-radius: 50%;
+        transition: all 0.2s ease-in;
+        text-align: center;
+    }
+
+    .iconos-redes-sociales i {
+        color: #000000;
+        font-size: 2vh;
+        /* Aumenta el tamaño del icono para que se adapte mejor a los cambios de pantalla */
+        transition: all 0.2s ease-in;
+    }
+
+
+}
+
+.desarrollador {
+    font-size: 1.5vh;
+    color: #4d4b4b;
+    font-style: italic;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+}
+
+
+/* Proyectos */
+#menuEntradas {
+    max-height: min-content;
+}
+
+.our-menu {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-image: url('../files/FondoCarta.jpeg');
+    background-size: cover;
+
+}
+
+.our-menu img {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.2s ease;
+
+}
+
+.proyectos-contenedor {
+    padding-top: 60px;
+    margin-bottom: 40px;
+}
+
+.overlay {
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay p {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.plate {
+    position: relative;
+    max-width: min-content;
+    max-width: 250px;
+}
+
+.plate:hover img {
+    opacity: 0.2;
+
+}
+
+.plate:hover .overlay {
+    opacity: 1;
+}
+
+.overlay .iconos-contenedor {
+    display: flex;
+}
+
+.overlay i {
+    color: black;
+    font-size: 60px;
+    margin: 10px;
+}
+
+.col-12 .col-md-6 .col-lg-4 {
+    max-width: min-content;
+}
+
+.carousel.slide {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Adaptable (Responsivo) */
+
+@media screen and (max-width: 400px) {
+    .overlay p {
+        font-size: 18px;
+    }
+
+    .overlay i {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-brand {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .testimonio-imagen {
+        height: 120px;
+        width: 120px;
+    }
+
+    .testimonio-texto {
+        font-size: 18px;
+    }
+}
