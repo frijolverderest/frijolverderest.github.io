@@ -712,6 +712,7 @@ hr {
     cursor: pointer;
     border-radius: 8px;
     overflow: hidden;
+    max-height: 400px;
 }
 
 .platep-img {
