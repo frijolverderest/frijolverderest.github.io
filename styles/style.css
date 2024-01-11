@@ -1,5 +1,17 @@
 /* barra de navegación */
 /* Establece la posición fija para la barra de navegación */
+.navbar{
+    display: flex;
+    flex-direction: row;
+    min-height: 70px;
+    align-items: center;
+
+
+    
+}
+.container-fluid{
+    width: 98%;
+}
 .navbar-fixed {
     position: fixed;
     top: 0;
@@ -18,7 +30,7 @@
 
 
 #navbar-title {
-    font-size: 1.2vw;
+    font-size: 1.5vw;
     padding-right: 1vw;
 }
 
@@ -67,11 +79,23 @@
 }
 
 .nav-link {
-    font-size: 1.2vw;
+    font-size: 1.4vw;
     font-family: 'Roboto', sans-serif;
 }
 
 @media screen and (max-width: 768px) {
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        min-height: 50px;
+        align-items: center;
+    
+    
+        
+    }
+    .navbar.navbar-inverse .navbar-brand {
+        display: block;
+    }
     .nav-link {
         font-size: 1em;
     }
@@ -175,6 +199,8 @@ h1 {
     background-color: #b5e62f;
     color: #000000;
     border-color: #495e11;
+    transform: scale(1.1) rotate(0deg);
+    transition: all 0.5s;
 }
 
 /* Cambiar el fondo y el color del texto del botón secundario */
@@ -197,10 +223,10 @@ h1 {
     }
 }
 
-#menu-dia {
+.menu-dia {
+    display: none;
     padding: 10px;
     margin: 0%;
-    display: flex;
     overflow: hidden;
     position: relative;
 }
