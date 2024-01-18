@@ -1,11 +1,26 @@
 /* barra de navegación */
 /* Establece la posición fija para la barra de navegación */
+html{
+    background-color: #000000;
+}
 .navbar{
     display: flex;
     flex-direction: row;
     min-height: 70px;
-    align-items: center;  
+    align-items: center;
+  
 }
+/*.navbar::after {
+    content: '';
+    position: absolute;
+    bottom: -10px; /* Ajusta la altura negativa para que sobresalga hacia abajo */
+    /*left: 0;
+    width: 100%;
+    height: 15px; /* Ajusta la altura de la curva según tu preferencia */
+    /*background: linear-gradient(to bottom, transparent, #000000, transparent); /* Cambiado a "to bottom" */
+    /*border-radius: 50%;
+  }
+  */
 .container-fluid{
     width: 98%;
 }
@@ -23,10 +38,16 @@
 }
 .container-body-menu {
     display: flex;
-    margin-top: 50px;
-    background-color: #000000;
+    margin-top: 50px; 
+     background-image: url('files/fondoMenu.jpg');
+    background-repeat: no-repeat;
     justify-content: center;
     align-items: center;
+  
+    background-attachment: fixed;
+    
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('files/fondoMenu.jpg');
+
 } 
 
 .container{
@@ -139,7 +160,18 @@ h1 {
     padding: 10px;
 }
 
-
+#myCarousel{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1ba309; /* Ajusta el color según tus preferencias */
+    z-index: -1; 
+    max-height: min-content;
+    height: auto;
+}
 
 
 /* Seccion Hero */
@@ -156,12 +188,16 @@ h1 {
     align-items: center;
     overflow: hidden;
     position: relative;
+    z-index: 1;
+/*    background-image: url('files/desenfoqueMadera.png'); */
 }
+
 
 
 .parallax {
     transform: translateY(0);
     transition: transform 0.3s;
+    display: none;
 }
 
 #hola-nombre {
@@ -422,7 +458,9 @@ hr {
     background-color:#b8b3b3;
     color: #020202;
     text-align: center;
-
+position: relative;
+margin-top: 0;
+width: 100%;
 }
 
 .container-footer {
@@ -605,6 +643,7 @@ hr {
     align-items: left;
     justify-content: left;
     text-align: left;
+    background-color: #000000;
 }
 
 
@@ -744,14 +783,13 @@ hr {
 .modal {
     display: none;
     position: fixed;
-    z-index: 1;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.9);
-
+    z-index: 3;
       
     
     
@@ -759,17 +797,38 @@ hr {
 /* Estilos de la tarjeta de plato */
 .platep {
     position: relative;
-    width: 300px;
+    width: 15vw;
     cursor: pointer;
     border-radius: 8px;
     overflow: hidden;
-    max-height: 400px;
+    height: 22.5vw;
+    max-width: 250px;
+    max-height: 350px;
+    border: 2px solid #1ba309;
+    transition: transform 0.3s ease-in-out; /* Agrega una transición a la propiedad transform */
+    z-index: 1;
+    box-shadow: 5px 5px 25px #0e3000;
+}
+@media screen and (max-width: 768px) {
+    .platep {
+        position: relative;
+        width: 15vh;
+        cursor: pointer;
+        border-radius: 8px;
+        overflow: hidden;
+        height: 22.5vh;
+        max-width: 250px;
+        max-height: 350px;
+        border: 2px solid #1ba309;
+        transition: transform 0.3s ease-in-out; /* Agrega una transición a la propiedad transform */
+        z-index: 1;
+        box-shadow: 5px 5px 25px #0e3000;
+    }
 }
 
 .platep-img {
     position: relative;
     width: 45%;
-    height: auto;
     border-radius: 0px;
     transition: transform 0.3s ease;
 }
@@ -812,6 +871,7 @@ hr {
     color: #ffffff ; /* Usar !important para asegurar la prioridad del color */
     z-index: 9999;
     opacity: 1 ;
+    transition: 0.3s;
 }
 
 
@@ -838,18 +898,32 @@ hr {
     padding: 20px; /* Añade espacio interno según sea necesario */
     padding-bottom: 10px;
 }
-h3{
+.platep-details h3{
    
     color: #ffffff;
     margin: 10px;
     padding: 0;
     text-align: center;
     font-family: 'Rubik Dirt', cursive;
+    font-size: 1.5vw;
 }
 
+.platep-details p{
+    font-size: 1vw;
+    margin-bottom: 0;
+}
+.platep:hover{
+    transform: scale(1.2); 
+    transition: 0.3s;
+    border: 2px solid #1ba309;
+    box-shadow: 5px 5px 25px #0e3000;
+    z-index: 2;
+}
 .platep:hover .platep-details {
     background-color: rgba(0, 0, 0, 0.459);
     color : #ffffff;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+    transform: scale(1.1); 
 }
 
 .plate-description {
@@ -876,7 +950,7 @@ h3{
     align-items: center;
     justify-content: center;
     padding: 0 4px;
-    gap: 10px;
+    gap: 1.7vw;
     position: relative;
    /*  background-color: aqua;*/
     width: 98%;

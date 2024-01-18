@@ -1,0 +1,134 @@
+{
+  "menu": {
+    "entradas": [
+      {
+        "id": 1,
+        "nombre": "Ensalada César",
+        "descripcionCorta": "Fresca y saludable",
+        "descripcionLarga": "Ensalada de lechuga romana, aderezo César, crutones y queso parmesano.",
+        "precio": 8.99,
+        "fotografias": ["ensalada_cesar_1.jpg", "ensalada_cesar_2.jpg"]
+      },
+      {
+        "id": 2,
+        "nombre": "Sopa de Tomate",
+        "descripcionCorta": "Caliente y reconfortante",
+        "descripcionLarga": "Sopa de tomate con albahaca fresca y crujientes crutones.",
+        "precio": 6.99,
+        "fotografias": ["sopa_tomate_1.jpg", "sopa_tomate_2.jpg"]
+      },
+      {
+        "id": 3,
+        "nombre": "Rollitos de Primavera",
+        "descripcionCorta": "Crujientes y sabrosos",
+        "descripcionLarga": "Rollitos rellenos de verduras frescas y carne, acompañados de salsa agridulce.",
+        "precio": 9.99,
+        "fotografias": ["rollitos_primavera_1.jpg", "rollitos_primavera_2.jpg"]
+      }
+    ],
+    "platosConFrijol": [
+      {
+        "id": 5,
+        "nombre": "Frijoles Refritos",
+        "descripcionCorta": "Suaves y sabrosos",
+        "descripcionLarga": "Frijoles negros refritos con cebolla, ajo y especias.",
+        "precio": 6.99,
+        "fotografias": ["frijoles_refritos_1.jpg", "frijoles_refritos_2.jpg"]
+      },
+      {
+        "id": 6,
+        "nombre": "Enchiladas de Frijol",
+        "descripcionCorta": "Sabores auténticos",
+        "descripcionLarga": "Enchiladas rellenas de frijoles refritos, queso y salsa picante.",
+        "precio": 8.99,
+        "fotografias": ["enchiladas_frijol_1.jpg", "enchiladas_frijol_2.jpg"]
+      },
+      {
+        "id": 7,
+        "nombre": "Tacos de Frijol",
+        "descripcionCorta": "Pequeños bocados llenos de sabor",
+        "descripcionLarga": "Tacos mini rellenos de frijoles, guacamole y queso.",
+        "precio": 7.99,
+        "fotografias": ["tacos_frijol_1.jpg", "tacos_frijol_2.jpg"]
+      }
+    ],
+    "delRio": [
+      {
+        "id": 11,
+        "nombre": "Margarita",
+        "descripcionCorta": "Refrescante y cítrica",
+        "descripcionLarga": "Margarita con tequila, triple sec, jugo de limón y sal en el borde del vaso.",
+        "precio": 7.99,
+        "fotografias": ["margarita_1.jpg", "margarita_2.jpg"]
+      },
+      {
+        "id": 12,
+        "nombre": "Cerveza Artesanal",
+        "descripcionCorta": "Variedad de sabores",
+        "descripcionLarga": "Selección de cervezas artesanales locales y regionales.",
+        "precio": 5.99,
+        "fotografias": ["cerveza_artesanal_1.jpg", "cerveza_artesanal_2.jpg"]
+      },
+      {
+        "id": 13,
+        "nombre": "Tequila Sunrise",
+        "descripcionCorta": "Colorido y delicioso",
+        "descripcionLarga": "Cóctel con tequila, jugo de naranja y un toque de granadina.",
+        "precio": 8.99,
+        "fotografias": ["tequila_sunrise_1.jpg", "tequila_sunrise_2.jpg"]
+      }
+    ],
+    "carnes": [
+      {
+        "id": 7,
+        "nombre": "Filete Mignon",
+        "descripcionCorta": "Tierno y jugoso",
+        "descripcionLarga": "Filete de res a la parrilla, acompañado de puré de papas y espárragos.",
+        "precio": 19.99,
+        "fotografias": ["filete_mignon_1.jpg", "filete_mignon_2.jpg"]
+      },
+      {
+        "id": 8,
+        "nombre": "Pollo a la Parrilla",
+        "descripcionCorta": "Sano y delicioso",
+        "descripcionLarga": "Pechuga de pollo a la parrilla con hierbas frescas, servido con ensalada y arroz.",
+        "precio": 14.99,
+        "fotografias": ["pollo_parrilla_1.jpg", "pollo_parrilla_2.jpg"]
+      },
+      {
+        "id": 14,
+        "nombre": "Costillas BBQ",
+        "descripcionCorta": "Sabor ahumado y caramelizado",
+        "descripcionLarga": "Costillas de cerdo bañadas en salsa BBQ, acompañadas de papas asadas.",
+        "precio": 17.99,
+        "fotografias": ["costillas_bbq_1.jpg", "costillas_bbq_2.jpg"]
+      }
+    ],
+    "bebidas": [
+      {
+        "id": 9,
+        "nombre": "Margarita",
+        "descripcionCorta": "Refrescante y cítrica",
+        "descripcionLarga": "Margarita con tequila, triple sec, jugo de limón y sal en el borde del vaso.",
+        "precio": 7.99,
+        "fotografias": ["margarita_1.jpg", "margarita_2.jpg"]
+      },
+      {
+        "id": 10,
+        "nombre": "Cerveza Artesanal",
+        "descripcionCorta": "Variedad de sabores",
+        "descripcionLarga": "Selección de cervezas artesanales locales y regionales.",
+        "precio": 5.99,
+        "fotografias": ["cerveza_artesanal_1.jpg", "cerveza_artesanal_2.jpg"]
+      },
+      {
+        "id": 15,
+        "nombre": "Piña Colada",
+        "descripcionCorta": "Tropical y refrescante",
+        "descripcionLarga": "Cóctel con piña, coco y ron, perfecto para disfrutar en la playa.",
+        "precio": 8.99,
+        "fotografias": ["pina_colada_1.jpg", "pina_colada_2.jpg"]
+      }
+    ]
+  }
+}

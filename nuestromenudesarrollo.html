@@ -76,7 +76,8 @@
         </div>
     </nav>
 
-    <div class="container-body-menu">
+    <div class="container-body-menu"
+        style=" background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('files/fondopizarra.jpg');background-size: 100% 100%;background-repeat: no-repeat">
 
 
 
@@ -87,358 +88,78 @@
                     <h1 class="seccion-titulo">Nuestra Carta</h1>
                 </div>
             </div>
-            <!-- Menu entradas -->
-            <section id="menuEntradas" class="our-menu  d-flex flex-column">
-                <h3 class="seccion-titulo texto-negro">Entradas</h2>
-                    <!--<h3 class="seccion-descripcion">Description our menu..</h3>
-                 Galeria de platos -->
-                    <div class="container text-center proyectos-contenedor">
-                        <div class="row">
 
-                            <!-- plate 1 -->
+            <!-- Sección de Entradas -->
+            <section class="our-menu d-flex flex-column">
+                <h3 class="seccion-titulo texto-negro">Entradas</h3>
+                <div class="container text-center proyectos-contenedor">
+                    <div id="menuEntradas" class="row">
+                        <!-- Platos de Entradas -->
+                    </div>
 
-                            <!-- Tarjeta del plato -->
-                            <div class="card platep" onclick="showDetails('p1')">
-                                <img class="platep-img" src="files/imgOurMenu/p1.jpeg" alt="Plato 1">
-
-                                <div class="card-body platep-details">
-                                    <h3 class="card-title">Pan de Waffle</h3>
-                                    <p class="card-text">Descripción breve del plato...</p>
-                                </div>
-
-                            </div>
-
-                            <!-- Modal -->
-                            <div class="modal" id="modal">
-                                <div class="modal-content">
-                                    <span class="close" onclick="closeModal()">&times;</span>
-                                    <div class="modal-overlay">
-                                        <img class="modal-img" id="modal-img" src="" alt="Plato">
-                                        <div class="plate-description" id="modal-details">
-                                            <h2>Nombre del plato</h2>
-                                            <p>Descripción larga del plato...</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <!-- Plato 2 -->
-
-                            <div class="card platep" onclick="showDetails('p2')">
-                                <img class="card-img-top platep-img" src="files/imgOurMenu/p2.jpeg" alt="Plato 2">
-
-                                <div class="card-body platep-details">
-                                    <h3 class="card-title">Aborrajados</h3>
-                                    <p class="card-text">Descripción breve del plato...</p>
-
-                                </div>
-
-                            </div>
-
-
-                            <!-- Plato 3 -->
-                            <div class="card platep" onclick="showDetails('p3')">
-                                <img class="card-img-top  platep-img" src="files/imgOurMenu/p3.jpeg" alt="Plato 3">
-
-                                <div class="card-body platep-details">
-                                    <h3 class="card-title">Salchipapa</h3>
-                                    <p class="card-text">Descripción breve del plato...</p>
-
-                                </div>
-
-                            </div>
-
-
-                            <!-- Modales -->
-                            <div class="modal" id="modal">
-                                <div class="modal-content">
-                                    <span class="close" onclick="closeModal()">&times;</span>
-                                    <div class="modal-overlay">
-                                        <img class="modal-img" id="modal-img" src="" alt="Plato">
-                                        <div class="plate-description" id="modal-details">
-                                            <h2>Nombre del plato</h2>
-                                            <p>Descripción larga del plato...</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
+                </div>
             </section>
 
+
+
             <!-- Menu con frijol -->
-
-            <section id="menuConFrijol" class="our-menu  d-flex flex-column">
-                <h3 class="seccion-titulo texto-negro">Con Frijol</h2>
-                    <h4 class="seccion-descripcion">Description our menu..
-                </h3>
-                <!-- Galeria de platos -->
+            <section class="our-menu  d-flex flex-column">
+                <h3 class="seccion-titulo texto-negro">Con Frijol</h3>
                 <div class="container text-center proyectos-contenedor">
-                    <div class="row">
-                        <!-- plate 1 -->
-                        <!-- Tarjeta del plato -->
-                        <div class="card platep" onclick="showDetails('p4')">
-                            <img class="platep-img" src="files/imgOurMenu/p1.jpeg" alt="Plato 1">
-
-                            <div class="card-body platep-details">
-                                <h3 class="card-title">PLATO MONTAÑERO</h3>
-                                <p class="card-text">Descripción breve del plato...</p>
-                            </div>
-
-                        </div>
-
-                        <!-- plate 2 -->
-                        <div class="card platep" onclick="showDetails('p5')">
-                            <img class="platep-img" src="files/imgOurMenu/p1.jpeg" alt="Plato 1">
-
-                            <div class="card-body platep-details">
-                                <h3 class="card-title">COSTICAZUELA</h3>
-                                <p class="card-text">Descripción breve del plato...</p>
-                            </div>
-
-                        </div>
-                        <!-- plate 3 -->
-                        <div class="card platep" onclick="showDetails('p6')">
-                            <img class="platep-img" src="files/imgOurMenu/p3.jpeg" alt="Plato 1">
-
-                            <div class="card-body platep-details">
-                                <h3 class="card-title">CAZUELA DE FRIJOL</h3>
-                                <p class="card-text">Descripción breve del plato...</p>
-                            </div>
-
-                        </div>
-                        <!-- Proyecto 4 -->
-                        <div class="card platep" onclick="showDetails('p7')">
-                            <img class="platep-img" src="files/imgOurMenu/p3.jpeg" alt="Plato 1">
-
-                            <div class="card-body platep-details">
-                                <h3 class="card-title">BANDEJA PAISA</h3>
-                                <p class="card-text">Descripción breve del plato...</p>
-                            </div>
-
-                        </div>
-                        
+                    <div id="menuConFrijol" class="row">
+                        <!-- Platos de con frijol -->
                     </div>
                 </div>
             </section>
 
             <!-- Menu Del rio -->
-
-            <section id="menuDelRio" class="our-menu seccion-clara d-flex flex-column">
-                <h2 class="seccion-titulo texto-negro">Menú Del Rio</h2>
-                <h3 class="seccion-descripcion">Description our menu..</h3>
-                <!-- Galeria de platos -->
+            <section class="our-menu seccion-clara d-flex flex-column">
+                <h3 class="seccion-titulo texto-negro">Menú Del Rio</h3>
                 <div class="container text-center proyectos-contenedor">
-                    <div class="row">
-                        <!-- plate 1 -->
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="plate">
-                                <img class="card-img-top" src="files/imgOurMenu/p1.jpeg" width="100" alt="Proyecto 1">
-                                <div class="overlay">
-                                    <p>TRUCHA EN CHAMPIÑONES</p>
-                                    <div class="iconos-contenedor">
-                                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-                                            <i class="bi bi-github"></i>
-                                        </a>
-                                        <a href="#" target="_blank" rel="noopener noreferrer">
-                                            <i class="bi bi-laptop"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- plate 2 -->
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="plate">
-                                <img class="card-img-top" src="files/imgOurMenu/p2.jpeg" width="100" alt="Proyecto 1">
-                                <div class="overlay">
-                                    <p>TRUCHA FRITA</p>
-                                    <div class="iconos-contenedor">
-                                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-                                            <i class="bi bi-github"></i>
-                                        </a>
-                                        <a href="#" target="_blank" rel="noopener noreferrer">
-                                            <i class="bi bi-laptop"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- plate 3 -->
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="plate">
-                                <img class="card-img-top" src="files/imgOurMenu/p3.jpeg" width="100" alt="Proyecto 1">
-                                <div class="overlay">
-                                    <p>TILAPIA FRITA</p>
-                                    <div class="iconos-contenedor">
-                                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-                                            <i class="bi bi-github"></i>
-                                        </a>
-                                        <a href="https://www.freecodecamp.org/espanol/" target="_blank"
-                                            rel="noopener noreferrer">
-                                            <i class="bi bi-laptop"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div id="menuDelRio" class="row">
+                        <!-- Platos del rio-->
                     </div>
                 </div>
             </section>
 
             <!-- Carnes -->
-
-            <section id="menuCarnes" class="our-menu seccion-clara d-flex flex-column">
-                <h2 class="seccion-titulo texto-negro">Carnes</h2>
-                <h3 class="seccion-descripcion">Descrition our menu..</h3>
-                <!-- Galeria de platos -->
+            <section class="our-menu seccion-clara d-flex flex-column">
+                <h3 class="seccion-titulo texto-negro">Carnes</h3>
                 <div class="container text-center pproyectos-contenedor">
-                    <div class="row">
-                        <!-- plate 1 -->
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="plate">
-                                <img class="card-img-top" src="files/imgOurMenu/p1.jpeg" width="100" alt="Proyecto 1">
-                                <div class="overlay">
-                                    <p>CHULETA VALLUNA</p>
-                                    <div class="iconos-contenedor">
-                                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-                                            <i class="bi bi-github"></i>
-                                        </a>
-                                        <a href="#" target="_blank" rel="noopener noreferrer">
-                                            <i class="bi bi-laptop"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- plate 2 -->
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="plate">
-                                <img class="card-img-top" src="files/imgOurMenu/p2.jpeg" width="100" alt="Proyecto 1">
-                                <div class="overlay">
-                                    <p>COSTILLITAS BBQ</p>
-                                    <div class="iconos-contenedor">
-                                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-                                            <i class="bi bi-github"></i>
-                                        </a>
-                                        <a href="#" target="_blank" rel="noopener noreferrer">
-                                            <i class="bi bi-laptop"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- plate 3 -->
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="plate">
-                                <img class="card-img-top" src="files/imgOurMenu/p3.jpeg" width="100" alt="Proyecto 1">
-                                <div class="overlay">
-                                    <p>CHURRASCO</p>
-                                    <div class="iconos-contenedor">
-                                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-                                            <i class="bi bi-github"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- plate 4 -->
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="plate">
-                                <img class="card-img-top" src="files/imgOurMenu/p3.jpeg" width="100" alt="Proyecto 1">
-                                <div class="overlay">
-                                    <p>PARRILLA MIXTA
-                                    </p>
-                                    <div class="iconos-contenedor">
-                                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-                                            <i class="bi bi-github"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- plate 5 -->
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="plate">
-                                <img class="card-img-top" src="files/imgOurMenu/p3.jpeg" width="100" alt="Proyecto 1">
-                                <div class="overlay">
-                                    <p>PECHUGA HAWAIANA
-                                    </p>
-                                    <div class="iconos-contenedor">
-                                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-                                            <i class="bi bi-github"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- plate 6 -->
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="plate">
-                                <img class="card-img-top" src="files/imgOurMenu/p3.jpeg" width="100" alt="Proyecto 1">
-                                <div class="overlay">
-                                    <p>PECHUGA SUPREMA
-                                    </p>
-                                    <div class="iconos-contenedor">
-                                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-                                            <i class="bi bi-github"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- plate 7 -->
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="plate">
-                                <img class="card-img-top" src="files/imgOurMenu/p3.jpeg" width="100" alt="Proyecto 1">
-                                <div class="overlay">
-                                    <p>PECHUGA EN SALSA DE
-                                        CHAMPIÑONES
-                                    </p>
-                                    <div class="iconos-contenedor">
-                                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-                                            <i class="bi bi-github"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- plate 8 -->
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="plate">
-                                <img class="card-img-top" src="files/imgOurMenu/p3.jpeg" width="100" alt="Proyecto 1">
-                                <div class="overlay">
-                                    <p>LENGUA EN SALSA DE
-                                        CHAMPIÑONES
-                                    </p>
-                                    <div class="iconos-contenedor">
-                                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-                                            <i class="bi bi-github"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- plate 9 -->
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="plate">
-                                <img class="card-img-top" src="files/imgOurMenu/p3.jpeg" width="100" alt="Proyecto 1">
-                                <div class="overlay">
-                                    <p>LENGUA CRIOLLA
-                                    </p>
-                                    <div class="iconos-contenedor">
-                                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-                                            <i class="bi bi-github"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
+                    <div id="menuCarnes" class="row">
+                        <!-- Platos de carnes-->
                     </div>
                 </div>
             </section>
+
+            <!-- Bebidas -->
+            <section class="our-menu seccion-clara d-flex flex-column">
+                <h3 class="seccion-titulo texto-negro">Bebidas</h3>
+                <div class="container text-center pproyectos-contenedor">
+                    <div id="menuBebidas" class="row">
+                        <!-- platos bebidas-->
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Modal -->
+            <div class="modal" id="modal" onclick="closeModal()">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <div class="modal-overlay">
+                        <img class="modal-img" id="modal-img" src="" alt="Plato">
+                        <div class="plate-description" id="modal-details">
+                            <h2>Nombre del plato</h2>
+                            <p>Descripción larga del plato...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
 
 
             <!-- Pie de pagina (footer) -->
@@ -523,5 +244,10 @@
                 <p>Product Brand: Work in Progress, Page developed by James Soscue &copy;</p>
             </div>
 
+
+            <!-- Scripts -->
+            <script src="scripts/getMenu.js"></script>
+
+</body>
 
 </html>

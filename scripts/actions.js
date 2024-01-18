@@ -5,7 +5,7 @@ window.addEventListener('scroll', function() {
     parallax.style.transform = 'translateY(' + (scrolled * 0.05) + 'px)';
 });
 
- 
+/* 
 window.addEventListener('scroll', function() {
     const plateps = document.querySelectorAll('.platep');
     const scrolled = window.scrollY;
@@ -22,7 +22,7 @@ window.addEventListener('scroll', function() {
             platep.classList.remove('zoomIn');
         }
     });
-});
+});*/
 
 // Función para verificar si un elemento está en la vista
 function isElementInViewport(el) {
@@ -37,27 +37,4 @@ function isElementInViewport(el) {
 
 
 
-function showDetails(plateId) {
-    const modal = document.getElementById('modal');
-    const modalImg = document.getElementById('modal-img');
-    const modalDetails = document.getElementById('modal-details');
 
-    modalImg.src = `../files/imgOurMenu/${plateId}.jpeg`;
-
-    // Texto de prueba para la descripción larga del plato
-    modalDetails.innerHTML = "<h2>Nombre del plato</h2><p>Esta es una descripción larga de ejemplo para el plato. Incluye detalles sobre los ingredientes y la preparación del plato. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>";
-
-    modal.style.display = 'block';
-}
-
-function closeModal() {
-    const modal = document.getElementById('modal');
-    modal.style.display = 'none';
-}
-
-window.onclick = function(event) {
-    const modal = document.getElementById('modal');
-    if (event.target === modal) {
-        modal.style.display = 'none';
-    }
-};
