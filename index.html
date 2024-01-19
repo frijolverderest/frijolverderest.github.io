@@ -36,8 +36,8 @@
 
 <body>
     <!-- Barra de navegación -->
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
+    <nav class="navbar navbar-inverse navbar-fixed-top text-center">
+        <div class=" nav-cell">
             <a class="navbar-brand" href="./index" id="logo-container">
                 <img src="files/iconFrijol.png" alt="Icono" id="navbar-icon" width="40" class="pull-left">
                 <span id="navbar-title" class="pull-left"> Frijol Verde</span>
@@ -47,15 +47,18 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./nuestromenu">Nuestro Menú</a>
-                    </li>
-                   <!-- <li class="nav-item">
+        </div>
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index">Inicio</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./nuestromenu">Nuestro Menú</a>
+                </li>
+                <!-- <li class="nav-item">
                         <a class="nav-link" href="./desayunos">Desayunos</a>
                     </li>
                     <li class="nav-item">
@@ -63,17 +66,17 @@
                     </li>
 
                     <li class="nav-item dropdown">-->
-                        <!-- Opciones del menú desplegable -->
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./contacto">Contáctanos</a>
-                    </li><!--
+                <!-- Opciones del menú desplegable 
+                    </li>-->
+                <li class="nav-item">
+                    <a class="nav-link" href="./contacto">Contáctanos</a>
+                </li><!--
                     <li class="nav-item">
                         <a class="nav-link" href="./about">Sobre Nosotros</a>
                     </li>-->
-                </ul>
-            </div>
+            </ul>
         </div>
+
     </nav>
 
     <div class="container-body">
@@ -81,7 +84,9 @@
 
         <!-- Seccion Hero -->
         <section class="hero align-items-stretch"
-            style="background-image: url('files/desenfoqueMadera.png'); background-size: cover;">
+            style=" background: linear-gradient(rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.575)), url('files/fondoMenu.jpg');background-size: 100% 100%;background-repeat: no-repeat">
+            >
+
             <div class="hero-principal d-flex flex-column justify-content-center align-items-center py-2 my-2">
                 <div class="parallax">
                     <img class="hero-imagen rounded-circle img-fluid" src="files/iconFrijol.png" alt="img">
@@ -96,14 +101,16 @@
                         <i class="bi bi-list"></i> Nuestro Menú
                     </a>
 
-                    <a href="./eventos" class="btn btn-primary" type="button">
+                    <a href="./index" class="btn btn-primary" type="button">
                         <i class="bi bi-calendar-event"></i> Eventos
                     </a>
                 </div>
 
             </div>
         </section>
-        
+
+
+
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicadores -->
             <ol class="carousel-indicators">
@@ -111,12 +118,12 @@
                 <li data-target="#myCarousel" data-slide-to="1" class=""></li>
                 <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
             </ol>
-    
+
             <!-- Slides del carrusel -->
             <div class="carousel-inner">
                 <div class="item">
                     <div class="text-center">
-                        <img class = "img-pasatiempo"src="files/carusel/car1.jpg"  alt="Imagen 1">
+                        <img class="img-pasatiempo" src="files/carusel/car1.jpg" alt="Imagen 1">
                         <div class="carousel-caption">
                             <h3>EVENTOS </h3>
                             <p>Vive momentos inolvidables en tus fechas especiales.
@@ -127,7 +134,7 @@
                 </div>
                 <div class="item">
                     <div class="text-center">
-                        <img class = "img-pasatiempo" src="files/carusel/car2.jpg" alt="Imagen 2">
+                        <img class="img-pasatiempo" src="files/carusel/car2.jpg" alt="Imagen 2">
                         <div class="carousel-caption">
                             <h3>CHULETA VALLUNA</h3>
                             <p>UNA DELICIA VALLUNA IRRESISTIBLE!
@@ -141,11 +148,11 @@
                 </div>
                 <div class="item active">
                     <div class="text-center">
-                        <img class = "img-pasatiempo" src="files/carusel/car3.jpg"  alt="Imagen 3">
+                        <img class="img-pasatiempo" src="files/carusel/car3.jpg" alt="Imagen 3">
                         <div class="carousel-caption">
                             <h3>PECHUGA EN SALSA DE
                                 CHAMPIÑONES
-                                </h3>
+                            </h3>
                             <p>ELEGANCIA Y SABOR EN CADA BOCADO.
                                 PECHUGA BAÑADA EN SALSA DE
                                 CHAMPIÑONES, ACOMPAÑADA DE ARROZ,
@@ -155,7 +162,7 @@
                     </div>
                 </div>
             </div>
-    
+
             <!-- Controles del carrusel -->
             <a class="left carousel-control" href="#myCarousel" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left"></span>
@@ -164,130 +171,92 @@
                 <span class="glyphicon glyphicon-chevron-right"></span>
             </a>
         </div>
-    
+
+    </div>
 
 
 
-        <!-- Seccion menu del dia -->
-        <section id="menu-dia" class="menu-dia"
-            style="background-image: url('files/fondoCarton.png'); background-size: cover;">
-            <div class="contenedor-menu">
-                <h1 class="seccion-titulo">Menu del dia </h1>
-                <div class="menu-dia-box">
-                    <div>
-                        <img class="menu-imagen" src="files/ajiaco.png" alt="img">
-                    </div>
+    <!-- Pie de pagina (footer) -->
+    <footer class="seccion-clara d-flex flex-column align-items-center justify-content-center">
 
-                    <div class="contenedor-menu-dia">
-                        <h1 class="seccion-titulo">Menu</h1>
-                        <p class="menu-item-name">
-                            Sopa de Ajiaco <br>
-                            Mazamorra <br>
-                        </p>
-                        <hr>
-                        <p class="menu-item-name">
-                            Frijol <br>
-                            Lentejas <br>
-                            Pasta Boloñesa <br>
-                        </p>
-                        <hr>
-                        <p class="menu-item-name">
-                            Cerdo plancha <br>
-                            Fricase de pollo <br>
-                            Res con chimichurri
-                        </p>
-                        <div class="d-grid gap-2">
-                            <a href="https://wa.me/573013290099/" class="btn btn-domi btn-primary" type="button">
-                                <i class="bi bi-whatsapp"></i> Pedir Domicilio
-                            </a>
-                        </div>
-                    </div>
+        <div class="container-footer">
+            <div class="column">
+                <h1 class="seccion-titulo">Contáctanos</h1>
+
+                <div class="seccion-contact">
+                    <a class="bi bi-telephone" href="tel:6028352715" target="_blank" rel="noopener noreferrer">
+                        <p> 1234567890</p>
+                    </a>
                 </div>
-            </div>
-        </section>
-
-
-        <!-- Pie de pagina (footer) -->
-        <footer class="seccion-clara d-flex flex-column align-items-center justify-content-center">
-
-            <div class="container-footer">
-                <div class="column">
-                    <h1 class="seccion-titulo">Contáctanos</h1>
-
-                    <div class="seccion-contact">
-                        <a class="bi bi-telephone" href="tel:6028352715" target="_blank" rel="noopener noreferrer">
-                            <p> 1234567890</p>
-                        </a>
-                    </div>
-                    <div class="seccion-contact">
-                        <a class="bi bi-whatsapp" href="https://wa.me/573013290099/" target="_blank"
-                            rel="noopener noreferrer">
-                            <p>+57 301 329 0099</p>
-                        </a>
-                    </div>
-
-
-
+                <div class="seccion-contact">
+                    <a class="bi bi-whatsapp" href="https://wa.me/573013290099/" target="_blank"
+                        rel="noopener noreferrer">
+                        <p>+57 301 329 0099</p>
+                    </a>
                 </div>
-                <div class="column">
-                    <h1 class="seccion-titulo">Ubicación</h1>
 
-                    <div class="seccion-contact">
-                        <a class="bi bi-pin-map" href="https://maps.app.goo.gl/C9k7hQXihKUYHDuR8" target="_blank"
-                            rel="noopener noreferrer">
-                            <p>Calle 9N #8N - 21 Prados del Norte <br> Popayán - Cauca </p>
-                        </a>
-                    </div>
 
-                </div>
-                <div class="column">
-                    <h1 class="seccion-titulo">Horario de atención</h1>
-
-                    <div class="seccion-contact">
-                        <a class="bi bi-clock" href="https://maps.app.goo.gl/C9k7hQXihKUYHDuR8" target="_blank"
-                            rel="noopener noreferrer">
-                            <p>Lunes a Domingo 7:30 am - 4:00 pm </p>
-                        </a>
-                    </div>
-
-                </div>
-            </div>
-
-            <h1 class="seccion-titulo">Nuestras Redes Sociales</h1>
-
-            <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
-                <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-twitter"></i>
-                </a>
-                <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-tiktok"></i>
-                </a>
-                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-facebook"></i>
-                </a>
-                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-instagram"></i>
-                </a>
-                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-whatsapp"></i>
-                </a>
-                <a href="tel:+1234567890" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-telephone"></i>
-                </a>
-
-                <a href="mailto:" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-envelope"></i>
-                </a>
 
             </div>
+            <div class="column">
+                <h1 class="seccion-titulo">Ubicación</h1>
 
-            <div class="derechos-de-autor">
-                <p>Todos los derechos reservados.<br>2023 &copy; Frijol Verde. </p>
+                <div class="seccion-contact">
+                    <a class="bi bi-pin-map" href="https://maps.app.goo.gl/C9k7hQXihKUYHDuR8" target="_blank"
+                        rel="noopener noreferrer">
+                        <p>Calle 9N #8N - 21 Prados del Norte <br> Popayán - Cauca </p>
+                    </a>
+                </div>
+
             </div>
-        </footer>
-        <div class="desarrollador">
-            <p>Product Brand: Work in Progress, Page developed by James Soscue &copy;</p>
+            <div class="column">
+                <h1 class="seccion-titulo">Horario de atención</h1>
+
+                <div class="seccion-contact">
+                    <a class="bi bi-clock" href="https://maps.app.goo.gl/C9k7hQXihKUYHDuR8" target="_blank"
+                        rel="noopener noreferrer">
+                        <p>Lunes a Domingo 7:30 am - 4:00 pm </p>
+                    </a>
+                </div>
+
+            </div>
         </div>
 
+        <h1 class="seccion-titulo">Nuestras Redes Sociales</h1>
+
+        <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-twitter"></i>
+            </a>
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-tiktok"></i>
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-whatsapp"></i>
+            </a>
+            <a href="tel:+1234567890" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-telephone"></i>
+            </a>
+
+            <a href="mailto:" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-envelope"></i>
+            </a>
+
+        </div>
+
+        <div class="derechos-de-autor">
+            <p>Todos los derechos reservados.<br>2023 &copy; Frijol Verde. </p>
+        </div>
+    </footer>
+    <div class="desarrollador">
+        <p>Product Brand: Work in Progress, Page developed by James Soscue &copy;</p>
+    </div>
+</body>
 
 </html>
