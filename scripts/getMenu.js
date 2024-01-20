@@ -43,7 +43,6 @@ cargarCategoria(contenedorBebidas, menu.bebidas);
 
 function cargarCategoria(contenedor, categoria) {
   categoria.forEach((plato) => {
-    // Crear elementos HTML para cada plato
     const platoDiv = document.createElement('div');
     platoDiv.classList.add('card', 'platep');
     platoDiv.onclick = () => showDetails(`p${plato.id}`);
@@ -52,8 +51,9 @@ function cargarCategoria(contenedor, categoria) {
 
     const img = document.createElement('img');
     img.classList.add('platep-img');
-    img.src = `files/imgOurMenu/p${plato.id}.jpeg`;
-    img.alt = `Plato ${plato.id}`;
+    img.src = `files/imgOurMenu/${plato.fotografias[0]}`;
+    img.alt = `Plato ${plato.id} - Foto 1`;
+
 
     const cardBody = document.createElement('div');
     cardBody.classList.add('card-body', 'platep-details');
@@ -69,17 +69,13 @@ function cargarCategoria(contenedor, categoria) {
 
     const precio = document.createElement('h3');
     precio.classList.add('card-title');
-    precio.textContent = plato.precio;
+    precio.textContent = "$"+ plato.precio.toFixed(3);
 
-
-    // Agregar elementos al DOM
     cardBody.appendChild(titulo);
     cardBody.appendChild(descripcion);
     cardBody.appendChild(precio);
-
     platoDiv.appendChild(img);
     platoDiv.appendChild(cardBody);
-
     contenedor.appendChild(platoDiv);
   });
 }

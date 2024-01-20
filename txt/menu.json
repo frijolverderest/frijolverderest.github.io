@@ -3,53 +3,53 @@
     "entradas": [
       {
         "id": 1,
-        "nombre": "Ensalada César",
-        "descripcionCorta": "Fresca y saludable",
-        "descripcionLarga": "Ensalada de lechuga romana, aderezo César, crutones y queso parmesano.",
-        "precio": 8.99,
-        "fotografias": ["ensalada_cesar_1.jpg", "ensalada_cesar_2.jpg"]
+        "nombre": "Pan De Waffle",
+        "descripcionCorta": "",
+        "descripcionLarga": "",
+        "precio": 8.500,
+        "fotografias": ["p1.jpeg", "p2.jpeg"]
       },
       {
         "id": 2,
-        "nombre": "Sopa de Tomate",
-        "descripcionCorta": "Caliente y reconfortante",
-        "descripcionLarga": "Sopa de tomate con albahaca fresca y crujientes crutones.",
-        "precio": 6.99,
-        "fotografias": ["sopa_tomate_1.jpg", "sopa_tomate_2.jpg"]
+        "nombre": "Aborrajados",
+        "descripcionCorta": "",
+        "descripcionLarga": "",
+        "precio": 8.500,
+        "fotografias": ["p2.jpeg", "p3.jpeg"]
       },
       {
         "id": 3,
-        "nombre": "Rollitos de Primavera",
-        "descripcionCorta": "Crujientes y sabrosos",
-        "descripcionLarga": "Rollitos rellenos de verduras frescas y carne, acompañados de salsa agridulce.",
-        "precio": 9.99,
-        "fotografias": ["rollitos_primavera_1.jpg", "rollitos_primavera_2.jpg"]
+        "nombre": "Sachipapas",
+        "descripcionCorta": "",
+        "descripcionLarga": "",
+        "precio": 8.500,
+        "fotografias": ["p3.jpeg", "p5.jpeg"]
       }
     ],
     "platosConFrijol": [
       {
         "id": 5,
-        "nombre": "Frijoles Refritos",
-        "descripcionCorta": "Suaves y sabrosos",
-        "descripcionLarga": "Frijoles negros refritos con cebolla, ajo y especias.",
-        "precio": 6.99,
-        "fotografias": ["frijoles_refritos_1.jpg", "frijoles_refritos_2.jpg"]
+        "nombre": "Plato Montañero",
+        "descripcionCorta": "Sabor montañero inigualable!",
+        "descripcionLarga": "FRIJOLES, ARROZ, CARNES (RES, CERDO, POLLO), COSTILLA Y CHICHARRÓN. ¡UNA EXPERIENCIA IRRESISTIBLE EN CADA BOCADO!.",
+        "precio": 32.000,
+        "fotografias": ["p6.jpeg", "p5.jpeg"]
       },
       {
         "id": 6,
-        "nombre": "Enchiladas de Frijol",
-        "descripcionCorta": "Sabores auténticos",
-        "descripcionLarga": "Enchiladas rellenas de frijoles refritos, queso y salsa picante.",
-        "precio": 8.99,
-        "fotografias": ["enchiladas_frijol_1.jpg", "enchiladas_frijol_2.jpg"]
+        "nombre": "Costicazuela",
+        "descripcionCorta": "SABORES QUE TE ENAMORARÁN",
+        "descripcionLarga": "FRIJOLES, COSTILLITA, HUEVO, MADURO, AGUACATE, MAICITOS Y ARROZ. UNA FIESTA DE SABORES AUTÉNTICOS",
+        "precio": 25.000,
+        "fotografias": ["p5.jpeg", "p6.jpeg"]
       },
       {
         "id": 7,
-        "nombre": "Tacos de Frijol",
-        "descripcionCorta": "Pequeños bocados llenos de sabor",
-        "descripcionLarga": "Tacos mini rellenos de frijoles, guacamole y queso.",
-        "precio": 7.99,
-        "fotografias": ["tacos_frijol_1.jpg", "tacos_frijol_2.jpg"]
+        "nombre": "Cazuela de Frijol",
+        "descripcionCorta": "TRADICIÓN Y SABORES ÚNICOS!",
+        "descripcionLarga": "FRIJOLES, CHICHARRÓN, CARNE DE RES, AGUACATE Y PATACÓN. DELEITE COLOMBIANO AUTÉNTICO.",
+        "precio": 25.000,
+        "fotografias": ["p7.jpeg", "p8.jpeg"]
       }
     ],
     "delRio": [
