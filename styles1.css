@@ -1,6 +1,29 @@
+.contenedor-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.categoria-titulo {
+    color: rgb(111, 156, 5);
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    max-width: min-content;
+    padding: 5px 20px;
+    border-radius: 15px 15px 15px 0;
+    left: -20px;
+    top: -20px;
+    font-weight: bold;
+    font-size: 1.5rem;
+
+}
 .contenedor-platos {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     /* En lugar de space-between */
     align-items: center;
     flex-wrap: wrap;
@@ -9,9 +32,16 @@
     border-radius: 4vw;
     /* Haciendo los bordes más proporcionales */
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0);
-    gap: 30px;
+    gap: 40px;
     max-width: 100%;
-    padding-top: 2vw;
+    padding: 3.5vw;
+
+}
+
+#seccion-entradas {
+    background: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.507)), url('files/fondorest.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 .plato-card {
@@ -28,6 +58,13 @@
     max-height: 160px;
     max-width: 47%;
     border: 1px solid #000000;
+}
+
+.plato-card:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+    box-shadow: 5px 5px 25px #0e3000;
+    z-index: 2;
 }
 
 .plato-detalles {
@@ -85,7 +122,7 @@
     border: none;
     margin-top: 0;
     margin-bottom: 0;
-    
+
 }
 
 .plato-precio {
@@ -114,6 +151,7 @@
         padding-top: 40px;
         /* Ajustes de padding para pantallas más pequeñas */
     }
+
     .plato-card {
         border-radius: 8px 4vh 4vh 5vh;
         align-items: center;
@@ -125,51 +163,51 @@
         margin-right: 0;
     }
 
-.plato-categoria {
-    color: rgb(111, 156, 5);
-    margin: 0;
-    background-color: rgb(255, 255, 255);
-    position: relative;
-    max-width: min-content;
-    padding: 5px 15px;
-    border-radius: 10px 10px 10px 0;
-    left: -10px;
-    top: -15px;
-    font-weight: bold;
-    font-size: 1.3rem;
+    .plato-categoria {
+        color: rgb(111, 156, 5);
+        margin: 0;
+        background-color: rgb(255, 255, 255);
+        position: relative;
+        max-width: min-content;
+        padding: 5px 15px;
+        border-radius: 10px 10px 10px 0;
+        left: -10px;
+        top: -15px;
+        font-weight: bold;
+        font-size: 1.3rem;
 
-}
-
-
-.plato-nombre {
-    position: relative;
-    margin-top: 0;
-    margin-left: 2vw;
-    max-width: min-content;
-    white-space: nowrap;
-    font-size: 1.8rem;
-    top: -10px;
-    color: #eeeeee;
-    font-family: 'Rubik Dirt', cursive;
+    }
 
 
+    .plato-nombre {
+        position: relative;
+        margin-top: 0;
+        margin-left: 2vw;
+        max-width: min-content;
+        white-space: nowrap;
+        font-size: 1.8rem;
+        top: -10px;
+        color: #eeeeee;
+        font-family: 'Rubik Dirt', cursive;
 
-}
 
 
-.plato-descripcion {
-    color: #f8f8f8;
-    margin-left: 2.3vw;
-    margin-right: 1.5vw;
-    margin-top: 0;
-    margin-bottom: 0;
-    position: relative;
-    top: -10px;
-    font-size: 1.3rem;
-}
+    }
 
-.plato-precio {
-    font-weight: bold;
-    color: rgb(111, 156, 5);
-}
+
+    .plato-descripcion {
+        color: #f8f8f8;
+        margin-left: 2.3vw;
+        margin-right: 1.5vw;
+        margin-top: 0;
+        margin-bottom: 0;
+        position: relative;
+        top: -10px;
+        font-size: 1.3rem;
+    }
+
+    .plato-precio {
+        font-weight: bold;
+        color: rgb(111, 156, 5);
+    }
 }

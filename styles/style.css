@@ -39,7 +39,7 @@ h1 {
     justify-items: center;
     justify-content: center;
     border: none;
-    gap: 0px;
+    gap: 25px;
 }
 
 .navbar-fixed {
@@ -303,7 +303,7 @@ h1 {
 }
 
 #myCarousel{
-    display: flex;
+    display: none;
     position: relative;
     
     left: 0;
@@ -333,17 +333,9 @@ h1 {
     position: relative;
 }
 
-.contenedor-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin: 10px;
-    padding: 10px;
-}
 
-.seccion-titulo {
+
+.titulo-menu{
     font-size: 3vw;
     margin: 0%;
     display: flex;
@@ -352,6 +344,7 @@ h1 {
     justify-content: center;
     text-align: center;
     color : #ffffff;
+    margin-top: 80px;
 
 }
 .seccion-descripcion{
@@ -499,7 +492,7 @@ hr {
         line-height: 2.5vw;
     }
 
-    .seccion-titulo {
+    .titulo-menu{
         font-size: 3vh;
     }
 
@@ -704,8 +697,7 @@ width: 100%;
 /* Proyectos */
 
 .our-menu {
-    margin-top: 10px;
-    margin-bottom: 10px;
+   
    /* background-image: url('../files/FondoCarta.jpeg');
     */
     
@@ -1010,7 +1002,7 @@ width: 100%;
     gap: 1.7vw;
     position: relative;
    /*  background-color: aqua;*/
-    width: 98%;
+    width: 100%;
 }
 
 .imagenes-temp{
