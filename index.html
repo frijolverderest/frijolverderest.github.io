@@ -12,17 +12,23 @@
     <title>Frijol Verde</title>
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="files/iconFrijol.png">
-    <!-- Bootstrap CDN  -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.min.js"></script>
+    <!-- Bootstrap CDN 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/js/bootstrap.bundle.min.js"></script>
+     -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!-- Iconos de Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <!-- CSS estilos personalizados-->
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/index.css">
+
     <!-- JS estilos personalizados-->
     <script src="scripts/actions.js"></script>
 
@@ -61,10 +67,11 @@
                 <!-- <li class="nav-item">
                         <a class="nav-link" href="./desayunos">Desayunos</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./eventos">Eventos</a>
-                    </li>
-
+                <li class="nav-item">
+                    <a class="nav-link" href="./eventos">Eventos</a>
+                </li>
+            -->
+                <!--
                     <li class="nav-item dropdown">-->
                 <!-- Opciones del menú desplegable 
                     </li>-->
@@ -79,140 +86,110 @@
 
     </nav>
 
-    <div class="container-body">
+    <div class="contenedor-index">
+
+        <section class="seccion-banner">
+            <div class="contenedor-banner">
 
 
-        <!-- Seccion Hero -->
-        <section class="hero align-items-stretch"
-            style=" background: linear-gradient(rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.575)), url('files/fondomenu.jpg');background-size: 100% 100%;background-repeat: no-repeat">
-            >
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Contenedor de botones e indicadores -->
+                    <div class="contenedor-botones-indicadores">
+                        <!-- Indicadores -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+                            <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+                            <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
+                        </ol>
 
-            <div class="hero-principal d-flex flex-column justify-content-center align-items-center py-2 my-2">
-                <div class="parallax">
-                    <img class="hero-imagen rounded-circle img-fluid" src="files/iconFrijol.png" alt="img">
+                        <!-- Botones -->
+                        <div class="d-grid gap-2">
+                            <a href="./nuestromenu" class="btn btn-primary" type="button">
+                                <i class="bi bi-cup-hot"></i> Desayunos
+                            </a>
+                            <a href="./nuestromenu" class="btn btn-primary" type="button">
+                                <i class="fas fa-utensils"></i> Medio Dia
+                            </a>
+                            <a href="./index" class="btn btn-primary" type="button">
+                                <i class="bi bi-calendar-event"></i> Eventos
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Slides del carrusel -->
+                    <div class="carousel-inner">
+                        <div class="item">
+                            <img class="img-carousel" src="files/imgcarusel/car1.jpeg" alt="Imagen 1">
+
+                        </div>
+                        <div class="item">
+                            <img class="img-carousel" src="files/imgcarusel/car2.jpg" alt="Imagen 2">
+
+                        </div>
+                        <div class="item active">
+                            <img class="img-carousel" src="files/imgcarusel/car3.jpg" alt="Imagen 3">
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Controles del carrusel -->
+                    <a id="carrusel-izquierda" class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a id="carrusel-derecha" class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
                 </div>
-                <h1 id="hola-nombre">Frijol Verde</h1>
-
-                <div class="d-grid gap-2">
-                    <a href="./nuestromenu" class="btn btn-primary" type="button">
-                        <i class="bi bi-cup-hot"></i> Desayunos
-                    </a>
-                    <a href="./nuestromenu" class="btn btn-primary" type="button">
-                        <i class="bi bi-list"></i> Nuestro Menú
-                    </a>
-
-                    <a href="./index" class="btn btn-primary" type="button">
-                        <i class="bi bi-calendar-event"></i> Eventos
-                    </a>
-                </div>
-
             </div>
         </section>
-
-
-
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicadores -->
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class=""></li>
-                <li data-target="#myCarousel" data-slide-to="1" class=""></li>
-                <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
-            </ol>
-
-            <!-- Slides del carrusel -->
-            <div class="carousel-inner">
-                <div class="item">
-                    <div class="text-center-carousel">
-                        <img class="img-pasatiempo" src="files/carusel/car1.jpg" alt="Imagen 1">
-                        <div class="carousel-caption">
-                            <h3>EVENTOS </h3>
-                            <p>Vive momentos inolvidables en tus fechas especiales.
-                                Visítanos y disfruta de la mejor comida, música y compañía.
-                                ¡Haz que cada fecha especial sea un recuerdo inolvidable!</p>
-                        </div>
-                    </div>>
-                </div>
-                <div class="item">
-                    <div class="text-center-carousel">
-                        <img class="img-pasatiempo" src="files/carusel/car2.jpg" alt="Imagen 2">
-                        <div class="carousel-caption">
-                            <h3>CHULETA VALLUNA</h3>
-                            <p>UNA DELICIA VALLUNA IRRESISTIBLE!
-                                CARNE DE POLLO O CERDO APANADA,
-                                ACOMPAÑADA DE ARROZ, PAPA FRANCESA Y
-                                ENSALADA. UN PLACER CRUJIENTE Y
-                                SABROSO.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item active">
-                    <div class="text-center-carousel">
-                        <img class="img-pasatiempo" src="files/carusel/car3.jpg" alt="Imagen 3">
-                        <div class="carousel-caption">
-                            <h3>PECHUGA EN SALSA DE
-                                CHAMPIÑONES
-                            </h3>
-                            <p>ELEGANCIA Y SABOR EN CADA BOCADO.
-                                PECHUGA BAÑADA EN SALSA DE
-                                CHAMPIÑONES, ACOMPAÑADA DE ARROZ,
-                                PAPA FRANCESA Y ENSALADA. UN PLACER
-                                EXQUISITO.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Controles del carrusel -->
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-            </a>
-        </div>
 
     </div>
 
 
 
+
+
+
+
+
+
     <!-- Pie de pagina (footer) -->
-    <footer class="seccion-clara d-flex flex-column align-items-center justify-content-center">
+    <footer class="seccion-clara d-flex flex-column align-items-center justify-content-center" style="top: -70px;">
 
-        <div class="container-footer">
-            <div class="column">
-                <h1 class="seccion-titulo">Contáctanos</h1>
+        <div class="contenedor-footer">
+            <div class="columna-footer">
+                <h1 class="titulo-footer">Contáctanos</h1>
 
-                <div class="seccion-contact">
+                <div class="contacto-footer">
                     <a class="bi bi-telephone" href="tel:6028352715" target="_blank" rel="noopener noreferrer">
-                        <p> 1234567890</p>
+                        <p>602 8352715</p>
                     </a>
                 </div>
-                <div class="seccion-contact">
+                <div class="contacto-footer">
                     <a class="bi bi-whatsapp" href="https://wa.me/573013290099/" target="_blank"
                         rel="noopener noreferrer">
                         <p>+57 301 329 0099</p>
                     </a>
                 </div>
-
-
-
             </div>
-            <div class="column">
-                <h1 class="seccion-titulo">Ubicación</h1>
+            <div class="linea-vertical"></div>
+            <div class="columna-footer">
+                <h1 class="titulo-footer">Ubicación</h1>
 
-                <div class="seccion-contact">
+                <div class="contacto-footer">
                     <a class="bi bi-pin-map" href="https://maps.app.goo.gl/C9k7hQXihKUYHDuR8" target="_blank"
                         rel="noopener noreferrer">
                         <p>Calle 9N #8N - 21 Prados del Norte <br> Popayán - Cauca </p>
                     </a>
                 </div>
-
             </div>
-            <div class="column">
-                <h1 class="seccion-titulo">Horario de atención</h1>
+            <div class="linea-vertical"></div>
+            <div class="columna-footer">
+                <h1 class="titulo-footer">Horario de atención</h1>
 
-                <div class="seccion-contact">
+                <div class="contacto-footer">
                     <a class="bi bi-clock" href="https://maps.app.goo.gl/C9k7hQXihKUYHDuR8" target="_blank"
                         rel="noopener noreferrer">
                         <p>Lunes a Domingo 7:30 am - 4:00 pm </p>
@@ -222,41 +199,36 @@
             </div>
         </div>
 
-        <h1 class="seccion-titulo">Nuestras Redes Sociales</h1>
+        <h1 class="titulo-footer">Nuestras Redes Sociales</h1>
 
         <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
-            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
-                <i class="bi bi-twitter"></i>
-            </a>
-            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+
+            <a href="https://tiktok.com/@restaurantefrijolverde" target="_blank" rel="noopener noreferrer">
                 <i class="bi bi-tiktok"></i>
             </a>
-            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.facebook.com/frijolverde2013" target="_blank" rel="noopener noreferrer">
                 <i class="bi bi-facebook"></i>
             </a>
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/frijolverderest/" target="_blank" rel="noopener noreferrer">
                 <i class="bi bi-instagram"></i>
             </a>
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/573013290099/" target="_blank" rel="noopener noreferrer">
                 <i class="bi bi-whatsapp"></i>
             </a>
-            <a href="tel:+1234567890" target="_blank" rel="noopener noreferrer">
+            <a href="tel:+573013290099" target="_blank" rel="noopener noreferrer">
                 <i class="bi bi-telephone"></i>
-            </a>
-
-            <a href="mailto:" target="_blank" rel="noopener noreferrer">
-                <i class="bi bi-envelope"></i>
             </a>
 
         </div>
 
         <div class="derechos-de-autor">
-            <p>Todos los derechos reservados.<br>2023 &copy; Frijol Verde. </p>
+            <p>Todos los derechos reservados.<br>2024 &copy; Frijol Verde. </p>
         </div>
     </footer>
     <div class="desarrollador">
         <p>Product Brand: Work in Progress, Page developed by James Soscue &copy;</p>
     </div>
+
 </body>
 
 </html>

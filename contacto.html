@@ -23,6 +23,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <!-- CSS estilos personalizados-->
     <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/contacto.css">
     <!-- JS estilos personalizados-->
     <script src="../scripts/actions.js"></script>
 
@@ -60,11 +63,11 @@
                 </li>
                 <!-- <li class="nav-item">
                         <a class="nav-link" href="./desayunos">Desayunos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./eventos">Eventos</a>
-                    </li>
-
+                    </li>-->
+                <li class="nav-item">
+                    <a class="nav-link" href="./eventos">Eventos</a>
+                </li>
+                <!--
                     <li class="nav-item dropdown">-->
                 <!-- Opciones del menú desplegable 
                     </li>-->
@@ -79,122 +82,110 @@
 
     </nav>
 
-    <div class="container-body">
+    <div class="contenedor-contacto">
 
 
-        <!-- Seccion Hero -->
-        <section class="hero align-items-stretch"
-            style=" background: linear-gradient(rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.575)), url('files/fondomenu.jpg');background-size: 100% 100%;background-repeat: no-repeat">
-            >
-
-            <div class="hero-principal d-flex flex-column justify-content-center align-items-center py-2 my-2">
-                <div class="parallax">
-                    <img class="hero-imagen rounded-circle img-fluid" src="files/iconFrijol.png" alt="img">
+        <div class="contenedor-formulario">
+            <h1 class="titulo-formulario">Contáctanos</h1>
+            <form action="enviar.php" method="post" class="formulario">
+                <div class="campo-formulario">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
                 </div>
-                <h1 id="hola-nombre">Frijol Verde</h1>
-
-                <div class="d-grid gap-2">
-                    <a href="./nuestromenu" class="btn btn-primary" type="button">
-                        <i class="bi bi-cup-hot"></i> Desayunos
-                    </a>
-                    <a href="./nuestromenu" class="btn btn-primary" type="button">
-                        <i class="bi bi-list"></i> Nuestro Menú
-                    </a>
-
-                    <a href="./index" class="btn btn-primary" type="button">
-                        <i class="bi bi-calendar-event"></i> Eventos
-                    </a>
+                <div class="campo-formulario">
+                    <label for="correo">Correo:</label>
+                    <input type="email" id="correo" name="correo" required>
                 </div>
-
-            </div>
-        </section>
-
-
-
+                <div class="campo-formulario">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+                <div class="campo-formulario">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+                </div>
+                <div class="campo-formulario">
+                    <input type="submit" value="Enviar" class="boton-enviar">
+                </div>
+            </form>
+        </div>
 
 
     </div>
 
 
 
-    <!-- Pie de pagina (footer) -->
-    <footer class="seccion-clara d-flex flex-column align-items-center justify-content-center">
+        <!-- Pie de pagina (footer) -->
+        <footer class="seccion-clara d-flex flex-column align-items-center justify-content-center" style="top: -70px;">
 
-        <div class="container-footer">
-            <div class="column">
-                <h1 class="seccion-titulo">Contáctanos</h1>
+            <div class="contenedor-footer">
+                <div class="columna-footer">
+                    <h1 class="titulo-footer">Contáctanos</h1>
 
-                <div class="seccion-contact">
-                    <a class="bi bi-telephone" href="tel:6028352715" target="_blank" rel="noopener noreferrer">
-                        <p> 1234567890</p>
-                    </a>
+                    <div class="contacto-footer">
+                        <a class="bi bi-telephone" href="tel:6028352715" target="_blank" rel="noopener noreferrer">
+                            <p>602 8352715</p>
+                        </a>
+                    </div>
+                    <div class="contacto-footer">
+                        <a class="bi bi-whatsapp" href="https://wa.me/573013290099/" target="_blank"
+                            rel="noopener noreferrer">
+                            <p>+57 301 329 0099</p>
+                        </a>
+                    </div>
                 </div>
-                <div class="seccion-contact">
-                    <a class="bi bi-whatsapp" href="https://wa.me/573013290099/" target="_blank"
-                        rel="noopener noreferrer">
-                        <p>+57 301 329 0099</p>
-                    </a>
+                <div class="linea-vertical"></div>
+                <div class="columna-footer">
+                    <h1 class="titulo-footer">Ubicación</h1>
+
+                    <div class="contacto-footer">
+                        <a class="bi bi-pin-map" href="https://maps.app.goo.gl/C9k7hQXihKUYHDuR8" target="_blank"
+                            rel="noopener noreferrer">
+                            <p>Calle 9N #8N - 21 Prados del Norte <br> Popayán - Cauca </p>
+                        </a>
+                    </div>
                 </div>
+                <div class="linea-vertical"></div>
+                <div class="columna-footer">
+                    <h1 class="titulo-footer">Horario de atención</h1>
 
+                    <div class="contacto-footer">
+                        <a class="bi bi-clock" href="https://maps.app.goo.gl/C9k7hQXihKUYHDuR8" target="_blank"
+                            rel="noopener noreferrer">
+                            <p>Lunes a Domingo 7:30 am - 4:00 pm </p>
+                        </a>
+                    </div>
 
+                </div>
+            </div>
+
+            <h1 class="titulo-footer">Nuestras Redes Sociales</h1>
+
+            <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+
+                <a href="https://tiktok.com/@restaurantefrijolverde" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-tiktok"></i>
+                </a>
+                <a href="https://www.facebook.com/frijolverde2013" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/frijolverderest/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://wa.me/573013290099/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-whatsapp"></i>
+                </a>
+                <a href="tel:+573013290099" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-telephone"></i>
+                </a>
 
             </div>
-            <div class="column">
-                <h1 class="seccion-titulo">Ubicación</h1>
 
-                <div class="seccion-contact">
-                    <a class="bi bi-pin-map" href="https://maps.app.goo.gl/C9k7hQXihKUYHDuR8" target="_blank"
-                        rel="noopener noreferrer">
-                        <p>Calle 9N #8N - 21 Prados del Norte <br> Popayán - Cauca </p>
-                    </a>
-                </div>
-
+            <div class="derechos-de-autor">
+                <p>Todos los derechos reservados.<br>2023 &copy; Frijol Verde. </p>
             </div>
-            <div class="column">
-                <h1 class="seccion-titulo">Horario de atención</h1>
+        </footer>
 
-                <div class="seccion-contact">
-                    <a class="bi bi-clock" href="https://maps.app.goo.gl/C9k7hQXihKUYHDuR8" target="_blank"
-                        rel="noopener noreferrer">
-                        <p>Lunes a Domingo 7:30 am - 4:00 pm </p>
-                    </a>
-                </div>
-
-            </div>
-        </div>
-
-        <h1 class="seccion-titulo">Nuestras Redes Sociales</h1>
-
-        <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
-            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
-                <i class="bi bi-twitter"></i>
-            </a>
-            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-                <i class="bi bi-tiktok"></i>
-            </a>
-            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
-                <i class="bi bi-facebook"></i>
-            </a>
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-                <i class="bi bi-instagram"></i>
-            </a>
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-                <i class="bi bi-whatsapp"></i>
-            </a>
-            <a href="tel:+1234567890" target="_blank" rel="noopener noreferrer">
-                <i class="bi bi-telephone"></i>
-            </a>
-
-            <a href="mailto:" target="_blank" rel="noopener noreferrer">
-                <i class="bi bi-envelope"></i>
-            </a>
-
-        </div>
-
-        <div class="derechos-de-autor">
-            <p>Todos los derechos reservados.<br>2023 &copy; Frijol Verde. </p>
-        </div>
-    </footer>
     <div class="desarrollador">
         <p>Product Brand: Work in Progress, Page developed by James Soscue &copy;</p>
     </div>

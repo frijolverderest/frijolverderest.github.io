@@ -1,0 +1,66 @@
+.contenedor-contacto{
+    background: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.507)), url('../files/screen.webp');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+position: relative;
+top: -70px;
+padding: 70px;
+}
+.contenedor-formulario {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #3a3a3a;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 80px;
+  }
+  
+  .titulo-formulario {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #FFDE00;
+  }
+  
+  .formulario {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .campo-formulario {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-weight: bold;
+    color: #FFDE00;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #070707;
+  }
+  
+  .boton-enviar {
+    width: 100%;
+    padding: 10px;
+    background-color: #39b300;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    pointer-events: none;
+
+  }
+  
+  .boton-enviar:hover {
+    background-color: #329e00;
+  }
+  

@@ -23,8 +23,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <!-- CSS estilos personalizados-->
     <link rel="stylesheet" href="styles/style.css">
-    <!-- JS estilos personalizados-->
-    <script src="scripts/actions.js"></script>
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/nuestromenu.css">
+
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,8 +34,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap"
         rel="stylesheet">
+        <script src="scripts/getMenu.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="styles1.css">
 </head>
 
 <body>
@@ -62,11 +64,11 @@
                 </li>
                 <!-- <li class="nav-item">
                         <a class="nav-link" href="./desayunos">Desayunos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./eventos">Eventos</a>
-                    </li>
-
+                    </li>-->
+                <li class="nav-item">
+                    <a class="nav-link" href="./eventos">Eventos</a>
+                </li>
+                <!--
                     <li class="nav-item dropdown">-->
                 <!-- Opciones del menú desplegable 
                     </li>-->
@@ -91,10 +93,27 @@
         <!-- Menu -->
         <section id="seccion-entradas" class="our-menu d-flex flex-column">
 
-            <h1 class="titulo-menu">Nuestro Menú</h1>
-            
-            <div class="contenedor-platos">
-                
+            <h1 class="titulo-menu">NUESTRO MENÚ</h1>
+
+            <div id="menuEntradas" class="contenedor-platos">
+                <div class="contenedor-categoria-titulo">
+                    <h1 class="categoria-titulo">Entradas</h1>
+                    <hr class="categoria-hr">
+                </div>
+     <!--           
+                <div class="plato-card">
+                    <div class="plato-detalles">
+
+                        <h2 class="plato-nombre">PAN DE WAFFLE </h2>
+                        <p class="plato-descripcion">Velas aromatizantes disponibles en aromas a vainilla,
+                            naranja,
+                            lavanda o sandía.</p>
+                        <hr class="plato-hr">
+                        <p class="plato-precio">$8.500</p>
+                    </div>
+
+                    <img class="plato-img" src="files/imgmenu/p14.jpeg" alt="Pan de waffle">
+                </div>
 
                 <div class="plato-card">
                     <div class="plato-detalles">
@@ -107,21 +126,7 @@
                         <p class="plato-precio">$8.500</p>
                     </div>
 
-                    <img class="plato-img" src="files/imgOurMenu/p5.jpeg" alt="Pan de waffle">
-                </div>
-
-                <div class="plato-card">
-                    <div class="plato-detalles">
-                        <h3 class="plato-categoria">Entrada</h3>
-                        <h2 class="plato-nombre">PAN DE WAFFLE</h2>
-                        <p class="plato-descripcion">Velas aromatizantes disponibles en aromas a vainilla,
-                            naranja,
-                            lavanda o sandía.</p>
-                        <hr class="plato-hr">
-                        <p class="plato-precio">$8.500</p>
-                    </div>
-
-                    <img class="plato-img" src="files/imgOurMenu/p5.jpeg" alt="Pan de waffle">
+                    <img class="plato-img" src="files/imgmenu/p5.jpeg" alt="Pan de waffle">
                 </div>
                 <div class="plato-card">
                     <div class="plato-detalles">
@@ -134,7 +139,7 @@
                         <p class="plato-precio">$8.500</p>
                     </div>
 
-                    <img class="plato-img" src="files/imgOurMenu/p5.jpeg" alt="Pan de waffle">
+                    <img class="plato-img" src="files/imgmenu/p5.jpeg" alt="Pan de waffle">
                 </div>
                 <div class="plato-card">
                     <div class="plato-detalles">
@@ -147,7 +152,7 @@
                         <p class="plato-precio">$8.500</p>
                     </div>
 
-                    <img class="plato-img" src="files/imgOurMenu/p5.jpeg" alt="Pan de waffle">
+                    <img class="plato-img" src="files/imgmenu/p5.jpeg" alt="Pan de waffle">
                 </div>
                 <div class="plato-card">
                     <div class="plato-detalles">
@@ -160,7 +165,7 @@
                         <p class="plato-precio">$8.500</p>
                     </div>
 
-                    <img class="plato-img" src="files/imgOurMenu/p5.jpeg" alt="Pan de waffle">
+                    <img class="plato-img" src="files/imgmenu/p5.jpeg" alt="Pan de waffle">
                 </div>
                 <div class="plato-card">
                     <div class="plato-detalles">
@@ -173,173 +178,124 @@
                         <p class="plato-precio">$8.500</p>
                     </div>
 
-                    <img class="plato-img" src="files/imgOurMenu/p5.jpeg" alt="Pan de waffle">
+                    <img class="plato-img" src="files/imgmenu/p5.jpeg" alt="Pan de waffle">
                 </div>
+                -->
 
             </div>
         </section>
 
+        <section id="seccion-frijol" class="our-menu d-flex flex-column">
 
-
-        <!-- Sección de Entradas -->
-        <section class="our-menu d-flex flex-column">
-            <h3 class="seccion-titulo texto-negro">Entradas</h3>
-            <div class="container  proyectos-contenedor">
-                <div id="menuEntradas" class="row">
-                    <!-- Platos de Entradas -->
-                </div>
-
-            </div>
-        </section>
-
-
-
-        <!-- Menu con frijol -->
-        <section class="our-menu  d-flex flex-column">
-            <h3 class="seccion-titulo texto-negro">Con Frijol</h3>
-            <div class="container  proyectos-contenedor">
-                <div id="menuConFrijol" class="row">
-                    <!-- Platos de con frijol -->
+            <div id="menuConFrijol" class="contenedor-platos">
+                <div class="contenedor-categoria-titulo">
+                    <h1 class="categoria-titulo">Con Frijol</h1>
+                    <hr class="categoria-hr">
                 </div>
             </div>
         </section>
 
-        <!-- Menu Del rio -->
-        <section class="our-menu seccion-clara d-flex flex-column">
-            <h3 class="seccion-titulo texto-negro">Menú Del Rio</h3>
-            <div class="container  proyectos-contenedor">
-                <div id="menuDelRio" class="row">
-                    <!-- Platos del rio-->
+        <section id="seccion-delrio" class="our-menu d-flex flex-column">
+
+            <div id="menuDelRio" class="contenedor-platos">
+                <div class="contenedor-categoria-titulo">
+                    <h1 class="categoria-titulo">Del Rio</h1>
+                    <hr class="categoria-hr">
                 </div>
             </div>
         </section>
 
-        <!-- Carnes -->
-        <section class="our-menu seccion-clara d-flex flex-column">
-            <h3 class="seccion-titulo texto-negro">Carnes</h3>
-            <div class="container proyectos-contenedor">
-                <div id="menuCarnes" class="row">
-                    <!-- Platos de carnes-->
+        <section id="seccion-carnes" class="our-menu d-flex flex-column">
+
+            <div id="menuCarnes" class="contenedor-platos">
+                <div class="contenedor-categoria-titulo">
+                    <h1 class="categoria-titulo">Carnes</h1>
+                    <hr class="categoria-hr">
                 </div>
             </div>
         </section>
 
-        <!-- Bebidas -->
-        <section class="our-menu seccion-clara d-flex flex-column">
-            <h3 class="seccion-titulo texto-negro">Bebidas</h3>
-            <div class="container text-center pproyectos-contenedor">
-                <div id="menuBebidas" class="row">
-                    <!-- platos bebidas-->
-                </div>
-            </div>
-        </section>
+        <!-- Pie de pagina (footer) -->
+        <footer class="seccion-clara d-flex flex-column align-items-center justify-content-center">
 
+            <div class="contenedor-footer">
+                <div class="columna-footer">
+                    <h1 class="titulo-footer">Contáctanos</h1>
 
-        <!-- Modal -->
-        <div class="modal" id="modal" onclick="closeModal()">
-            <div class="modal-content">
-                <span class="close" onclick="closeModal()">&times;</span>
-                <div class="modal-overlay">
-                    <img class="modal-img" id="modal-img" src="" alt="Plato">
-                    <div class="plate-description" id="modal-details">
-                        <h2>Nombre del plato</h2>
-                        <p>Descripción larga del plato...</p>
+                    <div class="contacto-footer">
+                        <a class="bi bi-telephone" href="tel:6028352715" target="_blank" rel="noopener noreferrer">
+                            <p>602 8352715</p>
+                        </a>
+                    </div>
+                    <div class="contacto-footer">
+                        <a class="bi bi-whatsapp" href="https://wa.me/573013290099/" target="_blank"
+                            rel="noopener noreferrer">
+                            <p>+57 301 329 0099</p>
+                        </a>
                     </div>
                 </div>
+                <div class="linea-vertical"></div>
+                <div class="columna-footer">
+                    <h1 class="titulo-footer">Ubicación</h1>
+
+                    <div class="contacto-footer">
+                        <a class="bi bi-pin-map" href="https://maps.app.goo.gl/C9k7hQXihKUYHDuR8" target="_blank"
+                            rel="noopener noreferrer">
+                            <p>Calle 9N #8N - 21 Prados del Norte <br> Popayán - Cauca </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="linea-vertical"></div>
+                <div class="columna-footer">
+                    <h1 class="titulo-footer">Horario de atención</h1>
+
+                    <div class="contacto-footer">
+                        <a class="bi bi-clock" href="https://maps.app.goo.gl/C9k7hQXihKUYHDuR8" target="_blank"
+                            rel="noopener noreferrer">
+                            <p>Lunes a Domingo 7:30 am - 4:00 pm </p>
+                        </a>
+                    </div>
+
+                </div>
             </div>
+
+            <h1 class="titulo-footer">Nuestras Redes Sociales</h1>
+
+            <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+
+                <a href="https://tiktok.com/@restaurantefrijolverde" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-tiktok"></i>
+                </a>
+                <a href="https://www.facebook.com/frijolverde2013" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/frijolverderest/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://wa.me/573013290099/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-whatsapp"></i>
+                </a>
+                <a href="tel:+573013290099" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-telephone"></i>
+                </a>
+
+            </div>
+
+            <div class="derechos-de-autor">
+                <p>Todos los derechos reservados.<br>2023 &copy; Frijol Verde. </p>
+            </div>
+        </footer>
+
+        <div class="desarrollador">
+            <p>Product Brand: Work in Progress, Page developed by James Soscue &copy;</p>
         </div>
 
-
-    </div>
-
-
-
-    <!-- Pie de pagina (footer) -->
-    <footer class="seccion-clara d-flex flex-column align-items-center justify-content-center">
-
-        <div class="container-footer">
-            <div class="column">
-                <h1 class="seccion-titulo">Contáctanos</h1>
-
-                <div class="seccion-contact">
-                    <a class="bi bi-telephone" href="tel:6028352715" target="_blank" rel="noopener noreferrer">
-                        <p>6028352715</p>
-                    </a>
-                </div>
-                <div class="seccion-contact">
-                    <a class="bi bi-whatsapp" href="https://wa.me/573013290099/" target="_blank"
-                        rel="noopener noreferrer">
-                        <p>+57 301 329 0099</p>
-                    </a>
-                </div>
-
-
-
-            </div>
-            <div class="column">
-                <h1 class="seccion-titulo">Ubicación</h1>
-
-                <div class="seccion-contact">
-                    <a class="bi bi-pin-map" href="https://maps.app.goo.gl/C9k7hQXihKUYHDuR8" target="_blank"
-                        rel="noopener noreferrer">
-                        <p>Calle 9N #8N - 21 Prados del Norte <br> Popayán - Cauca </p>
-                    </a>
-                </div>
-
-            </div>
-            <div class="column">
-                <h1 class="seccion-titulo">Horario de atención</h1>
-
-                <div class="seccion-contact">
-                    <a class="bi bi-clock" href="https://maps.app.goo.gl/C9k7hQXihKUYHDuR8" target="_blank"
-                        rel="noopener noreferrer">
-                        <p>Lunes a Domingo 7:30 am - 4:00 pm </p>
-                    </a>
-                </div>
-
-            </div>
-        </div>
-
-        <h1 class="seccion-titulo">Nuestras Redes Sociales</h1>
-
-        <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
-            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
-                <i class="bi bi-twitter"></i>
-            </a>
-            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-                <i class="bi bi-tiktok"></i>
-            </a>
-            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
-                <i class="bi bi-facebook"></i>
-            </a>
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-                <i class="bi bi-instagram"></i>
-            </a>
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-                <i class="bi bi-whatsapp"></i>
-            </a>
-            <a href="tel:+1234567890" target="_blank" rel="noopener noreferrer">
-                <i class="bi bi-telephone"></i>
-            </a>
-
-            <a href="mailto:" target="_blank" rel="noopener noreferrer">
-                <i class="bi bi-envelope"></i>
-            </a>
-
-        </div>
-
-        <div class="derechos-de-autor">
-            <p>Todos los derechos reservados.<br>2023 &copy; Frijol Verde. </p>
-        </div>
-    </footer>
-    <div class="desarrollador">
-        <p>Product Brand: Work in Progress, Page developed by James Soscue &copy;</p>
-    </div>
-
-
-    <!-- Scripts -->
-    <script src="scripts/getMenu.js"></script>
 
 </body>
 
 </html>
+
+ <!-- JS estilos personalizados-->
+ <script src="scripts/actions.js"></script>
+ <!-- Scripts -->
+  

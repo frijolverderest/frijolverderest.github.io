@@ -1,0 +1,174 @@
+body {
+  display: flex;
+  position: relative;
+  top: -70px;
+  flex-direction: column;
+  padding-top: 70px;
+  background: linear-gradient(rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.575)), url('../files/fondodesenfoque.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* Fondo estático */
+
+
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .titulo-eventos {
+    font-size: 4rem;
+    font-weight: bold;
+  }
+
+}
+
+.titulo-eventos {
+  font-size: 5rem;
+  margin: 0%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 80px;
+  color: #FFDE00;
+  font-family: 'Monotype Corsiva', cursive;
+
+}
+
+.contenedor-eventos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #00000000;
+  gap: 30px;
+  padding: 20px;
+  opacity: 0;
+  animation: fadeInAnimation 0.8s ease-in forwards;
+}
+
+.tarjeta-evento {
+  position: relative;
+  /* Añadir posición relativa para que el contenido absoluto esté posicionado correctamente */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 31%;
+  max-width: 310px;
+  min-height: 480px;
+  background-image: linear-gradient(to right, rgba(17, 17, 17, 0.692), rgba(75, 75, 75, 0.685));
+  border-radius: 20px;
+  padding: 10px 20px;
+
+  /*
+  box-shadow: 0px 0px 3px rgba(192, 158, 4, 0.493); /* Sombra transparente */
+
+  cursor: pointer;
+  /* Cambiar el cursor al hacer hover para indicar que es clickeable */
+}
+
+.mas-detalles {
+  position: absolute;
+  bottom: 20px;
+  /* Posicionamiento en la parte inferior con un margen de 10px */
+  left: 50%;
+  /* Posicionamiento en el centro horizontal */
+  transform: translateX(-50%);
+  /* Centrar horizontalmente */
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  opacity: 0;
+  /* Inicialmente transparente */
+  transition: opacity 0.3s;
+  /* Transición de opacidad */
+}
+
+
+.tarjeta-evento:hover .mas-detalles {
+  opacity: 1;
+  /* Hacer visible el texto al hacer hover */
+  text-shadow: 0px 0px 10px rgb(255, 209, 3);
+}
+
+.tarjeta-evento:hover .imagen-evento {
+  border-radius: 10%;
+  transition: ease-in-out 0.3s;
+}
+
+.tarjeta-evento::before {
+  content: "";
+  /* Pseudo-elemento para crear una capa transparente */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: 0px 0px 13px rgba(192, 158, 4, 0.493);
+  /* Sombra transparente */
+  background-color: rgba(0, 0, 0, 0.205);
+  /* Color de fondo transparente */
+  border-radius: 20px;
+  /* Ajustar el mismo radio de borde que el div principal */
+  opacity: 0;
+  /* Inicialmente transparente */
+  transition: opacity 0.5s;
+  /* Agregar transición de opacidad */
+}
+
+.tarjeta-evento:hover::before {
+  opacity: 1;
+  /* Hacer visible la capa transparente al hacer hover */
+}
+
+.tarjeta-evento:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s;
+  /* background-image: linear-gradient(to right, rgba(17, 17, 17, 0.918), rgba(75, 75, 75, 0.877)); */
+}
+
+
+.tarjeta-evento p {
+  color: #ffffff;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.tarjeta-evento h1 {
+  background-image: linear-gradient(to top right, #ce7e05, hsl(54, 92%, 65%));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+}
+
+.imagen-evento {
+  max-width: 230px;
+  min-height: 230px;
+  border-radius: 50%;
+  height: auto;
+  object-fit: cover;
+}
+
+.evento-titulo {
+  font-family: 'Chau Philomene One', sans-serif;
+  font-weight: bold;
+
+}
+
+.evento-descripcion {
+  font-family: 'Chau Philomene One', sans-serif;
+  font-style: italic;
+
+}

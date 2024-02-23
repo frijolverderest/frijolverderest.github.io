@@ -1,5 +1,5 @@
 // Ruta del archivo JSON
-const jsonFilePath = 'txt/menu.json';
+const jsonFilePath = '../files/menu.json';
 
 // Variable global para almacenar los datos de los platos
 let platos;
@@ -11,7 +11,7 @@ async function cargarJSON() {
     platos = await response.json();
     // Muestra los platos
     mostrarPlatos(platos.menu);
-   
+
   } catch (error) {
     console.error('Error al cargar el archivo JSON:', error);
   }
@@ -22,20 +22,20 @@ async function cargarJSON() {
 // Función para mostrar los platos en la sección correspondiente
 function mostrarPlatos(menu) {
 
-   // Muestra los platos de entradas
-   //mostrarPlatosEntradas(platos.menu.entradas);
-   //mostrarPlatosConFrijol(platos.menu.entradas);
+  // Muestra los platos de entradas
+  //mostrarPlatosEntradas(platos.menu.entradas);
+  //mostrarPlatosConFrijol(platos.menu.entradas);
 
-const contenedorEntradas = document.getElementById('menuEntradas');
-cargarCategoria(contenedorEntradas, menu.entradas);
-const contenedorFrijol = document.getElementById('menuConFrijol');
-cargarCategoria(contenedorFrijol, menu.platosConFrijol);
-const contenedorRio = document.getElementById('menuDelRio');
-cargarCategoria(contenedorRio, menu.delRio);
-const contenedorCarnes = document.getElementById('menuCarnes');
-cargarCategoria(contenedorCarnes, menu.carnes);
-const contenedorBebidas = document.getElementById('menuBebidas');
-cargarCategoria(contenedorBebidas, menu.bebidas);
+  const contenedorEntradas = document.getElementById('menuEntradas');
+  cargarCategoria(contenedorEntradas, menu.entradas);
+  const contenedorFrijol = document.getElementById('menuConFrijol');
+  cargarCategoria(contenedorFrijol, menu.platosConFrijol);
+  const contenedorRio = document.getElementById('menuDelRio');
+  cargarCategoria(contenedorRio, menu.delRio);
+  const contenedorCarnes = document.getElementById('menuCarnes');
+  cargarCategoria(contenedorCarnes, menu.carnes);
+  const contenedorBebidas = document.getElementById('menuBebidas');
+  cargarCategoria(contenedorBebidas, menu.bebidas);
 
 
 
@@ -44,41 +44,63 @@ cargarCategoria(contenedorBebidas, menu.bebidas);
 function cargarCategoria(contenedor, categoria) {
   categoria.forEach((plato) => {
     const platoDiv = document.createElement('div');
-    platoDiv.classList.add('card', 'platep');
+    platoDiv.classList.add('plato-card'); // Agrega la clase 'plato-card'
+    //platoDiv.classList.add('animated'); // Agrega la clase 'animated' para iniciar la animación
     platoDiv.onclick = () => showDetails(`p${plato.id}`);
+   // platoDiv.style.opacity = '0'; // Inicia invisible
+    //platoDiv.style.transition = 'transform: scale(0.5)';
+   // platoDiv.style.animation = 'zoomIn 0.5s ease-out';
+   //platoDiv.classList.add('zoomIn');
+
     //platoDiv.addEventListener('mouseover', () => showDetails(`p${entrada.id}`));
     //platoDiv.addEventListener('mouseout', () => closeModal());
+    
+    const platoDetallesDiv = document.createElement('div');
+    platoDetallesDiv.classList.add('plato-detalles');
+
+    const platoH2 = document.createElement('h2');
+    platoH2.classList.add('plato-nombre');
+    platoH2.textContent = plato.nombre;
+
+    const descripcionP = document.createElement('p');
+    descripcionP.classList.add('plato-descripcion');
+    descripcionP.textContent = plato.descripcionCorta;
+
+    const platoHr = document.createElement('hr');
+    platoHr.classList.add('plato-hr');
+
+    const precioP = document.createElement('p');
+    precioP.classList.add('plato-precio');
+    precioP.textContent = "$" + plato.precio.toFixed(3);
+
+//******* */
 
     const img = document.createElement('img');
-    img.classList.add('platep-img');
-    img.src = `files/imgOurMenu/${plato.fotografias[0]}`;
+    img.classList.add('plato-img');
+    img.src = `files/imgmenu/${plato.fotografias[0]}`;
     img.alt = `Plato ${plato.id} - Foto 1`;
 
 
-    const cardBody = document.createElement('div');
-    cardBody.classList.add('card-body', 'platep-details');
+    platoDetallesDiv.appendChild(platoH2);
+    platoDetallesDiv.appendChild(descripcionP);
+    platoDetallesDiv.appendChild(platoHr);
+    platoDetallesDiv.appendChild(precioP);
 
-    const titulo = document.createElement('h3');
-    titulo.classList.add('card-title');
-    titulo.textContent = plato.nombre;
-
-
-    const descripcion = document.createElement('p');
-    descripcion.classList.add('card-text');
-    descripcion.textContent = plato.descripcionCorta;
-
-    const precio = document.createElement('h3');
-    precio.classList.add('card-title');
-    precio.textContent = "$"+ plato.precio.toFixed(3);
-
-    cardBody.appendChild(titulo);
-    cardBody.appendChild(descripcion);
-    cardBody.appendChild(precio);
+    platoDiv.appendChild(platoDetallesDiv);
     platoDiv.appendChild(img);
-    platoDiv.appendChild(cardBody);
+
     contenedor.appendChild(platoDiv);
+
+ 
+    
+
   });
 }
+
+
+
+
+
 
 
 // Función para mostrar el modal con detalles del plato
@@ -134,7 +156,7 @@ function showDetails(platoId) {
         // Mostrar el modal
         platepContainer.style.zIndex = 0;
         modal.style.display = 'block';
-        
+
         // Salir del bucle al encontrar el plato
         return;
       }
@@ -156,3 +178,31 @@ window.onload = cargarJSON;
 
 
 
+document.addEventListener('DOMContentLoaded', (event) => {
+  const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              entry.target.style.opacity = 1;
+              entry.target.style.transform = 'scale(1)';
+          } else {
+              entry.target.style.opacity = 0;
+              entry.target.style.transform = 'scale(0.5)';
+          }
+      });
+  }, { threshold: 0.1 }); // Ajusta el umbral según necesidad
+
+  // Observa todos los elementos .plato-card
+  document.querySelectorAll('.plato-card').forEach(card => {
+      observer.observe(card);
+  });
+
+  // Función para observar elementos .plato-card agregados dinámicamente
+  function observarElementosDinamicos() {
+      document.querySelectorAll('.plato-card').forEach(card => {
+          observer.observe(card);
+      });
+  }
+
+  // Llama a la función para observar los elementos dinámicos
+  observarElementosDinamicos();
+});
