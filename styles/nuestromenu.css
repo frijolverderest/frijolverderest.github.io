@@ -10,14 +10,14 @@
     width: 100%;
 }
 .titulo-menu {
-    font-size: 5rem;
+    font-size: 3rem;
     margin: 0%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 90px;
     color: #FFDE00;
     font-family: 'Monotype Corsiva', cursive;
 
@@ -31,7 +31,7 @@
     border-radius: 15px 15px 15px 0;
     left: 20px;
     top: 20px;
-    font-size: 5rem;
+    font-size: 3rem;
     color: #FFDE00;
     font-family: 'Monotype Corsiva', cursive;
 
@@ -66,16 +66,20 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
+
 }
 
 #seccion-frijol {
     background: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.507)), url('../files/s2.webp');
+    background: linear-gradient(to top right, #363434a6, #070605be);
+   
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 #seccion-delrio {
     background: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.507)), url('../files/screen.webp');
+    background: linear-gradient(to top right, #363434a6, #070605be);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -309,3 +313,61 @@ opacity: 1;
         justify-content: center;
     }
 }
+
+.barra-categorias{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 70px;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.548) 0%, rgba(0, 0, 0, 0.548) 100%);
+
+}
+.barra-categorias button{
+    border: none;
+width: 100%;
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: #FFDE00;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.548) 0%, rgba(0, 0, 0, 0.548) 100%);
+
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+
+
+.categoria {
+    margin-top: 50px; /* Espacio entre cada categoría */
+    padding-bottom: 50px; /* Espacio inferior */
+  }
+  
+  .btn-group {   
+     margin-top: 20px; /* Espacio entre los botones y las categorías */
+     display: flex;
+     flex-direction: row;
+     flex-wrap: nowrap;
+     flex-wrap: nowrap;
+     justify-content: center;
+     width: 98%;
+margin: 0 20px;
+    }
+  .categoria {
+    margin-top: 20px; /* Espacio entre cada categoría */
+    padding-bottom: 20px; /* Espacio inferior */
+  }
+  
+  .barra-categorias {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 98%;
+    z-index: 1000;
+  }
+  .active{
+    background-color: #FFDE00!important;
+    color: #000000!important;
+  }

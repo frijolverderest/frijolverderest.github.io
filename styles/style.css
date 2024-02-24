@@ -16,6 +16,7 @@ body {
     background-color: #000000;
     overflow-x: hidden;
     height: auto;
+    justify-content: center;
 }
 
 
