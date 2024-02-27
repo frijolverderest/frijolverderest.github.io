@@ -62,7 +62,7 @@
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    padding: 15px;
+    padding: 15px 0;
     
 }
 .pull-left {
