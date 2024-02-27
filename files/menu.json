@@ -7,7 +7,7 @@
         "descripcionCorta": "Crujiente por fuera, suave por dentro",
         "descripcionLarga": "Disfruta de nuestros deliciosos panes de waffle, perfectos para empezar tu comida con un toque dulce. Servidos con miel y mantequilla.",
         "precio": 8.500,
-        "fotografias": ["p1.jpg", "p2.jpeg"]
+        "fotografias": ["wafle1.jpg", "wafle2.jpeg"]
       },
       {
         "id": 2,
@@ -15,7 +15,7 @@
         "descripcionCorta": "Dulce tradición colombiana",
         "descripcionLarga": "Plátanos maduros rellenos de queso, fritos hasta alcanzar la perfección dorada. Un bocado crujiente por fuera y melty por dentro.",
         "precio": 8.500,
-        "fotografias": ["p2.jpeg", "p3.jpeg"]
+        "fotografias": ["aborrajado1.jpeg", "aborrajado2.jpeg"]
       },
       {
         "id": 3,
@@ -23,120 +23,302 @@
         "descripcionCorta": "Combinación clásica y deliciosa",
         "descripcionLarga": "Una mezcla irresistible de salchichas de primera calidad y papas fritas, servida con salsa de la casa. Ideal para compartir.",
         "precio": 8.500,
-        "fotografias": ["p3.jpeg", "p5.jpeg"]
+        "fotografias": ["salchipapa1.jpeg", "palchipapa2.jpeg"]
       }
     ],
     "platosConFrijol": [
       {
-        "id": 5,
+        "id": 4,
         "nombre": "Plato Montañero",
         "descripcionCorta": "Sabor montañero inigualable!",
         "descripcionLarga": "FRIJOLES, ARROZ, CARNES (RES, CERDO, POLLO), COSTILLA Y CHICHARRÓN. ¡UNA EXPERIENCIA IRRESISTIBLE EN CADA BOCADO!.",
         "precio": 32.000,
-        "fotografias": ["p6.jpeg", "p5.jpeg"]
+        "fotografias": ["montanero1.jpeg", "montanero2.jpeg"]
       },
       {
-        "id": 6,
+        "id": 5,
         "nombre": "Costicazuela",
         "descripcionCorta": "SABORES QUE TE ENAMORARÁN",
         "descripcionLarga": "FRIJOLES, COSTILLITA, HUEVO, MADURO, AGUACATE, MAICITOS Y ARROZ. UNA FIESTA DE SABORES AUTÉNTICOS",
-        "precio": 25.000,
-        "fotografias": ["p5.jpeg", "p6.jpeg"]
+        "precio": 27.500,
+        "fotografias": ["costicasuela1.jpeg", "costicasuela2.jpeg"]
       },
       {
-        "id": 7,
+        "id": 6,
         "nombre": "Cazuela de Frijol",
         "descripcionCorta": "TRADICIÓN Y SABORES ÚNICOS!",
         "descripcionLarga": "FRIJOLES, CHICHARRÓN, CARNE DE RES, AGUACATE Y PATACÓN. DELEITE COLOMBIANO AUTÉNTICO.",
-        "precio": 25.000,
-        "fotografias": ["p7.jpeg", "p8.jpeg"]
+        "precio": 27.500,
+        "fotografias": ["casuelafrijol1.jpeg", "casuelafrijol2.jpeg"]
       },
       {
         "id": 7,
         "nombre": "BANDEJA PAISA",
         "descripcionCorta": "¡UN FESTÍN IRRESISTIBLE!",
         "descripcionLarga": "FRIJOLES, ARROZ, CHORIZO, CHICHARRÓN, AGUACATE, RES MOLIDA Y HUEVO. SABOR COLOMBIANO EN PERFECTA ARMONÍA.",
-        "precio": 25.000,
-        "fotografias": ["p7.jpeg", "p8.jpeg"]
+        "precio": 27.500,
+        "fotografias": ["paisa1.jpeg", "paisa2.jpeg"]
       }
     ],
     "delRio": [
       {
-        "id": 11,
+        "id": 8,
         "nombre": "Trucha en champiñones",
         "descripcionCorta": "Sabor pescador inigualable",
         "descripcionLarga": "TRUCHA FRITA EN SALSA DE CHAMPIÑONES ACOMPAÑADA DE ARROZ, PAPA FRANCESA, ENSALADA Y MADURO. UN FESTÍN PARA LOS AMANTES DEL PESCADO.",
         "precio": 26.000,
-        "fotografias": ["p13.jpeg", "margarita_2.jpg"]
+        "fotografias": ["truchachampinones1.jpeg", "truchachampinones2.jpg"]
       },
       {
-        "id": 12,
+        "id": 9,
         "nombre": "Trucha Frita",
         "descripcionCorta": "SABOR PESCADOR INIGUALABLE.",
         "descripcionLarga": "TRUCHA FRITA ACOMPAÑADA DE ARROZ, PAPA FRANCESA, ENSALADA Y MADURO. UN FESTÍN PARA LOS AMANTES DEL PESCADO.",
-        "precio": 24.000,
-        "fotografias": ["p13.jpeg", "cerveza_artesanal_2.jpg"]
+        "precio": 25.000,
+        "fotografias": ["truchafrita1.jpeg", "truchafrita2.jpg"]
       },
       {
-        "id": 13,
+        "id": 10,
         "nombre": "Tilapia Frita",
         "descripcionCorta": "DELICIA CRUJIENTE Y FRESCA.",
         "descripcionLarga": "TILAPIA FRITA SERVIDA CON ARROZ, PAPA FRANCESA, ENSALADA Y MADURO. UNA COMBINACIÓN DE SABORES QUE TE ENCANTARÁ.",
-        "precio": 24.000,
-        "fotografias": ["p10.jpeg", "tequila_sunrise_2.jpg"]
+        "precio": 25.000,
+        "fotografias": ["tilapiafrita1.jpeg", "tilapiafrita2.jpg"]
       }
     ],
     "carnes": [
       {
-        "id": 7,
+        "id": 11,
         "nombre": "Chuleta Valluna",
         "descripcionCorta": "UNA DELICIA VALLUNA IRRESISTIBLE!",
         "descripcionLarga": "CARNE DE POLLO O CERDO APANADA, ACOMPAÑADA DE ARROZ, PAPA FRANCESA Y ENSALADA. UN PLACER CRUJIENTE Y SABROSO.",
-        "precio": 25.000,
-        "fotografias": ["p4.jpeg", "filete_mignon_2.jpg"]
+        "precio": 27.500,
+        "fotografias": ["chuletavalluna1.jpeg", "chuletavalluna2.jpg"]
       },
       {
-        "id": 14,
+        "id": 12,
         "nombre": "Costillas BBQ",
         "descripcionCorta": "Sabor ahumado y caramelizado",
         "descripcionLarga": "COSTILLA DE CERDO BAÑADA EN SALSA BBQ, CON MADURO, ARROZ, PAPA FRANCESA ENSALADA. UNA EXPERIENCIA QUE TE HARÁ DESEAR MÁS.",
-        "precio": 25.000,
-        "fotografias": ["p13.jpeg", "costillas_bbq_2.jpg"]
+        "precio": 27.500,
+        "fotografias": ["costillasbbq1.jpeg", "costillas_bbq_2.jpg"]
       },
       {
-        "id": 8,
-        "nombre": "Pollo a la Parrilla",
-        "descripcionCorta": "Sano y delicioso",
-        "descripcionLarga": "Pechuga de pollo a la parrilla con hierbas frescas, servido con ensalada y arroz.",
-        "precio": 14.99,
-        "fotografias": ["p15.jpeg", "pollo_parrilla_2.jpg"]
-      }
-    
-    ],
-    "bebidas": [
-      {
-        "id": 9,
-        "nombre": "Margarita",
-        "descripcionCorta": "Refrescante y cítrica",
-        "descripcionLarga": "Margarita con tequila, triple sec, jugo de limón y sal en el borde del vaso.",
-        "precio": 7.99,
-        "fotografias": ["margarita_1.jpg", "margarita_2.jpg"]
+        "id": 13,
+        "nombre": "Parrilla Mixta",
+        "descripcionCorta": " Elegancia y sabor en cada bocado",
+        "descripcionLarga": "Pechuga bañada en salsa de champiñones y tocineta, acompañada de arroz, papa francesa y ensalada. Un placer exquisito.",
+        "precio": 27.500,
+        "fotografias": ["parrillamixta1.jpeg", "parrillamixta2.jpeg"]
       },
       {
-        "id": 10,
-        "nombre": "Cerveza Artesanal",
-        "descripcionCorta": "Variedad de sabores",
-        "descripcionLarga": "Selección de cervezas artesanales locales y regionales.",
-        "precio": 5.99,
-        "fotografias": ["cerveza_artesanal_1.jpg", "cerveza_artesanal_2.jpg"]
+        "id": 14,
+        "nombre": "Pechuga Suprema",
+        "descripcionCorta": " Una parrillada para satisfacer todos los gustos",
+        "descripcionLarga": "deliciosas  Carnes de res, cerdo y pollo acompañadas de maduro, arroz, papa francesa y ensalada. Una parrillada para satisfacer todos los gustos",
+        "precio": 28.000,
+        "fotografias": ["pechugasuprema1.jpeg", "pechugasuprema2.jpeg"]
       },
       {
         "id": 15,
-        "nombre": "Tequila Sunrise",
-        "descripcionCorta": "Colorido y delicioso",
-        "descripcionLarga": "Cóctel con tequila, jugo de naranja y un toque de granadina.",
+        "nombre": "Pechuga En Salsa De Champiñones",
+        "descripcionCorta": " Elegancia y sabor en cada bocado",
+        "descripcionLarga": "Pechuga bañada en salsa de champiñones, acompañada de arroz, papa francesa y ensalada. Un placer exquisito.",
+        "precio": 27.500,
+        "fotografias": ["pechugachampinones1.jpeg", "pechugachampinones2.jpeg"]
+      },
+      {
+        "id": 16,
+        "nombre": "Pechuga Hawaiana",
+        "descripcionCorta": " Un toque tropical encantador.",
+        "descripcionLarga": "Filete de pechuga bañado en salsa de piña, con arroz, papa francesa y ensalada. Un viaje culinario a Hawai.",
+        "precio": 27.500,
+        "fotografias": ["pechugahawaiana1.jpeg", "pechugahawaiana2.jpeg"]
+      },
+      {
+        "id": 17,
+        "nombre": "Lengua criolla",
+        "descripcionCorta": " Un clásico lleno de sabor",
+        "descripcionLarga": "Lengua criolla con arroz, papa francesa y ensalada. Una opción reconfortante para los paladares más tradicionales.",
+        "precio": 27.500,
+        "fotografias": ["lenguacriolla1.jpeg", "lenguacriolla2.jpeg"]
+      },
+      {
+        "id": 18,
+        "nombre": "lengua en salsa de champiñones",
+        "descripcionCorta": " Un toque sofisticado. Lengua bañada en salsa de champiñones",
+        "descripcionLarga": "Un toque sofisticado. Lengua bañada en salsa de champiñones, acompañada de arroz, papa francesa y ensalada. Una experiencia gourmet.",
+        "precio": 27.500,
+        "fotografias": ["lenguachampiniones1.jpeg", "lenguachampiniones2.jpeg"]
+      },
+      {
+        "id": 19,
+        "nombre": "churrasco",
+        "descripcionCorta": " Un banquete de sabores inigualable.",
+        "descripcionLarga": "Lomo caracho asado acompañado de arroz, maduro, papa francesa y ensalada. Un banquete de sabores inigualable.",
+        "precio": 28.000,
+        "fotografias": ["churrasco1.jpeg", "churrasco2.jpeg"]
+      }
+
+    ],
+    "bebidas": [
+      {
+        "id": 20,
+        "nombre": "jugos naturales ",
+        "descripcionCorta": "agua $5.500 leche entera $6.000 leche deslactosada $7.000",
+        "descripcionLarga":"agua $5.500 leche entera $6.000 leche deslactosada $7.000",
+        "precio": 0.000,
+        "fotografias": ["jugosnaturales1.jpeg", "jugosnaturales2.jpeg"]
+      },
+      {
+        "id": 21,
+        "nombre": "Sodas Italianas",
+        "descripcionCorta": "Mango Biche, Fresa, Maracuya",
+        "descripcionLarga": "Mango Biche, Fresa, Maracuya.",
+        "precio": 10.000,
+        "fotografias": ["sodasitalianas1.jpg", "sodasitalianas2.jpg"]
+      },
+      {
+        "id": 22,
+        "nombre": "Coca Cola",
+        "descripcionCorta": "Coca Cola",
+        "descripcionLarga": "Coca Cola",
+        "precio": 4.500,
+        "fotografias": ["cocacola1.jpeg", "cocacola2.jpeg"]
+      },
+      {
+        "id": 23,
+        "nombre": "Cervezas",
+        "descripcionCorta": "corona $8.500 club colombia $5.500 poker $4.500",
+        "descripcionLarga": "corona $8.500 club colombia $5.500 poker $4.500",
+        "precio": 0.000,
+        "fotografias": ["cerveza1.jpeg", "cerveza1.jpeg"]
+      }
+    ],
+    "postres": [
+      {
+        "id": 24,
+        "nombre": "Brownie con Helado",
+        "descripcionCorta": "Brownie con helado a $8.500",
+        "descripcionLarga": "Delicioso brownie servido con una bola de helado a elección.",
+        "precio": 8500,
+        "fotografias": ["brownie_con_helado.jpeg"]
+      },
+      {
+        "id": 25,
+        "nombre": "Postre de las 3 Leches",
+        "descripcionCorta": "Postre de las 3 leches a $7.500",
+        "descripcionLarga": "Suave pastel empapado en tres tipos de leche: condensada, evaporada y crema de leche.",
+        "precio": 7500,
+        "fotografias": ["postre_tres_leches.jpg"]
+      },
+      {
+        "id": 26,
+        "nombre": "Copa de Helado",
+        "descripcionCorta": "Copa de helado a $5.500",
+        "descripcionLarga": "Refrescante copa de helado con sabores a elección, decorada con frutas frescas y salsa de chocolate.",
+        "precio": 5500,
+        "fotografias": ["copa_de_helado.jpeg"]
+      }
+    ],    
+    "desayunos": [
+      {
+        "id": 27,
+        "nombre": "Huevos Revueltos",
+        "descripcionCorta": "Desayuno clásico",
+        "descripcionLarga": "Huevos revueltos servidos con tostadas, jamón y queso.",
+        "precio": 9.99,
+        "fotografias": ["desayuno1.jpg", "desayuno2.jpg"]
+      },
+      {
+        "id": 28,
+        "nombre": "Panqueques con Frutas",
+        "descripcionCorta": "Dulce y delicioso",
+        "descripcionLarga": "Panqueques esponjosos acompañados de frutas frescas y jarabe de arce.",
+        "precio": 10.99,
+        "fotografias": ["panqueques1.jpg", "panqueques2.jpg"]
+      },
+      {
+        "id": 29,
+        "nombre": "Arepas con Queso",
+        "descripcionCorta": "Sabor tradicional colombiano",
+        "descripcionLarga": "Arepas de maíz rellenas de queso derretido.",
         "precio": 8.99,
-        "fotografias": ["tequila_sunrise_1.jpg", "tequila_sunrise_2.jpg"]
+        "fotografias": ["arepas1.jpg", "arepas2.jpg"]
+      },
+      {
+        "id": 30,
+        "nombre": "Tostadas Francesas",
+        "descripcionCorta": "Desayuno reconfortante",
+        "descripcionLarga": "Rebanadas de pan empapadas en huevo batido y luego doradas, servidas con miel y frutas frescas.",
+        "precio": 11.99,
+        "fotografias": ["tostadas1.jpg", "tostadas2.jpg"]
+      },
+      {
+        "id": 31,
+        "nombre": "Desayuno Americano",
+        "descripcionCorta": "Clásico y abundante",
+        "descripcionLarga": "Huevos fritos, tocino, salchichas, papas fritas y tostadas.",
+        "precio": 13.99,
+        "fotografias": ["americanbreakfast1.jpg", "americanbreakfast2.jpg"]
+      },
+      {
+        "id": 32,
+        "nombre": "Tortilla Española",
+        "descripcionCorta": "Sabor español auténtico",
+        "descripcionLarga": "Tortilla de huevos, papas y cebollas, servida con pan tostado.",
+        "precio": 10.99,
+        "fotografias": ["tortilla1.jpg", "tortilla2.jpg"]
+      }
+    ],
+    "platosJunior": [
+      {
+        "id": 33,
+        "nombre": "Mini Hamburguesas",
+        "descripcionCorta": "Para los más pequeños",
+        "descripcionLarga": "Mini hamburguesas con queso y ketchup, acompañadas de papas fritas.",
+        "precio": 7.99,
+        "fotografias": ["hamburguesas1.jpg", "hamburguesas2.jpg"]
+      },
+      {
+        "id": 34,
+        "nombre": "Tiras de Pollo",
+        "descripcionCorta": "Crujientes y sabrosas",
+        "descripcionLarga": "Tiras de pollo empanizadas, ideales para comer con salsa de tomate.",
+        "precio": 6.99,
+        "fotografias": ["tiraspollo1.jpg", "tiraspollo2.jpg"]
+      },
+      {
+        "id": 35,
+        "nombre": "Mini Pizza",
+        "descripcionCorta": "Pequeña pero deliciosa",
+        "descripcionLarga": "Pizza individual con salsa de tomate y queso fundido.",
+        "precio": 8.99,
+        "fotografias": ["minipizza1.jpg", "minipizza2.jpg"]
+      },
+      {
+        "id": 36,
+        "nombre": "Perritos Calientes",
+        "descripcionCorta": "Favoritos de los niños",
+        "descripcionLarga": "Perritos calientes con mostaza y ketchup, servidos con papas fritas.",
+        "precio": 7.99,
+        "fotografias": ["perritos1.jpg", "perritos2.jpg"]
+      },
+      {
+        "id": 37,
+        "nombre": "Palitos de Queso",
+        "descripcionCorta": "Snack crujiente",
+        "descripcionLarga": "Palitos de queso empanizados, perfectos para picar.",
+        "precio": 5.99,
+        "fotografias": ["palitosqueso1.jpg", "palitosqueso2.jpg"]
+      },
+      {
+        "id": 38,
+        "nombre": "Mini Burritos",
+        "descripcionCorta": "Sabor mexicano en miniatura",
+        "descripcionLarga": "Burritos pequeños rellenos de carne, frijoles y queso.",
+        "precio": 8.99,
+        "fotografias": ["miniburritos1.jpg", "miniburritos2.jpg"]
       }
     ]
   }

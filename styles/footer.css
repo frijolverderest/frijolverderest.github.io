@@ -201,7 +201,7 @@
 }
 
 .desarrollador {
-    font-size: 1.125rem;
+    font-size: 1rem;
     color: #ffffff;
     font-style: italic;
     padding: 5px;
@@ -211,6 +211,7 @@
     justify-content: left;
     background-color: #000000;
     max-height: min-content;
+    max-width: 100%;
     
 
 }

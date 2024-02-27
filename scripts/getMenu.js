@@ -21,25 +21,46 @@ async function cargarJSON() {
 
 // Función para mostrar los platos en la sección correspondiente
 function mostrarPlatos(menu) {
-
-  // Muestra los platos de entradas
-  //mostrarPlatosEntradas(platos.menu.entradas);
-  //mostrarPlatosConFrijol(platos.menu.entradas);
-
   const contenedorEntradas = document.getElementById('menuEntradas');
-  cargarCategoria(contenedorEntradas, menu.entradas);
+  if (contenedorEntradas) {
+    cargarCategoria(contenedorEntradas, menu.entradas);
+  }
+
   const contenedorFrijol = document.getElementById('menuConFrijol');
-  cargarCategoria(contenedorFrijol, menu.platosConFrijol);
+  if (contenedorFrijol) {
+    cargarCategoria(contenedorFrijol, menu.platosConFrijol);
+  }
+
   const contenedorRio = document.getElementById('menuDelRio');
-  cargarCategoria(contenedorRio, menu.delRio);
+  if (contenedorRio) {
+    cargarCategoria(contenedorRio, menu.delRio);
+  }
+
   const contenedorCarnes = document.getElementById('menuCarnes');
-  cargarCategoria(contenedorCarnes, menu.carnes);
+  if (contenedorCarnes) {
+    cargarCategoria(contenedorCarnes, menu.carnes);
+  }
+
   const contenedorBebidas = document.getElementById('menuBebidas');
-  cargarCategoria(contenedorBebidas, menu.bebidas);
+  if (contenedorBebidas) {
+    cargarCategoria(contenedorBebidas, menu.bebidas);
+  }
+  
+  const contenedorPostres = document.getElementById('menuPostres');
+  if (contenedorPostres) {
+    cargarCategoria(contenedorPostres, menu.postres);
+  }
 
-
-
+  const contenedorDesayunos = document.getElementById('menuDesayunos');
+  if (contenedorDesayunos) {
+    cargarCategoria(contenedorDesayunos, menu.desayunos);
+  }
+  const contenedorPlatosjr= document.getElementById('menuPlatosjr');
+  if (contenedorPlatosjr) {
+    cargarCategoria(contenedorPlatosjr, menu.platosJunior);
+  }
 }
+
 
 function cargarCategoria(contenedor, categoria) {
   categoria.forEach((plato) => {
@@ -60,7 +81,7 @@ function cargarCategoria(contenedor, categoria) {
 
     const platoH2 = document.createElement('h2');
     platoH2.classList.add('plato-nombre');
-    platoH2.textContent = plato.nombre;
+    platoH2.textContent = plato.nombre.toUpperCase();
 
     const descripcionP = document.createElement('p');
     descripcionP.classList.add('plato-descripcion');
@@ -101,7 +122,7 @@ function cargarCategoria(contenedor, categoria) {
 
 
 
-
+/*
 
 // Función para mostrar el modal con detalles del plato
 function showDetails(platoId) {
@@ -172,7 +193,7 @@ function closeModal() {
   const modal = document.getElementById('modal');
   modal.style.display = 'none';
 }
-
+*/
 // Llama a la función para cargar el JSON al cargar la página
 window.onload = cargarJSON;
 

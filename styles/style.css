@@ -59,12 +59,12 @@ h1 {
 
     background-color: #ffffff17;
     background-size: cover;
-    border-radius: 5px;
+    border-radius: 0px;
     width: 100%;
     padding-top: 10px;
     padding-bottom: 15px;
     max-height: min-content;
-    border-radius: 8px;
+    border-radius: 0px;
 
 
 }

@@ -41,7 +41,7 @@
     height: 100%;
     max-height: 450px;
     min-height: 450px;
-    min-width: 400px;
+    min-width: 375px;
     object-fit: cover;
       mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.959)); /* Aplica un degradado lineal al contenido de la imagen */
 
@@ -80,9 +80,9 @@
     text-align: center;
     margin-bottom: 0;
     padding-bottom: 1px;
-    gap:25px;
     position: relative;
     bottom: 15px;
+    max-width: 98%!important;
 }
 /* Estilos CSS personalizados para los botones */
 .btn.btn-primary {
