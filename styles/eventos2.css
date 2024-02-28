@@ -1,0 +1,198 @@
+.contenedor-eventos {
+
+    position: relative;
+    top: -70px;
+}
+
+.titulo-eventos {
+    font-size: 3rem;
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 140px;
+    color: #FFDE00;
+    font-family: 'Monotype Corsiva', cursive;
+}
+#seccion-indice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+    background: #c07504;
+    background: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.507)), url('../files/screen.webp');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    width: 100%;
+}
+.indice-eventos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    background: #0000007e;
+    width: 80%;
+    font-size: 2rem;
+    border-radius: 15px;
+    padding: 3vw;
+}
+.item-indice-eventos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #1d1c1cb2;
+    color:#FFDE00;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 160px;
+    height: 100px;
+    transition: transform 0.3s ease;
+}
+.item-indice-eventos:hover {
+    transform: scale(1.05);
+}
+.titulo-indice{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #FFDE00;
+    background-image: linear-gradient(to top right, #c07504, hsl(54, 91%, 66%));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.texto-indice {
+    text-align: center;
+    margin-top: 10px;
+    color: #ffffff;
+    font-size: 1.125rem;
+}	
+.contenedor-eventos-titulo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+.subtitulo-eventos {
+  
+        margin: 0;
+        position: relative;
+        white-space: nowrap;
+        max-width: min-content;
+        padding: 5px 20px;
+        border-radius: 15px 15px 15px 0;
+        left: 20px;
+        top: 20px;
+        font-size: 3rem;
+        color: #FFDE00;
+        font-family: 'Monotype Corsiva', cursive;
+    
+    }
+    
+.eventos-hr {
+        width: 98%;
+        border-color: #FFDE00;
+        border-style: solid;
+    
+    }
+
+.contenedor-servicios-eventos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    background: #bb4e4e00;
+    width: 100%;
+    gap:20px
+}
+.tarjeta-servicio{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #1d1c1cb2;
+    color:#FFDE00;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 98%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+.detalle-servicio{
+    display: flex;
+    flex-direction: column;
+    
+    padding: 20px;
+    background-color: #1d1c1c00;
+    color:#FFDE00;
+    border-radius: 8px;
+    width: 47%;
+    min-height: 100%;
+    transition: transform 0.3s ease;
+}
+.servicio-titulo{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #FFDE00;
+    background-image: linear-gradient(to top right, #c07504, hsl(54, 91%, 66%));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 2rem;
+    font-family: 'Ahkio Cursiva', 'Ahkio', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+.servicio-descripcion{
+    text-align: center;
+    margin-top: 10px;
+    color: #ffffff;
+    font-size: 1.8rem;
+}
+.imagen-servicio{
+    max-width: 47%;
+    max-height: 300px;
+    height: auto;
+    margin: 20px;
+    margin:  20px ;
+}
+
+@media screen and (max-width: 767px) {
+    .tarjeta-impar{
+        flex-direction: column-reverse!important;
+        align-items: center;
+
+    }
+    .detalle-servicio{
+        display: flex;
+        flex-direction: column;
+        
+        padding: 20px;
+        background-color: #1d1c1c00;
+        color:#FFDE00;
+        border-radius: 8px;
+        width: 95%;
+        min-height: 100%;
+        transition: transform 0.3s ease;
+    }
+    .imagen-servicio{
+        max-width: 95%;
+        max-height: 300px;
+        height: auto;
+        margin: 20px;
+        margin:  20px ;
+    }
+}
