@@ -194,15 +194,60 @@
     height: auto;
     margin: 20px;
     margin: 20px;
+    position: relative;
 }
 
 .imagen-servicio:hover {
     transform: scale(1.05);
+
+}
+
+
+.evento-vermas{
+    display: none;
+    position: absolute;
+    pointer-events: none;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0px;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+    padding-top: 0;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: center;
+    color: #FFDE00;
+    background-image: linear-gradient(to top right, #c07504, hsl(54, 91%, 66%));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 2rem;
+    font-family: 'Ahkio Cursiva', 'Ahkio', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    
+
+}
+
+.imagen-servicio:hover .evento-vermas{
+    display: flex!important;
+}
+.imagen-svc{
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    position: relative;
+    transition: transform 0.3s ease;
     border: #2222113d solid 2px;
     box-shadow: 0px 0px 15px #69623d60;
     mask-image: linear-gradient(to bottom, rgba(236, 146, 12, 0.685), rgba(219, 136, 11, 0.692));
     /* Aplica un degradado lineal al contenido de la imagen */
 
+}
+.imagen-svc:hover{
+    mask-image: linear-gradient(to bottom, rgba(236, 146, 12, 0.685), rgba(51, 32, 2, 0.37));
 }
 
 @media screen and (max-width: 767px) {
