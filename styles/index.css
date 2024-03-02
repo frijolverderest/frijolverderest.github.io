@@ -1,12 +1,13 @@
-.contenedor-index{
+.contenedor-index {
     display: flex;
     position: relative;
     flex-direction: column;
     padding-top: 70px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-  }
-  .contenedor-banner{
+}
+
+.contenedor-banner {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,9 +17,9 @@
     font-size: 5rem;
     width: 100%;
     height: 450px;
-  }
+}
 
-  #myCarousel {
+#myCarousel {
     display: flex;
     position: relative;
     left: 0;
@@ -26,7 +27,7 @@
     width: 100%;
     height: 100%;
     background-color: #000000;
-    top:-70px;
+    top: -70px;
 
 }
 
@@ -43,14 +44,18 @@
     min-height: 450px;
     min-width: 375px;
     object-fit: cover;
-      mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.959)); /* Aplica un degradado lineal al contenido de la imagen */
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.959));
 
 }
-#carrusel-izquierda{
-    background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgb(0, 0, 0)); /* Aplica un degradado lineal desde la derecha */
+
+#carrusel-izquierda {
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgb(0, 0, 0));
+    /* Aplica un degradado lineal desde la derecha */
 }
-#carrusel-derecha{
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 0, 0)); /* Aplica un degradado lineal desde la derecha */
+
+#carrusel-derecha {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 0, 0));
+    /* Aplica un degradado lineal desde la derecha */
 }
 
 .carousel-indicators {
@@ -62,17 +67,20 @@
     margin-bottom: 0;
     padding-bottom: 1px;
     position: absolute;
-    bottom: 2px; 
+    bottom: 2px;
 }
+
 .contenedor-botones-indicadores {
     position: absolute;
-    bottom: 15px; /* Ajusta la posición vertical según sea necesario */
+    bottom: 15px;
+    /* Ajusta la posición vertical según sea necesario */
     left: 50%;
     transform: translateX(-50%);
     z-index: 15;
     bottom: 5px;
-  }
-.d-grid{
+}
+
+.d-grid {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -82,8 +90,9 @@
     padding-bottom: 1px;
     position: relative;
     bottom: 15px;
-    max-width: 98%!important;
+    max-width: 98% !important;
 }
+
 /* Estilos CSS personalizados para los botones */
 .btn.btn-primary {
     background-color: #a5d12a;

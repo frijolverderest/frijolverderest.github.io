@@ -28,6 +28,9 @@
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/eventos2.css">
 
+    <script src="scripts/eventos.js"></script>
+
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -95,14 +98,20 @@
                     o un vibrante cumpleaños, estamos aquí para hacer realidad tus sueños.
 
                 <div class="item-indice-eventos">
-                    <h2 class="titulo-indice">Servicios de Eventos</h2>
-                    <p class="texto-indice"> Descubre nuestra atención de eventos </p>
+                    <a href="#seccion-Servicioseventos" class="enlace-indice">
+                        <h2 class="titulo-indice">Servicios de Eventos</h2>
+                        <p class="texto-indice">Descubre nuestra atención de eventos</p>
+                    </a>
                 </div>
 
                 <div class="item-indice-eventos">
-                    <h2 class="titulo-indice">Tipos de Eventos</h2>
-                    <p class="texto-indice"> Explora nuestros eventos personalizados </p>
+                    <a href="#seccion-tiposeventos" class="enlace-indice">
+
+                        <h2 class="titulo-indice">Tipos de Eventos</h2>
+                        <p class="texto-indice"> Explora nuestros eventos personalizados </p>
+                    </a>
                 </div>
+
             </div>
 
 
@@ -180,9 +189,80 @@
 
         </section>
 
+        <section id="seccion-tiposeventos" class="d-flex flex-column">
+
+            <div class="contenedor-eventos-titulo">
+                <h1 class="subtitulo-eventos">Tipos de Eventos</h1>
+                <hr class="eventos-hr">
+            </div>
+
+            <div class="contenedor-servicios-eventos">
+
+                <div class="tarjeta-servicio">
+                    <div class="detalle-servicio">
+                        <h1 class="servicio-titulo">Cumpleaños</h1>
+                        <p class="servicio-descripcion">
+                            ¡Celebra tu cumpleaños en Frijol Verde y haz de tu día especial un momento inolvidable!
+                            Disfruta de una experiencia gastronómica excepcional y un ambiente acogedor diseñado para
+                            crear recuerdos duraderos!
+                        </p>
+                    </div>
+                    <img class="imagen-servicio" src="files/imgeventos/cumpleanos.jpg" alt="" onclick="openModal()">
+                </div>
+
+                <div class="tarjeta-servicio tarjeta-impar">
+                    <img class="imagen-servicio" src="files/imgeventos/aniversario.jpg" alt="">
+                    <div class="detalle-servicio">
+                        <h1 class="servicio-titulo">Aniversario</h1>
+                        <p class="servicio-descripcion">
+                            ¡Haz de tu aniversario un recuerdo inolvidable celebrándolo en Frijol Verde! Disfruta de
+                            nuestra cocina excepcional en un ambiente cálido y acogedor, especialmente diseñado para
+                            celebrar su amor. ¡Reserva ahora y permítenos hacer de tu aniversario un día realmente
+                            especial! </p>
+                    </div>
+                </div>
+
+                <div class="tarjeta-servicio">
+                    <div class="detalle-servicio">
+                        <h1 class="servicio-titulo">15 Años</h1>
+                        <p class="servicio-descripcion">
+                            ¡Celebra tus 15 años en Frijol Verde y haz de este día algo único! Disfruta de una exquisita
+                            experiencia gastronómica en un ambiente encantador, diseñado para este momento especial en
+                            tu vida. Con atención personalizada y un ambiente acogedor, garantizamos una celebración
+                            inolvidable!
+                    </div>
+                    <img class="imagen-servicio" src="files/imgeventos/15anos.jpg" alt="">
+                </div>
+                <div class="tarjeta-servicio tarjeta-impar">
+                    <img class="imagen-servicio" src="files/imgeventos/graduacion.jpg" alt="" onclick="openModal()">
+                    <div class="detalle-servicio">
+                        <h1 class="servicio-titulo">Graduaciones</h1>
+                        <p class="servicio-descripcion">
+                            ¡Celebra tu graduación en Frijol Verde y haz de este día un hito memorable en tu vida! Disfruta de una exquisita experiencia gastronómica en un ambiente encantador, diseñado especialmente para este momento tan especial. Con atención personalizada, garantizamos que tu graduación sea una celebración inolvidable.
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section>
 
     </div>
 
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-overlay">
+                <img class="modal-img" id="modal-img" src="/files/imgeventos/graduacion.jpg" alt="Plato">
+                <div class="evento-description" id="modal-details">
+                    <h2>Graduaciones</h2>
+                    <p>Disfruta de una decoración encantadora para tu graduación en Frijol Verde</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer class="seccion-clara d-flex flex-column align-items-center justify-content-center">
 
