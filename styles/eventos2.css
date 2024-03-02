@@ -193,7 +193,6 @@
     max-height: 300px;
     height: auto;
     margin: 20px;
-    margin: 20px;
     position: relative;
     transition: transform 0.3s ease;
 
@@ -279,6 +278,7 @@
     .imagen-servicio {
         max-width: 95%;
         max-height: 300px;
+        max-width: 300px;
         height: auto;
         margin: 20px;
         margin: 20px;
