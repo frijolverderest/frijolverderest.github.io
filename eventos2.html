@@ -250,19 +250,60 @@
 
     </div>
 
-    <!-- Modal -->
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <div class="modal-overlay">
-                <img class="modal-img" id="modal-img" src="/files/imgeventos/graduacion.jpg" alt="Plato">
-                <div class="evento-description" id="modal-details">
-                    <h2>Graduaciones</h2>
-                    <p>Disfruta de una decoración encantadora para tu graduación en Frijol Verde</p>
+<!-- Modal -->
+<div id="myModal" class="modal carousel slide">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-overlay">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img class="modal-img" src="files/imgeventos/graduacion2.jpg" alt="Imagen 1">
+                    <div class="evento-description" id="modal-details">
+                        <h2>Graduaciones 1</h2>
+                        <p>Disfruta de una decoración encantadora para tu graduación en Frijol Verde</p>
+                    </div>
                 </div>
+                <div class="item">
+                    <img class="modal-img" src="files/imgeventos/graduacion.jpg" alt="Imagen 2">
+                    <div class="evento-description" id="modal-details">
+                        <h2>Graduaciones 2</h2>
+                        <p>Disfruta de una decoración encantadora para tu graduación en Frijol Verde</p>
+                    </div>
+                </div>
+                <div class="item ">
+                    <video id="videoGraduaciones" class="modal-img modal-video"  loop controls>
+                        <source src="files/imgeventos/graduacionesv.mp4" type="video/mp4">
+                        Tu navegador no admite la reproducción de videos HTML5.
+                    </video>
+                    
+                    <div class="evento-description" id="modal-details">
+                        <h2>Graduaciones 3</h2>
+                        <p>Disfruta de una decoración encantadora para tu graduación en Frijol Verde</p>
+                    </div>
+                </div>
+                
             </div>
+            <div class="contenedor-botones-indicadores">
+                <!-- Indicadores -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myModal" data-slide-to="0" class=""></li>
+                    <li data-target="#myModal" data-slide-to="1" class=""></li>
+                    <li data-target="#myModal" data-slide-to="2" class="active"></li>
+                </ol>
+            </div>
+            
+            <a id="carrusel-izquierda" class="left carousel-control" href="#myModal" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a id="carrusel-derecha" class="right carousel-control" href="#myModal" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+            
         </div>
     </div>
+</div>
+
+
 
     <footer class="seccion-clara d-flex flex-column align-items-center justify-content-center">
 
