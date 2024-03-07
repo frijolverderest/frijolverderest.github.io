@@ -36,11 +36,13 @@
     color: #ffffff;
     padding: 0;
     margin: 0;
+    transition: all 0.3s ease;
     vertical-align: middle!important;
 }
 
-.navbar-brand :hover {
+.navbar-brand:hover {
     font-size: 1.05em;
+    transform: scale(1.05); 
 }
 
 #navbar-icon {
@@ -80,6 +82,15 @@
     text-align: center;
     white-space: nowrap;
 }
+
+.nav-link:hover {
+    color: #ffffff;
+    background-image: linear-gradient(to top right, #c07504, hsl(54, 91%, 66%))!important;
+    -webkit-background-clip: text!important;
+    background-clip: text!important;
+    color: transparent!important;
+}
+
 .nav-cell{
     display: flex;
     flex-direction: row;

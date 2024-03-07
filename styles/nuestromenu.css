@@ -68,6 +68,7 @@
 
 #seccion-entradas {
     background: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.507)), url('../files/screen.webp');
+
     background: linear-gradient(to top right, #0a0a09a6, #31312f93,#0a0a09a6);
 
     background-size: 100% 100%;
@@ -79,7 +80,7 @@
 #seccion-frijol {
     background: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.507)), url('../files/s2.webp');
     background: linear-gradient(to top right, #363434a6, #070605be);
-    background: linear-gradient(to top right, #363434a6, #070605be,#363434a6);
+    background: linear-gradient(to top right, #363434a6, #070605be, #363434a6);
 
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -89,8 +90,8 @@
 #seccion-delrio {
     background: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.507)), url('../files/screen.webp');
     background: linear-gradient(to top, rgba(0, 0, 0, 0.548) 0%, rgba(0, 0, 0, 0.548) 100%);
-    
-    background: linear-gradient(to top right, #363434a6, #070605be,#363434a6);
+
+    background: linear-gradient(to top right, #363434a6, #070605be, #363434a6);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -100,25 +101,28 @@
     /*background: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.507)), url('../files/s2.webp');
     */
     background: linear-gradient(to top right, #363434a6, #070605be);
-    background: linear-gradient(to top right, #363434a6, #070605be,#363434a6);
+    background: linear-gradient(to top right, #363434a6, #070605be, #363434a6);
+   
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
 #seccion-bebidas {
     background: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.507)), url('../files/screen.webp');
     background: linear-gradient(to top, rgba(0, 0, 0, 0.548) 0%, rgba(0, 0, 0, 0.548) 100%);
-    
-    background: linear-gradient(to top right, #363434a6, #070605be,#363434a6);
+
+    background: linear-gradient(to top right, #363434a6, #070605be, #363434a6);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
 #seccion-postres {
     background: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.507)), url('../files/screen.webp');
     background: linear-gradient(to top, rgba(0, 0, 0, 0.548) 0%, rgba(0, 0, 0, 0.548) 100%);
-    
-    background: linear-gradient(to top right, #363434a6, #070605be,#363434a6);
+
+    background: linear-gradient(to top right, #363434a6, #070605be, #363434a6);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -126,20 +130,22 @@
 
 #seccion-desayunos {
     background: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.507)), url('../files/screen.webp');
-    background: linear-gradient(to top right, #363434a6, #070605be,#363434a6);
+    background: linear-gradient(to top right, #363434a6, #070605be, #363434a6);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
 
 }
+
 #seccion-platosjr {
     background: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.507)), url('../files/screen.webp');
-    background: linear-gradient(to top right, #363434a6, #070605be,#363434a6);
+    background: linear-gradient(to top right, #363434a6, #070605be, #363434a6);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
 
 }
+
 .plato-card {
     position: relative;
     background-color: #000000a6;
@@ -155,7 +161,7 @@
     opacity: 1;
     transition: transform 0.5s, opacity 0.5s;
     animation: zoomIn 0.5s ease-out;
-    overflow:visible;
+    overflow: visible;
 }
 
 .plato-card:hover {
@@ -273,17 +279,101 @@
 .plato-img {
     position: absolute;
     width: 160px;
-    height: 160px!important;
+    height: 160px !important;
     object-fit: contain;
-    border-radius: 20px!important;
+    border-radius: 20px !important;
     bottom: 12px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.418);
     max-height: 160px;
-    max-width: 160px;/*
+    max-width: 160px;
+    /*
     overflow: visible;  Permitir que el contenido se muestre fuera del contenedor */
 }
 
 
+
+
+
+.barra-categorias {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 60px;
+    background: #00000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 98%;
+    z-index: 2900;
+}
+
+
+
+.categoria {
+    /* Espacio entre cada categoría */
+    padding-bottom: 50px;
+    /* Espacio inferior */
+}
+
+.btn-group {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: min-content;
+    margin: 0 20px;
+    border-radius: 20px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.473) 50%, rgba(3, 3, 3, 0.027) 94%)!important;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.479);
+    border: none;
+
+}
+
+.categoria {
+    margin-top: 20px;
+    /* Espacio entre cada categoría */
+    padding-bottom: 20px;
+    /* Espacio inferior */
+}
+
+
+
+.active {
+    background-color: #dac60d8c !important;
+    color: #ffffff !important;
+    border-radius: 20px !important;
+    transition: all 0.3s ease !important;
+}
+
+.active:hover {
+    transform: scale(1.05) !important;
+}
+
+
+.btn-categoria {
+    border: none !important;
+    max-width: min-content;
+    font-size: 1.125rem;
+    color: #cac9c9;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.548) 0%, rgba(0, 0, 0, 0.548) 100%);
+    white-space: nowrap;
+    background: #00000000;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 100%;
+    padding: 3px 10px ;
+    border-radius: 20px !important;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.3s ease !important;
+}
+.btn-categoria:hover {
+    transform: scale(1.05) !important;
+    background: #ffffff1e;
+
+}
 
 @media screen and (max-width: 768px) {
     .contenedor-platos {
@@ -305,7 +395,8 @@
         max-width: 100%;
         min-width: 310px;
         margin-right: 0;
-        overflow:visible; /* Oculta cualquier contenido excedente */
+        overflow: visible;
+        /* Oculta cualquier contenido excedente */
         position: relative;
     }
 
@@ -329,7 +420,8 @@
         position: relative;
         margin-top: 0;
         margin-left: 2vw;
-        max-width: 200px; /* Ancho máximo deseado */
+        max-width: 200px;
+        /* Ancho máximo deseado */
         white-space: nowrap;
         font-size: 1.2rem;
         top: -10px;
@@ -341,9 +433,10 @@
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
-        word-wrap: break-word; /* Permite que las palabras se rompan si exceden el ancho máximo */
+        word-wrap: break-word;
+        /* Permite que las palabras se rompan si exceden el ancho máximo */
     }
-    
+
 
     .plato-descripcion {
         color: #f8f8f8;
@@ -358,7 +451,7 @@
 
     .plato-precio {
         font-weight: bold;
-        color:#FFDE00;
+        color: #FFDE00;
         display: flex;
         justify-content: center;
         font-size: 1.2rem;
@@ -367,83 +460,33 @@
 
     .plato-img {
         width: 150px;
-        height: 187px!important;
+        height: 187px !important;
         object-fit: contain;
-        border-radius: 20px!important;
-        bottom: 25px; /* Mueve la imagen 20px hacia arriba para que solo se muestren los 20px excedentes */
+        border-radius: 20px !important;
+        bottom: 25px;
+        /* Mueve la imagen 20px hacia arriba para que solo se muestren los 20px excedentes */
         box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.418);
         max-height: 187px;
         max-width: 150px;
-        position: absolute; /* Permite posicionar la imagen en relación con .plato-img-container */
+        position: absolute;
+        /* Permite posicionar la imagen en relación con .plato-img-container */
     }
-}
+    .barra-categorias {
+        margin-top: 52px!important;
+        z-index: 29;
+    }
+    .btn-group {
 
-.barra-categorias {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    justify-content: center;
-    margin-top: 70px;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.548) 0%, rgba(0, 0, 0, 0.548) 100%);
-    background: #00000000;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 98%;
-    z-index: 29;
-}
+        background: #00000098!important;
+        box-shadow: 0 5px 8px rgba(0, 0, 0, 0.555);
+        border: none;
+    
+    }
+    .btn-categoria {
+        font-size: 1rem;
 
+        padding: 10px 10px ;
 
+    }
 
-.categoria {
-    margin-top: 50px;
-    /* Espacio entre cada categoría */
-    padding-bottom: 50px;
-    /* Espacio inferior */
-}
-
-.btn-group {
-    margin-top: 20px;
-    /* Espacio entre los botones y las categorías */
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    justify-content: center;
-    width: 98%;
-    margin: 0 20px;
-}
-
-.categoria {
-    margin-top: 20px;
-    /* Espacio entre cada categoría */
-    padding-bottom: 20px;
-    /* Espacio inferior */
-}
-
-
-
-.active {
-    background-color: #dabf0de5 !important;
-    color: #ffffff !important;
-    border-radius: 20px!important;
-}
-.btn-categoria{
-    border: none;
-    max-width: min-content;
-    font-size: 1.125rem;
-    font-weight: bold;
-    color: #ffffff;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.548) 0%, rgba(0, 0, 0, 0.548) 100%);
-    cursor: pointer;
-    transition: all 0.3s;
-    width: 100%;
-    font-size: 1.125rem;
-    font-weight: bold;
-    color: #ffffff;
-    cursor: pointer;
-    transition: all 0.3s;
-    border-radius: 15px;
 }

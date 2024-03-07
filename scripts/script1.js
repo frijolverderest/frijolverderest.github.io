@@ -20,8 +20,8 @@ function isElementInViewport(el) {
 
 $(document).ready(function() {
     // Función para manejar el clic en los botones de categoría
-    $('.btn').on('click', function() {
-      $('.btn').removeClass('active'); // Eliminar la clase "active" de todos los botones
+    $('.btnc').on('click', function() {
+      $('.btnc').removeClass('active'); // Eliminar la clase "active" de todos los botones
       $(this).addClass('active'); // Agregar la clase "active" al botón clickeado
       var target = $(this).data('target'); // Obtener el objetivo de la sección
       $('html, body').animate({
@@ -33,11 +33,11 @@ $(document).ready(function() {
 // Función para resaltar automáticamente el botón de categoría mientras se desplaza
 window.addEventListener('scroll', function() {
     var scrollDistance = $(window).scrollTop();
-    $('.btn').each(function(i) {
+    $('.btnc').each(function(i) {
         var target = $(this).data('target'); // Obtener el objetivo de la sección asociada al botón
         var section = $(target); // Seleccionar la sección asociada al botón
         if (isElementInViewport(section[0])) {
-            $('.btn').removeClass('active'); // Eliminar la clase "active" de todos los botones
+            $('.btnc').removeClass('active'); // Eliminar la clase "active" de todos los botones
             $(this).addClass('active'); // Agregar la clase "active" al botón correspondiente
         }
     });
