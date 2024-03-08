@@ -19,7 +19,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: 90px;
+    margin-top: 100px;
     color: #FFDE00;
     font-family: 'Monotype Corsiva', cursive;
 
@@ -57,7 +57,7 @@
     /* Utilizando unidades vw para el padding */
     /* Haciendo los bordes más proporcionales */
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0);
-    gap: 40px;
+    gap: 80px 40px;
     max-width: 100%;
     padding: 3.5vw;
     padding-top: 0;
@@ -69,7 +69,7 @@
 #seccion-entradas {
     background: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.507)), url('../files/screen.webp');
 
-    background: linear-gradient(to top right, #0a0a09a6, #31312f93,#0a0a09a6);
+    background: linear-gradient(to top right, #000000d5, #31312f6e, #0a0a09d3);
 
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -80,7 +80,7 @@
 #seccion-frijol {
     background: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.507)), url('../files/s2.webp');
     background: linear-gradient(to top right, #363434a6, #070605be);
-    background: linear-gradient(to top right, #363434a6, #070605be, #363434a6);
+    background: linear-gradient(to top left, #363434a6, #070605be, #363434a6);
 
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -101,8 +101,8 @@
     /*background: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.507)), url('../files/s2.webp');
     */
     background: linear-gradient(to top right, #363434a6, #070605be);
-    background: linear-gradient(to top right, #363434a6, #070605be, #363434a6);
-   
+    background: linear-gradient(to top left, #363434a6, #070605be, #363434a6);
+
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -122,7 +122,7 @@
     background: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.507)), url('../files/screen.webp');
     background: linear-gradient(to top, rgba(0, 0, 0, 0.548) 0%, rgba(0, 0, 0, 0.548) 100%);
 
-    background: linear-gradient(to top right, #363434a6, #070605be, #363434a6);
+    background: linear-gradient(to top left, #363434a6, #070605be, #363434a6);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -149,6 +149,8 @@
 .plato-card {
     position: relative;
     background-color: #000000a6;
+        background: linear-gradient(to top right, #0a0a09a6, #31312f93, #0a0a09a6);
+
     border-radius: 2px;
     box-shadow: 0px 0px 10px rgba(7, 7, 7, 0.932);
     display: flex;
@@ -162,6 +164,8 @@
     transition: transform 0.5s, opacity 0.5s;
     animation: zoomIn 0.5s ease-out;
     overflow: visible;
+    min-width: 310px;
+
 }
 
 .plato-card:hover {
@@ -279,12 +283,12 @@
 .plato-img {
     position: absolute;
     width: 160px;
-    height: 160px !important;
+    height: 200px !important;
     object-fit: contain;
     border-radius: 20px !important;
-    bottom: 12px;
+    bottom: 32px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.418);
-    max-height: 160px;
+    max-height: 200px;
     max-width: 160px;
     /*
     overflow: visible;  Permitir que el contenido se muestre fuera del contenedor */
@@ -326,9 +330,10 @@
     width: min-content;
     margin: 0 20px;
     border-radius: 20px;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.473) 50%, rgba(3, 3, 3, 0.027) 94%)!important;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.473) 50%, rgba(3, 3, 3, 0.027) 94%) !important;
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.479);
     border: none;
+    padding: 8px 2px;
 
 }
 
@@ -342,7 +347,7 @@
 
 
 .active {
-    background-color: #dac60d8c !important;
+    background-color: #ffe600af !important;
     color: #ffffff !important;
     border-radius: 20px !important;
     transition: all 0.3s ease !important;
@@ -364,11 +369,12 @@
     cursor: pointer;
     transition: all 0.3s;
     width: 100%;
-    padding: 3px 10px ;
+    padding: 4px 12px;
     border-radius: 20px !important;
     font-family: 'Roboto', sans-serif;
     transition: all 0.3s ease !important;
 }
+
 .btn-categoria:hover {
     transform: scale(1.05) !important;
     background: #ffffff1e;
@@ -376,6 +382,12 @@
 }
 
 @media screen and (max-width: 768px) {
+    .titulo-menu {
+        font-size: 3rem;
+        margin-top: 55px;
+
+    }
+
     .contenedor-platos {
         align-items: stretch;
         padding-top: 0px;
@@ -471,22 +483,39 @@
         position: absolute;
         /* Permite posicionar la imagen en relación con .plato-img-container */
     }
+
     .barra-categorias {
-        margin-top: 52px!important;
-        z-index: 29;
+        position: fixed;
+        bottom: 20px !important;
+        left: 0;
+        margin-top: 0 !important;
+        /* Eliminamos el margen superior */
+        z-index: 2900;
+        /* Ajusta según tus necesidades */
+        max-height: min-content;
+        top: auto;
     }
+
     .btn-group {
-
-        background: #00000098!important;
-        box-shadow: 0 5px 8px rgba(0, 0, 0, 0.555);
+        background: #000000d8 !important;
+        box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.61) !important;
         border: none;
-    
+        padding: 5px 2px;
+
     }
+
     .btn-categoria {
-        font-size: 1rem;
-
-        padding: 10px 10px ;
+        font-size: 1.125rem;
+        padding: 8px 10px;
 
     }
+
+    .active {
+        background-color: #ffe600cc !important;
+        color: #ffffff !important;
+        border-radius: 20px !important;
+        transition: all 0.3s ease !important;
+    }
+
 
 }
