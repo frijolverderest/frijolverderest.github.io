@@ -1,0 +1,214 @@
+{
+    "ServiciosEventos": [
+      {
+        "id": 1,
+        "titulo": "Catering Excepcional",
+        "descripcion": "Nuestro talentoso equipo culinario elabora deliciosos platillos, desde opciones tradicionales hasta creaciones innovadoras, para complacer a todos los paladares.",
+        "imagen": "../files/imgeventos/catering.jpg",
+        "carousel": [
+          {
+            "src": "files/imgeventos/catering.jpg",
+            "titulo": "Catering Excepcional",
+            "descripcion": "Disfruta de una deliciosa variedad de platillos en Frijol Verde."
+          },
+          {
+            "src": "files/imgeventos/catering3.jpg",
+            "titulo": "Catering Excepcional 2",
+            "descripcion": "Explora nuestras opciones culinarias excepcionales para eventos especiales."
+          },
+          {
+            "src": "files/imgeventos/cateringv.mp4",
+            "titulo": "Catering Excepcional 3",
+            "descripcion": "Experimenta la magia de nuestra cocina en acción."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "titulo": "Ambientación Personalizada",
+        "descripcion": "Transformamos nuestros espacios con decoración a medida, creando la atmósfera perfecta para tu evento con atención meticulosa a cada detalle.",
+        "imagen": "files/imgeventos/decoracion.jpg",
+        "carousel": [
+          {
+            "src": "files/imgeventos/decoracion.jpg",
+            "titulo": "Ambientación Personalizada 1",
+            "descripcion": "Crea la atmósfera perfecta para tu evento con nuestra decoración a medida."
+          },
+          {
+            "src": "files/imgeventos/decoracion3.jpg",
+            "titulo": "Ambientación Personalizada 2",
+            "descripcion": "Explora nuestras opciones de decoración para hacer realidad tus sueños."
+          },
+          {
+            "src": "files/imgeventos/decoracionv.mp4",
+            "titulo": "Ambientación Personalizada 3",
+            "descripcion": "Ve cómo transformamos nuestros espacios en un entorno mágico."
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "titulo": "Servicio Profesional",
+        "descripcion": "Nuestro dedicado equipo de eventos se encarga de todos los aspectos, desde la planificación inicial hasta la ejecución impecable el día del evento, para garantizar una experiencia sin preocupaciones.",
+        "imagen": "files/imgeventos/servicio.jpg",
+        "carousel": [
+          {
+            "src": "files/imgeventos/servicio2.jpg",
+            "titulo": "Servicio Profesional 1",
+            "descripcion": "Confía en nuestro equipo para brindarte un servicio excepcional en cada etapa de tu evento."
+          },
+          {
+            "src": "files/imgeventos/servicio3.jpg",
+            "titulo": "Servicio Profesional 2",
+            "descripcion": "Desde la planificación hasta la ejecución, estamos aquí para asegurarnos de que todo salga perfecto."
+          },
+          {
+            "src": "files/imgeventos/serviciov.mp4",
+            "titulo": "Servicio Profesional 3",
+            "descripcion": "Conoce cómo nuestro equipo trabaja incansablemente para hacer realidad tus sueños de eventos."
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "titulo": "Tecnología Avanzada",
+        "descripcion": "Equipamos nuestros espacios con tecnología audiovisual de vanguardia para presentaciones impactantes y experiencias multimedia cautivadoras.",
+        "imagen": "files/imgeventos/tecnologia.jpg",
+        "carousel": [
+          {
+            "src": "files/imgeventos/tecnologia2.jpg",
+            "titulo": "Tecnología Avanzada 1",
+            "descripcion": "Descubre cómo nuestra tecnología de vanguardia puede llevar tu evento al siguiente nivel."
+          },
+          {
+            "src": "files/imgeventos/tecnologia3.jpg",
+            "titulo": "Tecnología Avanzada 2",
+            "descripcion": "Experimenta la innovación con nuestras soluciones audiovisuales de última generación."
+          },
+          {
+            "src": "files/imgeventos/tecnologiav.mp4",
+            "titulo": "Tecnología Avanzada 3",
+            "descripcion": "Sumérgete en una experiencia multimedia única con nuestra tecnología avanzada."
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "titulo": "Coordinación Integral",
+        "descripcion": "Trabajamos estrechamente contigo para coordinar todos los aspectos de tu evento, asegurándonos de que tus necesidades y expectativas se cumplan con excelencia.",
+        "imagen": "files/imgeventos/coordinacion.jpg",
+        "carousel": [
+          {
+            "src": "files/imgeventos/coordinacion2.jpg",
+            "titulo": "Coordinación Integral 1",
+            "descripcion": "Confía en nuestro equipo para gestionar todos los detalles y hacer que tu evento sea un éxito."
+          },
+          {
+            "src": "files/imgeventos/coordinacion3.jpg",
+            "titulo": "Coordinación Integral 2",
+            "descripcion": "Desde la planificación hasta la ejecución, estamos aquí para garantizar una coordinación sin problemas."
+          },
+          {
+            "src": "files/imgeventos/coordinacionv.mp4",
+            "titulo": "Coordinación Integral 3",
+            "descripcion": "Ve cómo nuestro equipo trabaja en armonía para hacer que cada momento de tu evento sea memorable."
+          }
+        ]
+      }
+    ],
+    "TiposEventos": [
+      {
+        "id": 5,
+        "titulo": "Cumpleaños",
+        "descripcion": "¡Celebra tu cumpleaños en Frijol Verde y haz de tu día especial un momento inolvidable! Disfruta de una experiencia gastronómica excepcional y un ambiente acogedor diseñado para crear recuerdos duraderos!",
+        "imagen": "files/imgeventos/cumpleanos.jpg",
+        "carousel": [
+          {
+            "src": "files/imgeventos/cumpleanos2.jpg",
+            "titulo": "Cumpleaños 1",
+            "descripcion": "Haz de tu cumpleaños un evento para recordar en Frijol Verde."
+          },
+          {
+            "src": "files/imgeventos/cumpleanos3.jpg",
+            "titulo": "Cumpleaños 2",
+            "descripcion": "Celebra otro año de vida con estilo en nuestros espacios personalizados."
+          },
+          {
+            "src": "files/imgeventos/cumpleanosv.mp4",
+            "titulo": "Cumpleaños 3",
+            "descripcion": "Disfruta de la diversión y la emoción de tu cumpleaños con amigos y familiares."
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "titulo": "Aniversario",
+        "descripcion": "¡Haz de tu aniversario un recuerdo inolvidable celebrándolo en Frijol Verde! Disfruta de nuestra cocina excepcional en un ambiente cálido y acogedor, especialmente diseñado para celebrar su amor. ¡Reserva ahora y permítenos hacer de tu aniversario un día realmente especial!",
+        "imagen": "files/imgeventos/aniversario.jpg",
+        "carousel": [
+          {
+            "src": "files/imgeventos/aniversario2.jpg",
+            "titulo": "Aniversario 1",
+            "descripcion": "Celebra el amor y los recuerdos en Frijol Verde en tu aniversario."
+          },
+          {
+            "src": "files/imgeventos/aniversario3.jpg",
+            "titulo": "Aniversario 2",
+            "descripcion": "Haz que este aniversario sea aún más especial con nuestra atención personalizada."
+          },
+          {
+            "src": "files/imgeventos/aniversariov.mp4",
+            "titulo": "Aniversario 3",
+            "descripcion": "Revive momentos especiales con nuestra celebración de aniversario."
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "titulo": "15 Años",
+        "descripcion": "¡Celebra tus 15 años en Frijol Verde y haz de este día algo único! Disfruta de una exquisita experiencia gastronómica en un ambiente encantador, diseñado para este momento especial en tu vida. Con atención personalizada y un ambiente acogedor, garantizamos una celebración inolvidable!",
+        "imagen": "files/imgeventos/15anos.jpg",
+        "carousel": [
+          {
+            "src": "files/imgeventos/15anos2.jpg",
+            "titulo": "15 Años 1",
+            "descripcion": "Celebra la transición a la adultez con una fiesta de 15 años inolvidable en Frijol Verde."
+          },
+          {
+            "src": "files/imgeventos/15anos3.jpg",
+            "titulo": "15 Años 2",
+            "descripcion": "Haz que este día especial sea aún más memorable con nuestras opciones personalizadas."
+          },
+          {
+            "src": "files/imgeventos/15anosv.mp4",
+            "titulo": "15 Años 3",
+            "descripcion": "Disfruta de la magia de tus 15 años con una celebración inolvidable en nuestros espacios."
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "titulo": "Graduaciones",
+        "descripcion": "¡Celebra tu graduación en Frijol Verde y haz de este día un hito memorable en tu vida! Disfruta de una exquisita experiencia gastronómica en un ambiente encantador, diseñado especialmente para este momento tan especial. Con atención personalizada, garantizamos que tu graduación sea una celebración inolvidable.",
+        "imagen": "files/imgeventos/graduacion.jpg",
+        "carousel": [
+          {
+            "src": "files/imgeventos/graduacion2.jpg",
+            "titulo": "Graduaciones 1",
+            "descripcion": "Disfruta de una decoración encantadora para tu graduación en Frijol Verde."
+          },
+          {
+            "src": "files/imgeventos/graduacion3.jpg",
+            "titulo": "Graduaciones 2",
+            "descripcion": "Disfruta de una decoración encantadora para tu graduación en Frijol Verde."
+          },
+          {
+            "src": "files/imgeventos/graduacionesv.mp4",
+            "titulo": "Graduaciones 3",
+            "descripcion": "Disfruta de una decoración encantadora para tu graduación en Frijol Verde."
+          }
+        ]
+      }
+    ]
+  }
+  

@@ -55,6 +55,8 @@
     padding: 20px;
     background-color: #1d1c1cb2;
     color: #FFDE00;
+    background: linear-gradient(to top right,  #141413d5,#2c2b2bd5,#070605c7);
+
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 160px;
