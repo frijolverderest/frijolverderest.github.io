@@ -21,8 +21,8 @@ function isElementInViewport(el) {
 $(document).ready(function() {
     // Función para manejar el clic en los botones de categoría
     $('.btnc').on('click', function() {
-      $('.btnc').removeClass('active'); // Eliminar la clase "active" de todos los botones
-      $(this).addClass('active'); // Agregar la clase "active" al botón clickeado
+      $('.btnc').removeClass('bar-active'); // Eliminar la clase "active" de todos los botones
+      $(this).addClass('bar-active'); // Agregar la clase "active" al botón clickeado
       var target = $(this).data('target'); // Obtener el objetivo de la sección
       $('html, body').animate({
         scrollTop: $(target).offset().top // Desplazar suavemente a la sección objetivo
@@ -37,8 +37,8 @@ window.addEventListener('scroll', function() {
         var target = $(this).data('target'); // Obtener el objetivo de la sección asociada al botón
         var section = $(target); // Seleccionar la sección asociada al botón
         if (isElementInViewport(section[0])) {
-            $('.btnc').removeClass('active'); // Eliminar la clase "active" de todos los botones
-            $(this).addClass('active'); // Agregar la clase "active" al botón correspondiente
+            $('.btnc').removeClass('bar-active'); // Eliminar la clase "active" de todos los botones
+            $(this).addClass('bar-active'); // Agregar la clase "active" al botón correspondiente
         }
     });
 });

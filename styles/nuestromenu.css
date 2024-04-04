@@ -69,8 +69,7 @@
 #seccion-entradas {
     background: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.507)), url('../files/screen.webp');
 
-    background: linear-gradient(to top right, #000000d5, #31312f6e, #0a0a09d3);
-
+    background: linear-gradient(to top right, #000000d5, #1d1d0c6e, #0a0a09d3);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -80,7 +79,7 @@
 #seccion-frijol {
     background: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.507)), url('../files/s2.webp');
     background: linear-gradient(to top right, #363434a6, #070605be);
-    background: linear-gradient(to top left, #363434a6, #070605be, #363434a6);
+    background: linear-gradient(to top left, #1d1d0c6e, #070605be, #1d1d0c6e);
 
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -91,7 +90,7 @@
     background: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.507)), url('../files/screen.webp');
     background: linear-gradient(to top, rgba(0, 0, 0, 0.548) 0%, rgba(0, 0, 0, 0.548) 100%);
 
-    background: linear-gradient(to top right, #363434a6, #070605be, #363434a6);
+    background: linear-gradient(to top right, #070605be, #1d1d0c6e, #070605be);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -102,6 +101,7 @@
     */
     background: linear-gradient(to top right, #363434a6, #070605be);
     background: linear-gradient(to top left, #363434a6, #070605be, #363434a6);
+    background: linear-gradient(to top left, #1d1d0c6e, #070605be, #1d1d0c6e);
 
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -113,6 +113,8 @@
     background: linear-gradient(to top, rgba(0, 0, 0, 0.548) 0%, rgba(0, 0, 0, 0.548) 100%);
 
     background: linear-gradient(to top right, #363434a6, #070605be, #363434a6);
+    background: linear-gradient(to top right, #070605be, #1d1d0c6e, #070605be);
+
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -123,6 +125,8 @@
     background: linear-gradient(to top, rgba(0, 0, 0, 0.548) 0%, rgba(0, 0, 0, 0.548) 100%);
 
     background: linear-gradient(to top left, #363434a6, #070605be, #363434a6);
+    background: linear-gradient(to top left, #1d1d0c6e, #070605be, #1d1d0c6e);
+
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -131,6 +135,8 @@
 #seccion-desayunos {
     background: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.507)), url('../files/screen.webp');
     background: linear-gradient(to top right, #363434a6, #070605be, #363434a6);
+    background: linear-gradient(to top right, #070605be, #1d1d0c6e, #070605be);
+
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -140,6 +146,8 @@
 #seccion-platosjr {
     background: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.507)), url('../files/screen.webp');
     background: linear-gradient(to top right, #363434a6, #070605be, #363434a6);
+    background: linear-gradient(to top right, #070605be, #1d1d0c6e, #070605be);
+
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -346,14 +354,14 @@
 
 
 
-.active {
+.bar-active {
     background-color: #ffe600af !important;
     color: #ffffff !important;
     border-radius: 20px !important;
     transition: all 0.3s ease !important;
 }
 
-.active:hover {
+.bar-active:hover {
     transform: scale(1.05) !important;
 }
 
@@ -432,9 +440,9 @@
         position: relative;
         margin-top: 0;
         margin-left: 2vw;
-        max-width: 200px;
+        max-width: calc(100vw - 180px);
         /* Ancho máximo deseado */
-        white-space: nowrap;
+        white-space: wrap;
         font-size: 1.2rem;
         top: -10px;
         font-family: 'Ahkio Cursiva', 'Ahkio', sans-serif;
@@ -510,12 +518,177 @@
 
     }
 
-    .active {
+    .bar-active {
         background-color: #ffe600cc !important;
         color: #ffffff !important;
         border-radius: 20px !important;
         transition: all 0.3s ease !important;
     }
+    .modal {
+
+        padding-top: 2.3vh !important;
 
 
+    }
+
+    .modal-img {
+        max-height: calc(100vh - 250px);
+        /* Ajusta según el tamaño del encabezado y el botón de cierre */
+        width: auto;
+        max-width: 100%;
+        padding-top: 0px;
+    }
+
+
+}
+
+/* Estilos del modal */
+.modal {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 3;
+    padding-top: 0px;
+
+}
+
+.modal-overlay {
+    position: relative;
+    width: auto;
+}
+
+
+.modal-content {
+    position: relative;
+    margin: auto;
+    display: block;
+    width: fit-content;
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 8px;
+    border: #42422248 solid 2px;
+    /* box-shadow: 0px 0px 10px #948a5450;*/
+    background-color: #222121fd;
+
+    box-sizing: border-box;
+    margin-top: 8vw;
+    overflow: hidden;
+    /* Para evitar que la imagen sobresalga */
+}
+
+
+.modal-img {
+    max-height: calc(100vh - 250px);
+    /* Ajusta según el tamaño del encabezado y el botón de cierre */
+    width: auto;
+    min-width: 350px!important;
+    min-height: 350px;
+    padding-top: 50px;
+}
+
+
+.modal-content .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 36px;
+    cursor: pointer;
+    color: #ffffff;
+    /* Usar !important para asegurar la prioridad del color */
+    z-index: 9999;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+
+.close:hover,
+.close:focus {
+    color: #ccc;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.evento-description {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(214, 13, 13, 0);
+    color: #fff;
+    padding: 0px;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+    padding-top: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: center;
+
+}
+
+.evento-description h2 {
+    display: flex;
+    padding: 0;
+    margin-top: 15px;
+    justify-content: center;
+    text-align: center;
+    background-image: linear-gradient(to top right, #c07504, hsl(54, 91%, 66%));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-family: 'Ahkio Cursiva', 'Ahkio', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2rem;
+
+}
+
+.evento-description p {
+    display: flex;
+    padding: 0;
+    margin-top: 5px;
+    justify-content: center;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.125rem;
+    max-width: 100%;
+    padding: 0 5%;
+
+}
+.contenedor-botones-indicadores{
+    position: relative;
+    bottom: 100px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 10px;
+    padding-top: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.carousel-control{
+    max-height: 180px;
+    top:18%;
+}
+.carousel-control.right{
+    right: 0;
+    border-radius: 15px 0 0 15px ;
+}
+.carousel-control.left{
+    left: 0;
+    border-radius: 0 15px 15px 0;
 }

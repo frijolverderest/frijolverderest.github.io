@@ -61,13 +61,13 @@ function mostrarPlatos(menu) {
   }
 }
 
-
 function cargarCategoria(contenedor, categoria) {
   categoria.forEach((plato) => {
     const platoDiv = document.createElement('div');
     platoDiv.classList.add('plato-card'); // Agrega la clase 'plato-card'
     //platoDiv.classList.add('animated'); // Agrega la clase 'animated' para iniciar la animación
-    platoDiv.onclick = () => showDetails(`p${plato.id}`);
+    
+  platoDiv.onclick = () => showDetails(plato);
    // platoDiv.style.opacity = '0'; // Inicia invisible
     //platoDiv.style.transition = 'transform: scale(0.5)';
    // platoDiv.style.animation = 'zoomIn 0.5s ease-out';
@@ -119,13 +119,63 @@ function cargarCategoria(contenedor, categoria) {
 }
 
 
+function showDetails(_plato) {
+  document.getElementById('myModal').style.display = 'block';
+
+  // Para el primer item
+  document.querySelector('.carousel-inner .item:nth-child(1) .modal-img').src = `files/imgmenu/${_plato.fotografias[0]}`;//'files/imgeventos/graduacion2.jpg';
+  document.querySelector('.carousel-inner .item:nth-child(1) h2').innerText =  _plato.nombre; //'Graduaciones 1';
+  document.querySelector('.carousel-inner .item:nth-child(1) p').innerText = _plato.descripcionCorta; //'Disfruta de una decoración encantadora para tu graduación en Frijol Verde';
+
+  // Para el segundo item
+  document.querySelector('.carousel-inner .item:nth-child(2) .modal-img').src = `files/imgmenu/${_plato.fotografias[0]}`;//'files/imgeventos/graduacion.jpg';
+  document.querySelector('.carousel-inner .item:nth-child(2) h2').innerText =  _plato.nombre; //'Graduaciones 2';
+  document.querySelector('.carousel-inner .item:nth-child(2) p').innerText = _plato.descripcionCorta;//'Disfruta de una decoración encantadora para tu graduación en Frijol Verde';
+
+  // Para el tercer item
+  document.querySelector('.carousel-inner .item:nth-child(3) .modal-video').src =`files/imgmenu/${_plato.fotografias[0]}`;//'files/imgeventos/graduacionesv.mp4';
+  document.querySelector('.carousel-inner .item:nth-child(3) h2').innerText =   _plato.nombre; //'Graduaciones 3';
+  document.querySelector('.carousel-inner .item:nth-child(3) p').innerText = _plato.descripcionCorta;//'Disfruta de una decoración encantadora para tu graduación en Frijol Verde';
+}
+
+$(document).ready(function () {
+  $('.carousel').on('touchstart', function (event) {
+      const xClick = event.originalEvent.touches[0].pageX;
+      $(this).one('touchmove', function (event) {
+          const xMove = event.originalEvent.touches[0].pageX;
+          const sensitivityInPx = 5; // Sensibilidad del deslizamiento (ajústala según tu preferencia)
+          if (Math.floor(xClick - xMove) > sensitivityInPx) {
+              $(this).carousel('next');
+          }
+          else if (Math.floor(xClick - xMove) < -sensitivityInPx) {
+              $(this).carousel('prev');
+          }
+      });
+      $(this).on('touchend', function () {
+          $(this).off('touchmove');
+      });
+  });
+});
+
+window.addEventListener('scroll', function () {
+  var video = document.getElementById('videoGraduaciones');
+  var position = video.getBoundingClientRect().top;
+  var screenHeight = window.innerHeight;
+
+  if (position < screenHeight && position > 0) {
+      video.play();
+  } else {
+      video.pause();
+  }
+});
 
 
 
 /*
 
+
 // Función para mostrar el modal con detalles del plato
-function showDetails(platoId) {
+function showDetails(plato) {
   const platepContainer = document.querySelector('.platep');
   const modal = document.getElementById('modal');
   const modalImg = document.getElementById('modal-img');
@@ -149,7 +199,8 @@ function showDetails(platoId) {
   platepContainer.style.zIndex = 0;
   modal.style.display = 'block';
 }
-
+*/
+/*
 // Función para mostrar el modal con detalles del plato
 function showDetails(platoId) {
   const platepContainer = document.querySelector('.platep');
@@ -186,14 +237,24 @@ function showDetails(platoId) {
 
   // Si no se encuentra el plato, puedes manejarlo como desees (por ejemplo, mostrar un mensaje de error)
   console.log(`No se encontró el plato con ID ${platoId}`);
-}
+}*/
 
 // Función para cerrar el modal
 function closeModal() {
-  const modal = document.getElementById('modal');
+  const modal = document.getElementById('myModal');
   modal.style.display = 'none';
 }
-*/
+
+// Cerrar el modal si se hace clic fuera de él
+window.onclick = function (event) {
+  var modal = document.getElementById('myModal');
+  if (event.target == modal) {
+      var video = document.getElementById('videoGraduaciones');
+      video.pause();
+      modal.style.display = 'none';
+  }
+}
+
 // Llama a la función para cargar el JSON al cargar la página
 window.onload = cargarJSON;
 

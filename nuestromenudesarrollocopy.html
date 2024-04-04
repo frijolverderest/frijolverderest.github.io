@@ -1,117 +1,169 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
+  <head>
     <!-- Metadatos -->
-    <meta charset="utf-8">
-    <meta name="author" content="James Soscue">
-    <meta name="description" content="Restaurante Frijol Verde">
-    <meta name="keywords" content="restaurante, frijol, verde, almuerzo, desayuno, domicilio,parrilla">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="author" content="James Soscue" />
+    <meta name="description" content="Restaurante Frijol Verde" />
+    <meta
+      name="keywords"
+      content="restaurante, frijol, verde, almuerzo, desayuno, domicilio,parrilla"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Titulo -->
     <title>Frijol Verde</title>
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="files/iconFrijol.png">
+    <link rel="icon" type="image/x-icon" href="files/iconFrijol.png" />
     <!-- Bootstrap CDN  -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <!-- Iconos de Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
     <!-- CSS estilos personalizados-->
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/navbar.css">
-    <link rel="stylesheet" href="styles/footer.css">
-    <link rel="stylesheet" href="styles/nuestromenu.css">
-
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/navbar.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/nuestromenu.css" />
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+
     <script src="scripts/getMenu.js"></script>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <!-- Barra de navegación -->
     <nav class="navbar navbar-inverse navbar-fixed-top text-center">
-        <div class=" nav-cell">
-            <a class="navbar-brand" href="./index" id="logo-container">
-                <img src="files/iconFrijol.png" alt="Icono" id="navbar-icon" class="pull-left">
-                <span id="navbar-title" class="pull-left"> Frijol Verde</span>
-            </a>
-            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
+      <div class="nav-cell">
+        <a class="navbar-brand" href="./index" id="logo-container">
+          <img
+            src="files/iconFrijol.png"
+            alt="Icono"
+            id="navbar-icon"
+            class="pull-left"
+          />
+          <span id="navbar-title" class="pull-left"> Frijol Verde</span>
+        </a>
+        <button
+          class="navbar-toggle"
+          type="button"
+          data-toggle="collapse"
+          data-target="#myNavbar"
+        >
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
 
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="./index">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./desayunos">Desayunos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./nuestromenu">Nuestro Menú</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./eventos2">Eventos</a>
-                </li>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="./index">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./desayunos">Desayunos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./nuestromenu">Nuestro Menú</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./eventos2">Eventos</a>
+          </li>
 
-                <!--
+          <!--
                 <li class="nav-item dropdown">-->
-                <!-- Opciones del menú desplegable 
+          <!-- Opciones del menú desplegable 
                 </li>-->
-                <li class="nav-item">
-                    <a class="nav-link" href="./contacto">Contáctanos</a>
-                </li><!--
+          <li class="nav-item">
+            <a class="nav-link" href="./contacto">Contáctanos</a>
+          </li>
+          <!--
                 <li class="nav-item">
                     <a class="nav-link" href="./about">Sobre Nosotros</a>
                 </li>-->
-            </ul>
-        </div>
-
+        </ul>
+      </div>
     </nav>
 
-
     <div class="container">
-        <div class="barra-categorias">
-            <div class="btn-group" role="group" aria-label="Basic example">
-                <button type="button" class="btnc btn-categoria active"
-                    data-target="#seccion-entradas">Entradas</button>
-                <button type="button" class="btnc btn-categoria" data-target="#seccion-frijol">Con Frijol</button>
-                <button type="button" class="btnc btn-categoria" data-target="#seccion-delrio">Del Rio</button>
-                <button type="button" class="btnc btn-categoria" data-target="#seccion-carnes">Carnes</button>
-                <button type="button" class="btnc btn-categoria" data-target="#seccion-bebidas">Bebidas</button>
-                <button type="button" class="btnc btn-categoria" data-target="#seccion-postres">Postres</button>
-            </div>
+      <div class="barra-categorias">
+        <div class="btn-group" role="group" aria-label="Basic example">
+          <button
+            type="button"
+            class="btnc btn-categoria active"
+            data-target="#seccion-entradas"
+          >
+            Entradas
+          </button>
+          <button
+            type="button"
+            class="btnc btn-categoria"
+            data-target="#seccion-frijol"
+          >
+            Con Frijol
+          </button>
+          <button
+            type="button"
+            class="btnc btn-categoria"
+            data-target="#seccion-delrio"
+          >
+            Del Rio
+          </button>
+          <button
+            type="button"
+            class="btnc btn-categoria"
+            data-target="#seccion-carnes"
+          >
+            Carnes
+          </button>
+          <button
+            type="button"
+            class="btnc btn-categoria"
+            data-target="#seccion-bebidas"
+          >
+            Bebidas
+          </button>
+          <button
+            type="button"
+            class="btnc btn-categoria"
+            data-target="#seccion-postres"
+          >
+            Postres
+          </button>
         </div>
+      </div>
     </div>
 
     <div class="contenedor-menu">
+      <!-- Menu -->
+      <section id="seccion-entradas" class="our-menu d-flex flex-column">
+        <h1 class="titulo-menu">NUESTRO MENÚ</h1>
 
-
-        <!-- Menu -->
-        <section id="seccion-entradas" class="our-menu d-flex flex-column">
-
-            <h1 class="titulo-menu">NUESTRO MENÚ</h1>
-
-            <div id="menuEntradas" class="contenedor-platos">
-                <div class="contenedor-categoria-titulo">
-                    <h1 class="categoria-titulo">Entradas</h1>
-                    <hr class="categoria-hr">
-                </div>
-                <!--           
+        <div id="menuEntradas" class="contenedor-platos">
+          <div class="contenedor-categoria-titulo">
+            <h1 class="categoria-titulo">Entradas</h1>
+            <hr class="categoria-hr" />
+          </div>
+          <!--           
                 <div class="plato-card">
                     <div class="plato-detalles">
 
@@ -192,149 +244,240 @@
                     <img class="plato-img" src="files/imgmenu/p5.jpeg" alt="Pan de waffle">
                 </div>
                 -->
+        </div>
+      </section>
 
+      <section id="seccion-frijol" class="our-menu d-flex flex-column">
+        <div id="menuConFrijol" class="contenedor-platos">
+          <div class="contenedor-categoria-titulo">
+            <h1 class="categoria-titulo">Con Frijol</h1>
+            <hr class="categoria-hr" />
+          </div>
+        </div>
+      </section>
+
+      <section id="seccion-delrio" class="our-menu d-flex flex-column">
+        <div id="menuDelRio" class="contenedor-platos">
+          <div class="contenedor-categoria-titulo">
+            <h1 class="categoria-titulo">Del Rio</h1>
+            <hr class="categoria-hr" />
+          </div>
+        </div>
+      </section>
+
+      <section id="seccion-carnes" class="our-menu d-flex flex-column">
+        <div id="menuCarnes" class="contenedor-platos">
+          <div class="contenedor-categoria-titulo">
+            <h1 class="categoria-titulo">Carnes</h1>
+            <hr class="categoria-hr" />
+          </div>
+        </div>
+      </section>
+
+      <section id="seccion-bebidas" class="our-menu d-flex flex-column">
+        <div id="menuBebidas" class="contenedor-platos">
+          <div class="contenedor-categoria-titulo">
+            <h1 class="categoria-titulo">Bebidas</h1>
+            <hr class="categoria-hr" />
+          </div>
+        </div>
+      </section>
+
+      <section id="seccion-postres" class="our-menu d-flex flex-column">
+        <div id="menuPostres" class="contenedor-platos">
+          <div class="contenedor-categoria-titulo">
+            <h1 class="categoria-titulo">Postres</h1>
+            <hr class="categoria-hr" />
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Modal -->
+    <div id="myModal" class="modal carousel slide">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-overlay">
+          <div class="carousel-inner">
+            <div class="item active">
+              <img class="modal-img" src="" alt="Imagen 1" />
+              <div class="evento-description" id="modal-details">
+                <h2></h2>
+                <p></p>
+              </div>
             </div>
-        </section>
-
-        <section id="seccion-frijol" class="our-menu d-flex flex-column">
-
-            <div id="menuConFrijol" class="contenedor-platos">
-                <div class="contenedor-categoria-titulo">
-                    <h1 class="categoria-titulo">Con Frijol</h1>
-                    <hr class="categoria-hr">
-                </div>
+            <div class="item">
+              <img class="modal-img" src="" alt="Imagen 2" />
+              <div class="evento-description" id="modal-details">
+                <h2></h2>
+                <p></p>
+              </div>
             </div>
-        </section>
+            <div class="item">
+              <video
+                id="videoGraduaciones"
+                class="modal-img modal-video"
+                loop
+                controls
+              >
+                <source class="modal-video" src="" type="video/mp4" />
+                Tu navegador no admite la reproducción de videos HTML5.
+              </video>
 
-        <section id="seccion-delrio" class="our-menu d-flex flex-column">
-
-            <div id="menuDelRio" class="contenedor-platos">
-                <div class="contenedor-categoria-titulo">
-                    <h1 class="categoria-titulo">Del Rio</h1>
-                    <hr class="categoria-hr">
-                </div>
+              <div class="evento-description" id="modal-details">
+                <h2></h2>
+                <p></p>
+              </div>
             </div>
-        </section>
+          </div>
+          <div class="contenedor-botones-indicadores">
+            <!-- Indicadores -->
+            <ol class="carousel-indicators">
+              <li data-target="#myModal" data-slide-to="0" class="active"></li>
+              <li data-target="#myModal" data-slide-to="1" class=""></li>
+              <li data-target="#myModal" data-slide-to="2" class=""></li>
+            </ol>
+          </div>
 
-        <section id="seccion-carnes" class="our-menu d-flex flex-column">
-
-            <div id="menuCarnes" class="contenedor-platos">
-                <div class="contenedor-categoria-titulo">
-                    <h1 class="categoria-titulo">Carnes</h1>
-                    <hr class="categoria-hr">
-                </div>
-            </div>
-        </section>
-
-        <section id="seccion-bebidas" class="our-menu d-flex flex-column">
-
-            <div id="menuBebidas" class="contenedor-platos">
-                <div class="contenedor-categoria-titulo">
-                    <h1 class="categoria-titulo">Bebidas</h1>
-                    <hr class="categoria-hr">
-                </div>
-            </div>
-        </section>
-
-        <section id="seccion-postres" class="our-menu d-flex flex-column">
-
-            <div id="menuPostres" class="contenedor-platos">
-                <div class="contenedor-categoria-titulo">
-                    <h1 class="categoria-titulo">Postres</h1>
-                    <hr class="categoria-hr">
-                </div>
-            </div>
-        </section>
-
-
+          <a
+            id="carrusel-izquierda"
+            class="left carousel-control"
+            href="#myModal"
+            data-slide="prev"
+          >
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a
+            id="carrusel-derecha"
+            class="right carousel-control"
+            href="#myModal"
+            data-slide="next"
+          >
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+        </div>
+      </div>
     </div>
 
     <!-- Pie de pagina (footer) -->
-    <footer class="seccion-clara d-flex flex-column align-items-center justify-content-center">
+    <footer
+      class="seccion-clara d-flex flex-column align-items-center justify-content-center"
+    >
+      <div class="contenedor-footer">
+        <div class="columna-footer">
+          <h1 class="titulo-footer">Contáctanos</h1>
 
-        <div class="contenedor-footer">
-            <div class="columna-footer">
-                <h1 class="titulo-footer">Contáctanos</h1>
-
-                <div class="contacto-footer">
-                    <a class="bi bi-telephone" href="tel:6028352715" target="_blank" rel="noopener noreferrer">
-                        <p>602 8352715</p>
-                    </a>
-                </div>
-                <div class="contacto-footer">
-                    <a class="bi bi-whatsapp" href="https://wa.me/573013290099/" target="_blank"
-                        rel="noopener noreferrer">
-                        <p>+57 301 329 0099</p>
-                    </a>
-                </div>
-            </div>
-            <div class="linea-vertical"></div>
-            <div class="columna-footer">
-                <h1 class="titulo-footer">Ubicación</h1>
-
-                <div class="contacto-footer">
-                    <a class="bi bi-pin-map" href="https://maps.app.goo.gl/C9k7hQXihKUYHDuR8" target="_blank"
-                        rel="noopener noreferrer">
-                        <p>Calle 9N #8N - 21 Prados del Norte <br> Popayán - Cauca </p>
-                    </a>
-                </div>
-            </div>
-            <div class="linea-vertical"></div>
-            <div class="columna-footer">
-                <h1 class="titulo-footer">Horario de atención</h1>
-
-                <div class="contacto-footer">
-                    <a class="bi bi-clock" href="https://maps.app.goo.gl/C9k7hQXihKUYHDuR8" target="_blank"
-                        rel="noopener noreferrer">
-                        <p>Lunes a Domingo 7:30 am - 4:00 pm </p>
-                    </a>
-                </div>
-
-            </div>
+          <div class="contacto-footer">
+            <a
+              class="bi bi-telephone"
+              href="tel:6028352715"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <p>602 8352715</p>
+            </a>
+          </div>
+          <div class="contacto-footer">
+            <a
+              class="bi bi-whatsapp"
+              href="https://wa.me/573013290099/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <p>+57 301 329 0099</p>
+            </a>
+          </div>
         </div>
+        <div class="linea-vertical"></div>
+        <div class="columna-footer">
+          <h1 class="titulo-footer">Ubicación</h1>
 
-        <h1 class="titulo-footer">Nuestras Redes Sociales</h1>
-
-        <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
-
-            <a href="https://tiktok.com/@restaurantefrijolverde" target="_blank" rel="noopener noreferrer">
-                <i class="bi bi-tiktok"></i>
+          <div class="contacto-footer">
+            <a
+              class="bi bi-pin-map"
+              href="https://maps.app.goo.gl/C9k7hQXihKUYHDuR8"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <p>
+                Calle 9N #8N - 21 Prados del Norte <br />
+                Popayán - Cauca
+              </p>
             </a>
-            <a href="https://www.facebook.com/frijolverde2013" target="_blank" rel="noopener noreferrer">
-                <i class="bi bi-facebook"></i>
-            </a>
-            <a href="https://www.instagram.com/frijolverderest/" target="_blank" rel="noopener noreferrer">
-                <i class="bi bi-instagram"></i>
-            </a>
-            <a href="https://wa.me/573013290099/" target="_blank" rel="noopener noreferrer">
-                <i class="bi bi-whatsapp"></i>
-            </a>
-            <a href="tel:+573013290099" target="_blank" rel="noopener noreferrer">
-                <i class="bi bi-telephone"></i>
-            </a>
-
+          </div>
         </div>
+        <div class="linea-vertical"></div>
+        <div class="columna-footer">
+          <h1 class="titulo-footer">Horario de atención</h1>
 
-        <div class="derechos-de-autor">
-            <p>Todos los derechos reservados.<br>2023 &copy; Frijol Verde. </p>
+          <div class="contacto-footer">
+            <a
+              class="bi bi-clock"
+              href="https://maps.app.goo.gl/C9k7hQXihKUYHDuR8"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <p>Lunes a Domingo 7:30 am - 4:00 pm</p>
+            </a>
+          </div>
         </div>
+      </div>
+
+      <h1 class="titulo-footer">Nuestras Redes Sociales</h1>
+
+      <div
+        class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center"
+      >
+        <a
+          href="https://tiktok.com/@restaurantefrijolverde"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="bi bi-tiktok"></i>
+        </a>
+        <a
+          href="https://www.facebook.com/frijolverde2013"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/frijolverderest/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a
+          href="https://wa.me/573013290099/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="bi bi-whatsapp"></i>
+        </a>
+        <a href="tel:+573013290099" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-telephone"></i>
+        </a>
+      </div>
+
+      <div class="derechos-de-autor">
+        <p>Todos los derechos reservados.<br />2023 &copy; Frijol Verde.</p>
+      </div>
     </footer>
 
     <div class="desarrollador">
-        <p>Product Brand: Work in Progress, Page developed by James Soscue &copy;</p>
+      <p>
+        Product Brand: Work in Progress, Page developed by James Soscue &copy;
+      </p>
     </div>
-
+    <!--
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+-->
     <script src="scripts/script1.js"></script>
 
     <!-- JS estilos personalizados-->
     <script src="scripts/actions.js"></script>
-
-
-
-</body>
-
+  </body>
 </html>
