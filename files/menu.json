@@ -220,56 +220,56 @@
         "precio": 5500,
         "fotografias": ["copa_de_helado.jpeg"]
       }
-    ],    
+    ],
     "desayunos": [
-      {
-        "id": 27,
-        "nombre": "Huevos Revueltos",
-        "descripcionCorta": "Desayuno clásico",
-        "descripcionLarga": "Huevos revueltos servidos con tostadas, jamón y queso.",
-        "precio": 9.99,
-        "fotografias": ["desayuno1.jpg", "desayuno2.jpg"]
-      },
-      {
-        "id": 28,
-        "nombre": "Panqueques con Frutas",
-        "descripcionCorta": "Dulce y delicioso",
-        "descripcionLarga": "Panqueques esponjosos acompañados de frutas frescas y jarabe de arce.",
-        "precio": 10.99,
-        "fotografias": ["carne1.jpg", "panqueques2.jpg"]
-      },
-      {
-        "id": 29,
-        "nombre": "Arepas con Queso",
-        "descripcionCorta": "Sabor tradicional colombiano",
-        "descripcionLarga": "Arepas de maíz rellenas de queso derretido.",
-        "precio": 8.99,
-        "fotografias": ["calentado1.jpg", "arepas2.jpg"]
-      },
-      {
-        "id": 30,
-        "nombre": "Tostadas Francesas",
-        "descripcionCorta": "Desayuno reconfortante",
-        "descripcionLarga": "Rebanadas de pan empapadas en huevo batido y luego doradas, servidas con miel y frutas frescas.",
-        "precio": 11.99,
-        "fotografias": ["caserola1.jpg", "tostadas2.jpg"]
-      },
-      {
-        "id": 31,
-        "nombre": "Desayuno Americano",
-        "descripcionCorta": "Clásico y abundante",
-        "descripcionLarga": "Huevos fritos, tocino, salchichas, papas fritas y tostadas.",
-        "precio": 13.99,
-        "fotografias": ["americano1.jpg", "americanbreakfast2.jpg"]
-      },
-      {
-        "id": 32,
-        "nombre": "Tortilla Española",
-        "descripcionCorta": "Sabor español auténtico",
-        "descripcionLarga": "Tortilla de huevos, papas y cebollas, servida con pan tostado.",
-        "precio": 10.99,
-        "fotografias": ["tradicional1.jpg", "tortilla2.jpg"]
-      }
+        {
+          "id": 27,
+          "nombre": "Omelette",
+          "descripcionCorta": "Clásico y delicioso",
+          "descripcionLarga": "Huevos revueltos servidos con tostadas, jamón y queso.",
+          "precio": 9.99,
+          "fotografias": ["omelette1.jpg", "desayuno2.jpg"]
+        },
+        {
+          "id": 28,
+          "nombre": "Con Carne",
+          "descripcionCorta": "Dulce y delicioso",
+          "descripcionLarga": "Panqueques esponjosos acompañados de frutas frescas y jarabe de arce.",
+          "precio": 10.99,
+          "fotografias": ["carne1.jpg", "panqueques2.jpg"]
+        },
+        {
+          "id": 29,
+          "nombre": "Calentado",
+          "descripcionCorta": "Sabor colombiano auténtico",
+          "descripcionLarga": "Arepas de maíz rellenas de queso derretido.",
+          "precio": 8.99,
+          "fotografias": ["calentado1.jpg", "arepas2.jpg"]
+        },
+        {
+          "id": 30,
+          "nombre": "Caserola",
+          "descripcionCorta": "Reconfortante y delicioso",
+          "descripcionLarga": "Rebanadas de pan empapadas en huevo batido y luego doradas, servidas con miel y frutas frescas.",
+          "precio": 11.99,
+          "fotografias": ["caserola1.jpg", "tostadas2.jpg"]
+        },
+        {
+          "id": 31,
+          "nombre": "Desayuno Americano",
+          "descripcionCorta": "Abundante y sabroso",
+          "descripcionLarga": "Huevos fritos, tocino, salchichas, papas fritas y tostadas.",
+          "precio": 13.99,
+          "fotografias": ["americano1.jpg", "americanbreakfast2.jpg"]
+        },
+        {
+          "id": 32,
+          "nombre": "Desayuno Tradicional",
+          "descripcionCorta": "Sabor español auténtico",
+          "descripcionLarga": "Tortilla de huevos, papas y cebollas, servida con pan tostado.",
+          "precio": 10.99,
+          "fotografias": ["tradicional1.jpg", "tortilla2.jpg"]
+        }
     ],
     "platosJunior": [
       {
