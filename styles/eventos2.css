@@ -247,7 +247,7 @@ scroll-snap-align: start;
     transition: transform 0.5s ease;
     border: #2222113d solid 2px;
     box-shadow: 0px 0px 15px #69623d60;
-    mask-image: linear-gradient(to bottom, rgba(236, 146, 12, 0.685), rgba(219, 136, 11, 0.692));
+    /* mask-image: linear-gradient(to bottom, rgba(236, 146, 12, 0.685), rgba(219, 136, 11, 0.692)); */
     /* Aplica un degradado lineal al contenido de la imagen */
 
 }

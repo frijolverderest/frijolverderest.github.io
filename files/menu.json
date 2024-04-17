@@ -236,7 +236,7 @@
         "descripcionCorta": "Dulce y delicioso",
         "descripcionLarga": "Panqueques esponjosos acompañados de frutas frescas y jarabe de arce.",
         "precio": 10.99,
-        "fotografias": ["panqueques1.jpg", "panqueques2.jpg"]
+        "fotografias": ["carne1.jpg", "panqueques2.jpg"]
       },
       {
         "id": 29,
@@ -244,7 +244,7 @@
         "descripcionCorta": "Sabor tradicional colombiano",
         "descripcionLarga": "Arepas de maíz rellenas de queso derretido.",
         "precio": 8.99,
-        "fotografias": ["arepas1.jpg", "arepas2.jpg"]
+        "fotografias": ["calentado1.jpg", "arepas2.jpg"]
       },
       {
         "id": 30,
@@ -252,7 +252,7 @@
         "descripcionCorta": "Desayuno reconfortante",
         "descripcionLarga": "Rebanadas de pan empapadas en huevo batido y luego doradas, servidas con miel y frutas frescas.",
         "precio": 11.99,
-        "fotografias": ["tostadas1.jpg", "tostadas2.jpg"]
+        "fotografias": ["caserola1.jpg", "tostadas2.jpg"]
       },
       {
         "id": 31,
@@ -260,7 +260,7 @@
         "descripcionCorta": "Clásico y abundante",
         "descripcionLarga": "Huevos fritos, tocino, salchichas, papas fritas y tostadas.",
         "precio": 13.99,
-        "fotografias": ["americanbreakfast1.jpg", "americanbreakfast2.jpg"]
+        "fotografias": ["americano1.jpg", "americanbreakfast2.jpg"]
       },
       {
         "id": 32,
@@ -268,7 +268,7 @@
         "descripcionCorta": "Sabor español auténtico",
         "descripcionLarga": "Tortilla de huevos, papas y cebollas, servida con pan tostado.",
         "precio": 10.99,
-        "fotografias": ["tortilla1.jpg", "tortilla2.jpg"]
+        "fotografias": ["tradicional1.jpg", "tortilla2.jpg"]
       }
     ],
     "platosJunior": [
