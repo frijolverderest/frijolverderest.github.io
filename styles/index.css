@@ -119,3 +119,75 @@
     background-color: #33cc33;
     color: #ffffff;
 }
+
+/*css parra el promo de eventos*/
+
+.contenedor-promo-eventos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Monotype Corsiva', cursive;
+    font-size: 5rem;
+    width: 100%;
+    height: 450px;
+    position: relative;
+    top:-70px;
+    background-color: #33cc33;
+}
+.detalles-promo-eventos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Monotype Corsiva', cursive;
+    font-size: 5rem;
+    width: 100%;
+    height: 450px;
+    background-color: #815a1f57;
+}
+.titulo-promo-eventos {
+    font-size: 3rem;
+    color: #ffffff;
+    font-family: 'Monotype Corsiva', cursive;
+    font-size: 5rem;
+    width: 100%;
+    height: 450px;
+    background-color: #815a1f57;
+
+}
+
+.descripcion-promo-eventos {
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-family: 'Monotype Corsiva', cursive;
+    font-size: 5rem;
+    width: 100%;
+    height: 450px;
+    background-color: #1f7a8157;
+
+}
+.contimg-promo-eventos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Monotype Corsiva', cursive;
+    font-size: 5rem;
+    width: 100%;
+    height: 450px;
+    background-color: #211f8157;
+
+}
+.img-promo-eventos{
+    width: 100%;
+    height: 100%;
+    max-height: 350px;
+    min-height: 350px;
+    min-width: 375px;
+    object-fit: cover;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.959));
+}
