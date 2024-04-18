@@ -157,6 +157,7 @@ $(document).ready(function () {
   });
 });
 
+
 window.addEventListener('scroll', function () {
   var video = document.getElementById('videoGraduaciones');
   var position = video.getBoundingClientRect().top;
