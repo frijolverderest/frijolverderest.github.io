@@ -1,193 +1,279 @@
 .contenedor-index {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    padding-top: 70px;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding-top: 70px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 .contenedor-banner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-family: 'Monotype Corsiva', cursive;
-    font-size: 5rem;
-    width: 100%;
-    height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Monotype Corsiva", cursive;
+  font-size: 5rem;
+  width: 100%;
+  height: 450px;
 }
 
 #myCarousel {
-    display: flex;
-    position: relative;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #000000;
-    top: -70px;
-
+  display: flex;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  top: -70px;
 }
 
 .carousel.slide {
-    margin-top: 0px;
-    margin-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .img-carousel {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    max-height: 450px;
-    min-height: 450px;
-    min-width: 375px;
-    object-fit: cover;
-    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.959));
-
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-height: 450px;
+  min-height: 450px;
+  min-width: 375px;
+  object-fit: cover;
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.507),
+    rgba(0, 0, 0, 0.959)
+  );
 }
 
 #carrusel-izquierda {
-    background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgb(0, 0, 0));
-    /* Aplica un degradado lineal desde la derecha */
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgb(0, 0, 0));
+  /* Aplica un degradado lineal desde la derecha */
 }
 
 #carrusel-derecha {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 0, 0));
-    /* Aplica un degradado lineal desde la derecha */
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 0, 0));
+  /* Aplica un degradado lineal desde la derecha */
 }
 
 .carousel-indicators {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 0;
-    padding-bottom: 1px;
-    position: absolute;
-    bottom: 2px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 0;
+  padding-bottom: 1px;
+  position: absolute;
+  bottom: 2px;
 }
 
 .contenedor-botones-indicadores {
-    position: absolute;
-    bottom: 15px;
-    /* Ajusta la posición vertical según sea necesario */
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 15;
-    bottom: 5px;
+  position: absolute;
+  bottom: 15px;
+  /* Ajusta la posición vertical según sea necesario */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 15;
+  bottom: 5px;
 }
 
 .d-grid {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 0;
-    padding-bottom: 1px;
-    position: relative;
-    bottom: 15px;
-    max-width: 98% !important;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 0;
+  padding-bottom: 1px;
+  position: relative;
+  bottom: 15px;
+  max-width: 98% !important;
 }
 
 /* Estilos CSS personalizados para los botones */
 .btn.btn-primary {
-    background-color: #a5d12a;
-    color: #000000;
-    border-color: #688519;
-    box-shadow: 5px 5px 20px #0e3000;
-    margin: 10px;
-    font-family: "Comic Sans MS", cursive, sans-serif;
-    font-style: bold;
-    text-align: center;
+  background-color: #a5d12a;
+  color: #000000;
+  border-color: #688519;
+  box-shadow: 5px 5px 20px #0e3000;
+  margin: 10px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-style: bold;
+  text-align: center;
 }
 
-
 .btn.btn-primary:hover {
-    background-color: #b5e62f;
-    color: #000000;
-    border-color: #495e11;
-    transform: scale(1.1) rotate(0deg);
-    transition: all 0.5s;
+  background-color: #b5e62f;
+  color: #000000;
+  border-color: #495e11;
+  transform: scale(1.1) rotate(0deg);
+  transition: all 0.5s;
 }
 
 /* Cambiar el fondo y el color del texto del botón secundario */
 .btn.btn-secondary {
-    background-color: #33cc33;
-    color: #ffffff;
+  background-color: #33cc33;
+  color: #ffffff;
 }
 
 /*css parra el promo de eventos*/
 
 .contenedor-promo-eventos {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-family: 'Monotype Corsiva', cursive;
-    font-size: 5rem;
-    width: 100%;
-    height: 450px;
-    position: relative;
-    top:-70px;
-    background-color: #33cc33;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Monotype Corsiva", cursive;
+  width: 100%;
+  height: 500px;
+  position: relative;
+  top: -70px;
+  /* background-color: #33cc33; */
+  background-color: #000000;
+
 }
 .detalles-promo-eventos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-family: 'Monotype Corsiva', cursive;
-    font-size: 5rem;
-    width: 100%;
-    height: 450px;
-    background-color: #815a1f57;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Monotype Corsiva", cursive;
+  font-size: 3rem;
+  width: 100%;
+  height: 500px;
+  background-color: #000000;
 }
 .titulo-promo-eventos {
-    font-size: 3rem;
-    color: #ffffff;
-    font-family: 'Monotype Corsiva', cursive;
-    font-size: 5rem;
-    width: 100%;
-    height: 450px;
-    background-color: #815a1f57;
-
+  display: flex;
+  flex-direction: column;
+  font-size: 4.5rem;
+  font-family: "Monotype Corsiva", cursive;
+  width: 100%;
+  height: 30%;
+  /* background-color: #815a1f57; */
+  justify-content: center;
+  color: #ffffff;
+  background-image: linear-gradient(to top right, #c07504, hsl(54, 91%, 66%));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .descripcion-promo-eventos {
-    font-size: 1.5rem;
-    color: #ffffff;
-    font-family: 'Monotype Corsiva', cursive;
-    font-size: 5rem;
-    width: 100%;
-    height: 450px;
-    background-color: #1f7a8157;
-
+  font-size: 3rem;
+  color: #ffffff;
+  font-family: "Monotype Corsiva", cursive;
+  width: 100%;
+  height: 90%;
+  /* background-color: #000000; */
 }
 .contimg-promo-eventos {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-family: 'Monotype Corsiva', cursive;
-    font-size: 5rem;
-    width: 100%;
-    height: 450px;
-    background-color: #211f8157;
-
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 500px;
+  background-color: #00000057;
 }
-.img-promo-eventos{
-    width: 100%;
-    height: 100%;
-    max-height: 350px;
-    min-height: 350px;
-    min-width: 375px;
-    object-fit: cover;
-    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.959));
+.img-promo-eventos {
+  width: auto;
+  height: 100%;
+  min-width: 500px;
+  min-height: 500px;
+  max-height: 500px;
+  object-fit: cover;
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.507),
+    rgba(0, 0, 0, 0.959)
+  );
+}
+
+@media screen and (max-width: 768px) {
+
+    .contenedor-promo-eventos {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-family: "Monotype Corsiva", cursive;
+        width: 100%;
+        height: 350px;
+        position: relative;
+        top: -70px;
+        /* background-color: #33cc33; */
+        background-color: #000000;
+      
+      }
+      .detalles-promo-eventos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-family: "Monotype Corsiva", cursive;
+        font-size: 3rem;
+        width: 100%;
+        height: 350px;
+        background-color: #000000;
+      }
+      .titulo-promo-eventos {
+        display: flex;
+        flex-direction: column;
+        font-size: 3rem;
+        font-family: "Monotype Corsiva", cursive;
+        width: 100%;
+        height: 30%;
+        /* background-color: #815a1f57; */
+        justify-content: center;
+        color: #ffffff;
+        background-image: linear-gradient(to top right, #c07504, hsl(54, 91%, 66%));
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+      
+      .descripcion-promo-eventos {
+        font-size: 2rem;
+        color: #ffffff;
+        font-family: "Monotype Corsiva", cursive;
+        width: 100%;
+        height: 90%;
+        /* background-color: #000000; */
+      }
+      .contimg-promo-eventos {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 350px;
+        background-color: #00000057;
+      }
+      .img-promo-eventos {
+        width: 100%;
+        height: 100%;
+        min-width: 270px;
+        min-height: 300px;
+        max-height: 350px;
+        object-fit: cover;
+        mask-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.507),
+          rgba(0, 0, 0, 0.959)
+        );
+      }
+
+
 }
