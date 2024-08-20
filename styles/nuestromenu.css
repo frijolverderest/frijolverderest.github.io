@@ -183,6 +183,7 @@
   justify-content: space-between;
   align-items: center;
   max-height: 135px;
+  max-width: 450px;
   width: 47%;
   /* Añade la animación aquí */
   opacity: 1;
@@ -261,12 +262,11 @@
   margin-left: 3vw;
   max-width: 100%;
   min-width: 100%;
-  font-size: 2vw;
-  top: -10px;
+  top: 0px;
   font-family: "Ahkio Cursiva", "Ahkio", sans-serif;
   font-style: italic;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   display: inline-block;
   position: relative;
   background-image: linear-gradient(to top right, #ce7e05, hsl(54, 92%, 65%));
@@ -283,10 +283,9 @@
   margin-bottom: 0;
   position: relative;
   font-style: italic;
-  margin-bottom:  20px;
-
-  top: -10px;
-  font-size: 1.2rem;
+  margin-bottom:  2px;
+  top: 0px;
+  font-size: 1.3rem;
 }
 
 .plato-hr {
@@ -349,7 +348,7 @@
   border-radius: 20px;
   background: linear-gradient(
     to top,
-    rgba(0, 0, 0, 0.473) 50%,
+    rgba(0, 0, 0, 0.581) 50%,
     rgba(3, 3, 3, 0.027) 94%
   ) !important;
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.479);
@@ -365,8 +364,23 @@
 }
 
 .bar-active {
-  background-color: #ffe600af !important;
-  color: #ffffff !important;
+  /* background-color: #1a1a193e !important; */
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 0, 0, 0) 97%,
+    rgb(234, 207, 3) 3%
+  )!important;
+  color: #d1bf1f !important;
+
+  transform: scale(1.05) !important;
+
+
+
+  /* background-image: linear-gradient(to top right, #c97a03, hsl(54, 100%, 65%))!important;
+  -webkit-background-clip: text!important;
+  background-clip: text!important;
+  color: transparent!important; */
+
   border-radius: 20px !important;
   transition: all 0.3s ease !important;
 }
@@ -378,7 +392,7 @@
 .btn-categoria {
   border: none !important;
   max-width: min-content;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   color: #cac9c9;
   background: linear-gradient(
     to top,
