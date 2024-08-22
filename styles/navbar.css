@@ -89,6 +89,16 @@
     -webkit-background-clip: text!important;
     background-clip: text!important;
     color: transparent!important;
+    transform: scale(1.1) rotate(0deg);
+    transition: all 0.3s;
+    
+}
+.nav-active {
+    color: #ffffff;
+    background-image: linear-gradient(to top right, #c07504, hsl(54, 91%, 66%))!important;
+    -webkit-background-clip: text!important;
+    background-clip: text!important;
+    color: transparent!important;
 }
 
 .nav-cell{

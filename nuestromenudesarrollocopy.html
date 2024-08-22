@@ -83,7 +83,7 @@
             <a class="nav-link" href="./desayunos">Desayunos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./nuestromenu">Nuestro Menú</a>
+            <a class="nav-link nav-active" href="./nuestromenu">Nuestro Menú</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./eventos2">Eventos</a>
@@ -245,70 +245,43 @@
     </div>
 
     <!-- Modal -->
-    <div id="myModal" class="modal carousel slide">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <div class="modal-overlay">
-          <div class="carousel-inner">
-            <div class="item active">
-              <img class="modal-img" src="" alt="Imagen 1" />
-              <div class="evento-description" id="modal-details">
-                <h2></h2>
-                <p></p>
-              </div>
-            </div>
-            <div class="item">
-              <img class="modal-img" src="" alt="Imagen 2" />
-              <div class="evento-description" id="modal-details">
-                <h2></h2>
-                <p></p>
-              </div>
-            </div>
-            <div class="item">
-              <video
-                id="videoGraduaciones"
-                class="modal-img modal-video"
-                loop
-                controls
-              >
-                <source class="modal-video" src="" type="video/mp4" />
-                Tu navegador no admite la reproducción de videos HTML5.
-              </video>
-
-              <div class="evento-description" id="modal-details">
-                <h2></h2>
-                <p></p>
-              </div>
-            </div>
-          </div>
-          <div class="contenedor-botones-indicadores">
-            <!-- Indicadores -->
-            <ol class="carousel-indicators">
-              <li data-target="#myModal" data-slide-to="0" class="active"></li>
-              <li data-target="#myModal" data-slide-to="1" class=""></li>
-              <li data-target="#myModal" data-slide-to="2" class=""></li>
-            </ol>
-          </div>
-
-          <a
-            id="carrusel-izquierda"
-            class="left carousel-control"
-            href="#myModal"
-            data-slide="prev"
-          >
-            <span class="glyphicon glyphicon-chevron-left"></span>
-          </a>
-          <a
-            id="carrusel-derecha"
-            class="right carousel-control"
-            href="#myModal"
-            data-slide="next"
-          >
-            <span class="glyphicon glyphicon-chevron-right"></span>
-          </a>
-        </div>
+<!-- Modal -->
+<div id="myModal" class="modal carousel slide">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="modal-overlay">
+      <!-- Carousel Inner -->
+      <div class="carousel-inner">
+        <!-- Los items del carrusel se generarán dinámicamente desde JavaScript -->
       </div>
+
+      <!-- Indicadores del carrusel -->
+      <div class="contenedor-botones-indicadores">
+        <ol class="carousel-indicators">
+          <!-- Los indicadores se generarán dinámicamente desde JavaScript -->
+        </ol>
+      </div>
+
+      <!-- Controles del carrusel -->
+      <a
+        id="carrusel-izquierda"
+        class="left carousel-control"
+        href="#myModal"
+        data-slide="prev"
+      >
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a
+        id="carrusel-derecha"
+        class="right carousel-control"
+        href="#myModal"
+        data-slide="next"
+      >
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
     </div>
+  </div>
+</div>
 
     <!-- Pie de pagina (footer) -->
     <footer

@@ -6,15 +6,15 @@
         "nombre": "Pan De Waffle",
         "descripcionCorta": "Crujiente por fuera, suave por dentro",
         "descripcionLarga": "Disfruta de nuestros deliciosos panes de waffle, perfectos para empezar tu comida con un toque dulce. Servidos con miel y mantequilla.",
-        "precio": 8.500,
-        "fotografias": ["wafle1.jpg", "wafle2.jpeg"]
+        "precio": 8500,
+        "fotografias": ["wafle1.jpg", "wafle2.jpeg","sds.jpg","wafle1.jpg", "wafle2.jpeg","sds.jpg"]
       },
       {
         "id": 2,
         "nombre": "Aborrajados",
         "descripcionCorta": "Dulce tradición colombiana",
         "descripcionLarga": "Plátanos maduros rellenos de queso, fritos hasta alcanzar la perfección dorada. Un bocado crujiente por fuera y melty por dentro.",
-        "precio": 8.500,
+        "precio": 8500,
         "fotografias": ["aborrajado2.jpg", "aborrajado3.jpg"]
       },
       {
@@ -22,7 +22,7 @@
         "nombre": "Sachipapas",
         "descripcionCorta": "Combinación clásica y deliciosa",
         "descripcionLarga": "Una mezcla irresistible de salchichas de primera calidad y papas fritas, servida con salsa de la casa. Ideal para compartir.",
-        "precio": 8.500,
+        "precio": 8500,
         "fotografias": ["salchipapa1.jpeg", "palchipapa2.jpeg"]
       }
     ],
@@ -32,15 +32,15 @@
         "nombre": "Plato Montañero",
         "descripcionCorta": "Sabor montañero inigualable!",
         "descripcionLarga": "FRIJOLES, ARROZ, CARNES (RES, CERDO, POLLO), COSTILLA Y CHICHARRÓN. ¡UNA EXPERIENCIA IRRESISTIBLE EN CADA BOCADO!.",
-        "precio": 32.000,
-        "fotografias": ["montanero1.jpeg", "montanero2.jpeg"]
+        "precio": 32000,
+        "fotografias": ["montanero1.jpeg", "montanero1.jpeg"]
       },
       {
         "id": 5,
         "nombre": "Costicazuela",
         "descripcionCorta": "SABORES QUE TE ENAMORARÁN",
         "descripcionLarga": "FRIJOLES, COSTILLITA, HUEVO, MADURO, AGUACATE, MAICITOS Y ARROZ. UNA FIESTA DE SABORES AUTÉNTICOS",
-        "precio": 27.500,
+        "precio": 27500,
         "fotografias": ["costicasuela1.jpeg", "costicasuela2.jpeg"]
       },
       {
@@ -48,7 +48,7 @@
         "nombre": "Cazuela de Frijol",
         "descripcionCorta": "TRADICIÓN Y SABORES ÚNICOS!",
         "descripcionLarga": "FRIJOLES, CHICHARRÓN, CARNE DE RES, AGUACATE Y PATACÓN. DELEITE COLOMBIANO AUTÉNTICO.",
-        "precio": 27.500,
+        "precio": 27500,
         "fotografias": ["casuelafrijol1.jpeg", "casuelafrijol2.jpeg"]
       },
       {
@@ -56,7 +56,7 @@
         "nombre": "BANDEJA PAISA",
         "descripcionCorta": "¡UN FESTÍN IRRESISTIBLE!",
         "descripcionLarga": "FRIJOLES, ARROZ, CHORIZO, CHICHARRÓN, AGUACATE, RES MOLIDA Y HUEVO. SABOR COLOMBIANO EN PERFECTA ARMONÍA.",
-        "precio": 27.500,
+        "precio": 27500,
         "fotografias": ["paisa1.jpeg", "paisa2.jpeg"]
       }
     ],
@@ -66,7 +66,7 @@
         "nombre": "Trucha en champiñones",
         "descripcionCorta": "Sabor pescador inigualable",
         "descripcionLarga": "TRUCHA FRITA EN SALSA DE CHAMPIÑONES ACOMPAÑADA DE ARROZ, PAPA FRANCESA, ENSALADA Y MADURO. UN FESTÍN PARA LOS AMANTES DEL PESCADO.",
-        "precio": 26.000,
+        "precio": 26000,
         "fotografias": ["truchachampinones1.jpeg", "truchachampinones2.jpg"]
       },
       {
@@ -74,7 +74,7 @@
         "nombre": "Trucha Frita",
         "descripcionCorta": "SABOR PESCADOR INIGUALABLE.",
         "descripcionLarga": "TRUCHA FRITA ACOMPAÑADA DE ARROZ, PAPA FRANCESA, ENSALADA Y MADURO. UN FESTÍN PARA LOS AMANTES DEL PESCADO.",
-        "precio": 25.000,
+        "precio": 25000,
         "fotografias": ["truchafrita1.jpeg", "truchafrita2.jpg"]
       },
       {
@@ -82,7 +82,7 @@
         "nombre": "Tilapia Frita",
         "descripcionCorta": "DELICIA CRUJIENTE Y FRESCA.",
         "descripcionLarga": "TILAPIA FRITA SERVIDA CON ARROZ, PAPA FRANCESA, ENSALADA Y MADURO. UNA COMBINACIÓN DE SABORES QUE TE ENCANTARÁ.",
-        "precio": 25.000,
+        "precio": 25000,
         "fotografias": ["tilapiafrita1.jpeg", "tilapiafrita2.jpg"]
       }
     ],
@@ -164,7 +164,15 @@
     "bebidas": [
       {
         "id": 20,
-        "nombre": "jugos naturales ",
+        "nombre": "jugo natural ",
+        "descripcionCorta": "agua $5.500 leche entera $6.000 leche deslactosada $7.000",
+        "descripcionLarga":"agua $5.500 leche entera $6.000 leche deslactosada $7.000",
+        "precio": 0.000,
+        "fotografias": ["jugosnaturales1.jpeg", "jugosnaturales2.jpeg"]
+      },
+      {
+        "id":39,
+        "nombre":"Jugo natural en leche",
         "descripcionCorta": "agua $5.500 leche entera $6.000 leche deslactosada $7.000",
         "descripcionLarga":"agua $5.500 leche entera $6.000 leche deslactosada $7.000",
         "precio": 0.000,
@@ -188,7 +196,23 @@
       },
       {
         "id": 23,
-        "nombre": "Cervezas",
+        "nombre": "Cerveza corona",
+        "descripcionCorta": "corona $8.500 club colombia $5.500 poker $4.500",
+        "descripcionLarga": "corona $8.500 club colombia $5.500 poker $4.500",
+        "precio": 0.000,
+        "fotografias": ["cerveza1.jpeg", "cerveza1.jpeg"]
+      },      
+      {
+        "id": 40,
+        "nombre": "Cerveza poker",
+        "descripcionCorta": "corona $8.500 club colombia $5.500 poker $4.500",
+        "descripcionLarga": "corona $8.500 club colombia $5.500 poker $4.500",
+        "precio": 0.000,
+        "fotografias": ["cerveza1.jpeg", "cerveza1.jpeg"]
+      },      
+      {
+        "id": 41,
+        "nombre": "Cerveza Club Colombia",
         "descripcionCorta": "corona $8.500 club colombia $5.500 poker $4.500",
         "descripcionLarga": "corona $8.500 club colombia $5.500 poker $4.500",
         "precio": 0.000,
@@ -201,7 +225,7 @@
         "nombre": "Brownie con Helado",
         "descripcionCorta": "Brownie con helado a $8.500",
         "descripcionLarga": "Delicioso brownie servido con una bola de helado a elección.",
-        "precio": 8500,
+        "precio": 8.500,
         "fotografias": ["brownie_con_helado.jpeg"]
       },
       {
@@ -209,7 +233,7 @@
         "nombre": "Postre de las 3 Leches",
         "descripcionCorta": "Postre de las 3 leches a $7.500",
         "descripcionLarga": "Suave pastel empapado en tres tipos de leche: condensada, evaporada y crema de leche.",
-        "precio": 7500,
+        "precio": 7.500,
         "fotografias": ["postre_tres_leches.jpg"]
       },
       {
@@ -217,7 +241,7 @@
         "nombre": "Copa de Helado",
         "descripcionCorta": "Copa de helado a $5.500",
         "descripcionLarga": "Refrescante copa de helado con sabores a elección, decorada con frutas frescas y salsa de chocolate.",
-        "precio": 5500,
+        "precio": 5.500,
         "fotografias": ["copa_de_helado.jpeg"]
       }
     ],
@@ -227,7 +251,7 @@
           "nombre": "Omelette",
           "descripcionCorta": "Clásico y delicioso",
           "descripcionLarga": "Huevos revueltos servidos con tostadas, jamón y queso.",
-          "precio": 12000,
+          "precio": 12.000,
           "fotografias": ["omelette1.jpg", "desayuno2.jpg"]
         },
         {
@@ -235,7 +259,7 @@
           "nombre": "Con Carne",
           "descripcionCorta": "Dulce y delicioso",
           "descripcionLarga": "Panqueques esponjosos acompañados de frutas frescas y jarabe de arce.",
-          "precio": 13000,
+          "precio": 13.000,
           "fotografias": ["carne1.jpg", "panqueques2.jpg"]
         },
         {
@@ -243,7 +267,7 @@
           "nombre": "Calentado",
           "descripcionCorta": "Sabor colombiano auténtico",
           "descripcionLarga": "Arepas de maíz rellenas de queso derretido.",
-          "precio": 14000,
+          "precio": 14.000,
           "fotografias": ["calentado1.jpg", "arepas2.jpg"]
         },
         {
@@ -251,7 +275,7 @@
           "nombre": "Caserola",
           "descripcionCorta": "Reconfortante y delicioso",
           "descripcionLarga": "Rebanadas de pan empapadas en huevo batido y luego doradas, servidas con miel y frutas frescas.",
-          "precio": 8000,
+          "precio": 8.000,
           "fotografias": ["caserola1.jpg", "tostadas2.jpg"]
         },
         {
@@ -259,7 +283,7 @@
           "nombre": "Desayuno Americano",
           "descripcionCorta": "Abundante y sabroso",
           "descripcionLarga": "Huevos fritos, tocino, salchichas, papas fritas y tostadas.",
-          "precio": 12000,
+          "precio": 12.000,
           "fotografias": ["americano1.jpg", "americanbreakfast2.jpg"]
         },
         {
@@ -267,7 +291,7 @@
           "nombre": "Desayuno Tradicional",
           "descripcionCorta": "Sabor español auténtico",
           "descripcionLarga": "Tortilla de huevos, papas y cebollas, servida con pan tostado.",
-          "precio": 8000,
+          "precio": 8.000,
           "fotografias": ["tradicional1.jpg", "tortilla2.jpg"]
         }
     ],
@@ -277,7 +301,7 @@
         "nombre": "Mini Hamburguesas",
         "descripcionCorta": "Para los más pequeños",
         "descripcionLarga": "Mini hamburguesas con queso y ketchup, acompañadas de papas fritas.",
-        "precio": 7.99,
+        "precio": 7.990,
         "fotografias": ["hamburguesas1.jpg", "hamburguesas2.jpg"]
       },
       {
@@ -285,7 +309,7 @@
         "nombre": "Tiras de Pollo",
         "descripcionCorta": "Crujientes y sabrosas",
         "descripcionLarga": "Tiras de pollo empanizadas, ideales para comer con salsa de tomate.",
-        "precio": 6.99,
+        "precio": 6.990,
         "fotografias": ["tiraspollo1.jpg", "tiraspollo2.jpg"]
       },
       {
@@ -293,7 +317,7 @@
         "nombre": "Mini Pizza",
         "descripcionCorta": "Pequeña pero deliciosa",
         "descripcionLarga": "Pizza individual con salsa de tomate y queso fundido.",
-        "precio": 8.99,
+        "precio": 8.990,
         "fotografias": ["minipizza1.jpg", "minipizza2.jpg"]
       },
       {
@@ -301,7 +325,7 @@
         "nombre": "Perritos Calientes",
         "descripcionCorta": "Favoritos de los niños",
         "descripcionLarga": "Perritos calientes con mostaza y ketchup, servidos con papas fritas.",
-        "precio": 7.99,
+        "precio": 7.990,
         "fotografias": ["perritos1.jpg", "perritos2.jpg"]
       },
       {
@@ -309,7 +333,7 @@
         "nombre": "Palitos de Queso",
         "descripcionCorta": "Snack crujiente",
         "descripcionLarga": "Palitos de queso empanizados, perfectos para picar.",
-        "precio": 5.99,
+        "precio": 5.990,
         "fotografias": ["palitosqueso1.jpg", "palitosqueso2.jpg"]
       },
       {
@@ -317,7 +341,7 @@
         "nombre": "Mini Burritos",
         "descripcionCorta": "Sabor mexicano en miniatura",
         "descripcionLarga": "Burritos pequeños rellenos de carne, frijoles y queso.",
-        "precio": 8.99,
+        "precio": 8.990,
         "fotografias": ["miniburritos1.jpg", "miniburritos2.jpg"]
       }
     ]

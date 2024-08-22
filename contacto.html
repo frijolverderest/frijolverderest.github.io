@@ -57,38 +57,20 @@
                 <li class="nav-item">
                     <a class="nav-link" href="./index">Inicio</a>
                 </li>
-
                 <li class="nav-item">
                     <a class="nav-link" href="./nuestromenu">Nuestro Menú</a>
                 </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link" href="./desayunos">Desayunos</a>
-                </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./eventos">Eventos</a>
-            </li>
-        -->
-                <!--
-                <li class="nav-item dropdown">-->
-                <!-- Opciones del menú desplegable 
-                </li>-->
                 <li class="nav-item">
                     <a class="nav-link" href="./contacto">Contáctanos</a>
-                </li><!--
-                <li class="nav-item">
-                    <a class="nav-link" href="./about">Sobre Nosotros</a>
-                </li>-->
+                </li>
             </ul>
         </div>
-
     </nav>
 
     <div class="contenedor-contacto">
-
-
         <div class="contenedor-formulario">
             <h1 class="titulo-formulario">Contáctanos</h1>
-            <form action="enviar.php" method="post" class="formulario">
+            <form id="contactForm" class="formulario">
                 <div class="campo-formulario">
                     <label for="nombre">Nombre:</label>
                     <input type="text" id="nombre" name="nombre" required>
@@ -110,27 +92,20 @@
                 </div>
             </form>
         </div>
-
-
     </div>
-
-
 
     <!-- Pie de pagina (footer) -->
     <footer class="seccion-clara d-flex flex-column align-items-center justify-content-center" style="top: -70px;">
-
         <div class="contenedor-footer">
             <div class="columna-footer">
                 <h1 class="titulo-footer">Contáctanos</h1>
-
                 <div class="contacto-footer">
                     <a class="bi bi-telephone" href="tel:6028352715" target="_blank" rel="noopener noreferrer">
                         <p>602 8352715</p>
                     </a>
                 </div>
                 <div class="contacto-footer">
-                    <a class="bi bi-whatsapp" href="https://wa.me/573013290099/" target="_blank"
-                        rel="noopener noreferrer">
+                    <a class="bi bi-whatsapp" href="https://wa.me/573013290099/" target="_blank" rel="noopener noreferrer">
                         <p>+57 301 329 0099</p>
                     </a>
                 </div>
@@ -138,10 +113,8 @@
             <div class="linea-vertical"></div>
             <div class="columna-footer">
                 <h1 class="titulo-footer">Ubicación</h1>
-
                 <div class="contacto-footer">
-                    <a class="bi bi-pin-map" href="https://maps.app.goo.gl/C9k7hQXihKUYHDuR8" target="_blank"
-                        rel="noopener noreferrer">
+                    <a class="bi bi-pin-map" href="https://maps.app.goo.gl/C9k7hQXihKUYHDuR8" target="_blank" rel="noopener noreferrer">
                         <p>Calle 9N #8N - 21 Prados del Norte <br> Popayán - Cauca </p>
                     </a>
                 </div>
@@ -149,21 +122,16 @@
             <div class="linea-vertical"></div>
             <div class="columna-footer">
                 <h1 class="titulo-footer">Horario de atención</h1>
-
                 <div class="contacto-footer">
-                    <a class="bi bi-clock" href="https://maps.app.goo.gl/C9k7hQXihKUYHDuR8" target="_blank"
-                        rel="noopener noreferrer">
+                    <a class="bi bi-clock" href="https://maps.app.goo.gl/C9k7hQXihKUYHDuR8" target="_blank" rel="noopener noreferrer">
                         <p>Lunes a Domingo 7:30 am - 4:00 pm </p>
                     </a>
                 </div>
-
             </div>
         </div>
 
         <h1 class="titulo-footer">Nuestras Redes Sociales</h1>
-
         <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
-
             <a href="https://tiktok.com/@restaurantefrijolverde" target="_blank" rel="noopener noreferrer">
                 <i class="bi bi-tiktok"></i>
             </a>
@@ -179,7 +147,6 @@
             <a href="tel:+573013290099" target="_blank" rel="noopener noreferrer">
                 <i class="bi bi-telephone"></i>
             </a>
-
         </div>
 
         <div class="derechos-de-autor">
@@ -190,6 +157,25 @@
     <div class="desarrollador">
         <p>Product Brand: Work in Progress, Page developed by James Soscue &copy;</p>
     </div>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const nombre = document.getElementById('nombre').value;
+            const correo = document.getElementById('correo').value;
+            const telefono = document.getElementById('telefono').value;
+            const mensaje = document.getElementById('mensaje').value;
+
+            const textoMensaje = `Hola, mi nombre es ${nombre}. Mi correo es ${correo} y mi teléfono es ${telefono}. Quiero decir: ${mensaje}`;
+            
+            // Construir la URL para enviar el mensaje por WhatsApp
+            const urlWhatsApp = `https://wa.me/573013290099?text=${encodeURIComponent(textoMensaje)}`;
+
+            // Redirigir a la URL de WhatsApp
+            window.open(urlWhatsApp, '_blank');
+        });
+    </script>
 </body>
 
 </html>

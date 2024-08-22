@@ -585,12 +585,14 @@
   display: block;
   width: fit-content;
   max-width: 80%;
-  max-height: 80%;
+  max-height: 85%;
   border-radius: 8px;
   border: #42422248 solid 2px;
-  /* box-shadow: 0px 0px 10px #948a5450;*/
-  background-color: #222121fd;
+  /* box-shadow: 0px 0px 10px #a79c5f5f; */
+  /* background-color: #222121fd; */
+  background-color: #000000fd;
 
+border-color: #f3d94640;
   box-sizing: border-box;
   margin-top: 8vw;
   overflow: hidden;
@@ -598,10 +600,14 @@
 }
 
 .modal-img {
-  max-height: calc(100vh - 250px);
+  max-height: calc(100vh - 270px);
   /* Ajusta según el tamaño del encabezado y el botón de cierre */
+  /* max-width: calac(((100vh - 270px)/4)*3);
+  max-width: calc(((100vh - 270px)/4) * 3); */
+  max-width:auto;
+  aspect-ratio: 3 / 4;
   width: auto;
-  min-width: 350px !important;
+  min-width: 262px !important;
   min-height: 350px;
   padding-top: 50px;
 }
