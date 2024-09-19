@@ -31,7 +31,6 @@ self.addEventListener('install', (event) => {
           './styles/nuestrmenu.css',
           './styles/style.css',
           './manifest.json'
-          // Si agregas más archivos en el futuro, inclúyelos aquí
         ]);
       })
     );
