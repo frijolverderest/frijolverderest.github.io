@@ -1,0 +1,21 @@
+{
+    "name": "Frijol Verde",
+    "short_name": "Frijol",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#4CAF50", 
+    "icons": [
+      {
+        "src": "files/iconFrijol.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "files/iconFrijol.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
+  
