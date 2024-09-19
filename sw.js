@@ -10,17 +10,15 @@ self.addEventListener('install', (event) => {
           './eventos.html',
           './eventos2.html',
           './indexdes.html',
-          './nuestrmenu.html',
-          './nuestrmenu.css',
-          './nuestrmenudesarrollo.html',
-          './nuestrmenudesarrollocopy.html',
+          './nuestromenu.html',
+          './nuestromenudesarrollo.html',
+          './nuestromenudesarrollocopy.html',
           './platosjr.html',
-          './CNAME',
           './scripts/actions.js',
           './scripts/eventos.js',
           './scripts/getEventos.js',
           './scripts/getMenu.js',
-          './scripts/index.js',
+          './scripts/indexjs.js',
           './scripts/script1.js',
           './styles/contacto.css',
           './styles/eventos.css',
@@ -28,9 +26,8 @@ self.addEventListener('install', (event) => {
           './styles/footer.css',
           './styles/index.css',
           './styles/navbar.css',
-          './styles/nuestrmenu.css',
+          './styles/nuestromenu.css',
           './styles/style.css',
-          './manifest.json'
         ]);
       })
     );
