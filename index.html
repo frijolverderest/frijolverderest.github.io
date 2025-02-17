@@ -1,319 +1,349 @@
-<!DOCTYPE html>
-<html lang="es">
-  <head>
-    <!-- Metadatos -->
-    <meta charset="utf-8" />
-    <meta name="author" content="James Soscue" />
-    <meta name="description" content="Restaurante Frijol Verde" />
-    <meta
-      name="keywords"
-      content="restaurante, frijol, verde, almuerzo, desayuno, domicilio"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Titulo -->
-    <title>Frijol Verde</title>
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="files/iconFrijol.png" />
-    <script defer src="scripts/installPWA.js"></script>
 
-    <link rel="manifest" href="manifest.json" />
-    <script>
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('sw.js')
-              .then((registration) => {
-                console.log('Service Worker registrado con éxito:', registration.scope);
-              }).catch((error) => {
-                console.log('Error al registrar el Service Worker:', error);
-              });
-          }
-          
-    </script>
-    
+  <!DOCTYPE html>
+  <html lang="es">
+    <head>
+      <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16869356750"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-16869356750'); </script>
+      
+      <!-- ✅ Configuración básica -->
+      <meta charset="utf-8" />
+      <meta name="author" content="James Soscue" />
+      <meta
+        name="description"
+        content="Restaurante Frijol Verde - Sabores auténticos en Popayán, Cauca."
+      />
+      <meta
+        name="keywords"
+        content="restaurante, comida, almuerzo, desayuno, Popayán, Cauca, domicilio"
+      />
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      />
 
-    <!-- Bootstrap CDN 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/js/bootstrap.bundle.min.js"></script>
-     -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <!-- Font Awesome CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
-    <!-- Iconos de Bootstrap -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
-    />
-    <!-- CSS estilos personalizados-->
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/navbar.css" />
-    <link rel="stylesheet" href="styles/footer.css" />
-    <link rel="stylesheet" href="styles/index.css" />
+      <!-- ✅ Open Graph (Para compartir en redes sociales) -->
+      <meta
+        property="og:title"
+        content="Frijol Verde - Restaurante en Popayán"
+      />
+      <meta
+        property="og:description"
+        content="Disfruta de nuestros deliciosos desayunos y almuerzos. ¡Visítanos en Popayán!"
+      />
+      <meta
+        property="og:image"
+        content="https://www.frijolverderest.com/files/iconFrijol.png"
+      />
+      <meta property="og:url" content="https://www.frijolverderest.com/" />
+      <meta name="twitter:card" content="summary_large_image" />
 
-    <!-- JS estilos personalizados-->
-    <script src="scripts/actions.js"></script>
-    <script src="scripts/indexjs.js"></script>
+      <!-- ✅ Título -->
+      <title>Frijol Verde | Restaurante en Popayán</title>
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+      <!-- ✅ Favicon -->
+      <link rel="icon" type="image/png" href="files/iconFrijol.png" />
 
-  <body>
-    <!-- Barra de navegación -->
-    <nav class="navbar navbar-inverse navbar-fixed-top text-center">
-      <div class="nav-cell">
-        <a class="navbar-brand" href="./index" id="logo-container">
-          <img
-            src="files/iconFrijol.png"
-            alt="Icono"
-            id="navbar-icon"
-            class="pull-left"
-          />
-          <span id="navbar-title" class="pull-left"> Frijol Verde</span>
-        </a>
-        <button
-          class="navbar-toggle"
-          type="button"
-          data-toggle="collapse"
-          data-target="#myNavbar"
-        >
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
+      <!-- ✅ Bootstrap 5 (Última versión SIN jQuery) -->
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+      />
+      <script
+        defer
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      ></script>
 
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="./index">Inicio</a>
-          </li>
+      <!-- ✅ Íconos de Bootstrap 5 -->
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      />
 
-          <li class="nav-item">
-            <a class="nav-link" href="./nuestromenu">Nuestro Menú</a>
-          </li>
-          <!-- <li class="nav-item">
-                    <a class="nav-link" href="./desayunos">Desayunos</a>
-                </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./eventos">Eventos</a>
-            </li>
-        -->
-          <!--
-                <li class="nav-item dropdown">-->
-          <!-- Opciones del menú desplegable 
-                </li>-->
-          <li class="nav-item">
-            <a class="nav-link" href="./contacto">Contáctanos</a>
-          </li>
-          <!--
-                <li class="nav-item">
-                    <a class="nav-link" href="./about">Sobre Nosotros</a>
-                </li>-->
-        </ul>
-      </div>
-    </nav>
-    <button id="installButton" style="display: none; z-index: 10000;margin-top:100px;">Instalar Frijol Verde</button>
+      <!-- ✅ Font Awesome (Íconos adicionales) -->
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      />
 
-    <div class="contenedor-index">
-      <section class="seccion-banner">
-        <div class="contenedor-banner">
-          <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Contenedor de botones e indicadores -->
-            <div class="contenedor-botones-indicadores">
-              <!-- Indicadores -->
-              <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class=""></li>
-                <li data-target="#myCarousel" data-slide-to="1" class=""></li>
-                <li
-                  data-target="#myCarousel"
-                  data-slide-to="2"
-                  class="active"
-                ></li>
-              </ol>
+      <!-- ✅ Google Fonts (Carga diferida para mejor rendimiento) -->
+      <link
+        rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap"
+        as="style"
+        onload="this.onload=null;this.rel='stylesheet'"
+      />
+      <noscript>
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap"
+        />
+      </noscript>
 
-              <!-- Botones -->
-              <div class="d-grid gap-2">
-                <a href="./nuestromenu" class="btn btn-primary" type="button">
-                  <i class="bi bi-cup-hot"></i> Desayunos
-                </a>
-                <a href="./nuestromenu" class="btn btn-primary" type="button">
-                  <i class="fas fa-utensils"></i> Medio Dia
-                </a>
-                <a href="./index" class="btn btn-primary" type="button">
-                  <i class="bi bi-calendar-event"></i> Eventos
-                </a>
-              </div>
-            </div>
-            <!-- Slides del carrusel -->
-            <div class="carousel-inner">
-              <div class="item">
-                <img
-                  class="img-carousel"
-                  src="files/imgcarusel/car1.jpeg"
-                  alt="Imagen 1"
-                />
-              </div>
-              <div class="item">
-                <img
-                  class="img-carousel"
-                  src="files/imgcarusel/car2.jpg"
-                  alt="Imagen 2"
-                />
-              </div>
-              <div class="item active">
-                <img
-                  class="img-carousel"
-                  src="files/imgcarusel/car3.jpg"
-                  alt="Imagen 3"
-                />
-              </div>
-            </div>
+      <!-- ✅ Estilos personalizados -->
+      <link rel="stylesheet" href="styles/style.css" />
+      <link rel="stylesheet" href="styles/navbar.css" />
+      <link rel="stylesheet" href="styles/footer.css" />
+      <link rel="stylesheet" href="styles/index.css" />
 
-            <!-- Controles del carrusel -->
-            <a
-              id="carrusel-izquierda"
-              class="left carousel-control"
-              href="#myCarousel"
-              data-slide="prev"
-            >
-              <span class="glyphicon glyphicon-chevron-left"></span>
-            </a>
-            <a
-              id="carrusel-derecha"
-              class="right carousel-control"
-              href="#myCarousel"
-              data-slide="next"
-            >
-              <span class="glyphicon glyphicon-chevron-right"></span>
-            </a>
+      <!-- ✅ Scripts personalizados (Carga diferida) -->
+      <script defer src="scripts/actions.js"></script>
+      <script defer src="scripts/indexjs.js"></script>
+
+      <!-- ✅ Service Worker para PWA -->
+      <!-- <link rel="manifest" href="manifest.json" /> -->
+      <!-- <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js')
+          .then((registration) => {
+            console.log('Service Worker registrado con éxito:', registration.scope);
+          })
+          .catch((error) => {
+            console.log('Error al registrar el Service Worker:', error);
+          });
+      }
+    </script> -->
+
+      <!-- ✅ SEO Local con JSON-LD -->
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Restaurant",
+          "name": "Frijol Verde",
+          "image": "https://www.frijolverderest.com/files/iconFrijol.png",
+          "telephone": "+57 301 329 0099",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Calle 9N #8N - 21 Prados del Norte",
+            "addressLocality": "Popayán",
+            "addressRegion": "Cauca",
+            "addressCountry": "CO"
+          },
+          "openingHours": "Mo-Su 07:30-16:00",
+          "priceRange": "$$",
+          "servesCuisine": "Comida Colombiana"
+        }
+      </script>
+    </head>
+
+    <body>
+      <!-- Barra de navegación -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <!-- Logo e Icono -->
+          <a
+            class="navbar-brand d-flex align-items-center"
+            href="./index"
+            id="logo-container"
+          >
+            <img src="files/iconFrijol.png" alt="Icono" id="navbar-icon" />
+            <span id="navbar-title">Frijol Verde</span>
+          </a>
+
+          <!-- Botón de menú para móviles -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Menú de Navegación -->
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="./index">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./nuestromenu">Nuestro Menú</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto">Contáctanos</a>
+              </li>
+            </ul>
           </div>
         </div>
-      </section>
-    </div>
+      </nav>
 
-    <!-- Pie de pagina (footer) -->
-    <footer
-      class="seccion-clara d-flex flex-column align-items-center justify-content-center"
-      style="top: -70px"
-    >
-      <div class="contenedor-footer">
-        <div class="columna-footer">
-          <h1 class="titulo-footer">Contáctanos</h1>
-
-          <div class="contacto-footer">
-            <a
-              class="bi bi-telephone"
-              href="tel:6028352715"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <p>602 8352715</p>
-            </a>
-          </div>
-          <div class="contacto-footer">
-            <a
-              class="bi bi-whatsapp"
-              href="https://wa.me/573013290099/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <p>+57 301 329 0099</p>
-            </a>
-          </div>
-        </div>
-        <div class="linea-vertical"></div>
-        <div class="columna-footer">
-          <h1 class="titulo-footer">Ubicación</h1>
-
-          <div class="contacto-footer">
-            <a
-              class="bi bi-pin-map"
-              href="https://maps.app.goo.gl/C9k7hQXihKUYHDuR8"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <p>
-                Calle 9N #8N - 21 Prados del Norte <br />
-                Popayán - Cauca
-              </p>
-            </a>
-          </div>
-        </div>
-        <div class="linea-vertical"></div>
-        <div class="columna-footer">
-          <h1 class="titulo-footer">Horario de atención</h1>
-
-          <div class="contacto-footer">
-            <a
-              class="bi bi-clock"
-              href="https://maps.app.goo.gl/C9k7hQXihKUYHDuR8"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <p>Lunes a Domingo 7:30 am - 4:00 pm</p>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <h1 class="titulo-footer">Nuestras Redes Sociales</h1>
-
-      <div
-        class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center"
+      <button
+        id="installButton"
+        style="display: none; z-index: 10000; margin-top: 100px"
       >
-        <a
-          href="https://tiktok.com/@restaurantefrijolverde"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i class="bi bi-tiktok"></i>
-        </a>
-        <a
-          href="https://www.facebook.com/frijolverde2013"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i class="bi bi-facebook"></i>
-        </a>
-        <a
-          href="https://www.instagram.com/frijolverderest/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i class="bi bi-instagram"></i>
-        </a>
-        <a
-          href="https://wa.me/573013290099/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i class="bi bi-whatsapp"></i>
-        </a>
-        <a href="tel:+573013290099" target="_blank" rel="noopener noreferrer">
-          <i class="bi bi-telephone"></i>
-        </a>
-      </div>
+        Instalar Frijol Verde
+      </button>
 
-      <div class="derechos-de-autor">
-        <p>Todos los derechos reservados.<br />2024 &copy; Frijol Verde.</p>
+      <div class="contenedor-index">
+        <section class="seccion-banner">
+          <div class="contenedor-banner">
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+              <!-- Contenedor de botones e indicadores -->
+              <div class="contenedor-botones-indicadores">
+                <!-- Indicadores -->
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <!-- Botones -->
+                <div class="d-grid gap-2">
+                  <a href="./nuestromenu" class="btn btn-primary">
+                    <i class="bi bi-cup-hot"></i> Desayunos
+                  </a>
+                  <a href="./nuestromenu" class="btn btn-primary">
+                    <i class="fas fa-utensils"></i> Medio Día
+                  </a>
+                  <a href="./index" class="btn btn-primary">
+                    <i class="bi bi-calendar-event"></i> Eventos
+                  </a>
+                </div>
+              </div>
+      
+              <!-- Slides del carrusel -->
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000"> <!-- 3 segundos por slide -->
+                  <img class="img-carousel d-block w-100" src="files/imgcarusel/car1.jpeg" alt="Imagen 1">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                  <img class="img-carousel d-block w-100" src="files/imgcarusel/car2.jpg" alt="Imagen 2">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                  <img class="img-carousel d-block w-100" src="files/imgcarusel/car3.jpg" alt="Imagen 3">
+                </div>
+              </div>
+      
+              <!-- Controles del carrusel -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+            </div>
+          </div>
+        </section>
       </div>
-    </footer>
-    <div class="desarrollador">
-      <p>
-        Product Brand: Work in Progress, Page developed by James Soscue &copy;
-      </p>
-    </div>
-  </body>
+      
+
+      <!-- Pie de pagina (footer) -->
+      <footer
+        class="seccion-clara d-flex flex-column align-items-center justify-content-center"
+        style="top: -70px"
+      >
+        <div class="contenedor-footer">
+          <div class="columna-footer">
+            <h1 class="titulo-footer">Contáctanos</h1>
+
+            <div class="contacto-footer">
+              <a
+                class="bi bi-telephone"
+                href="tel:6028352715"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <p>602 8352715</p>
+              </a>
+            </div>
+            <div class="contacto-footer">
+              <a
+                class="bi bi-whatsapp"
+                href="https://wa.me/573013290099/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <p>+57 301 329 0099</p>
+              </a>
+            </div>
+          </div>
+          <div class="linea-vertical"></div>
+          <div class="columna-footer">
+            <h1 class="titulo-footer">Ubicación</h1>
+
+            <div class="contacto-footer">
+              <a
+                class="bi bi-pin-map"
+                href="https://maps.app.goo.gl/C9k7hQXihKUYHDuR8"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <p>
+                  Calle 9N #8N - 21 Prados del Norte <br />
+                  Popayán - Cauca
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="linea-vertical"></div>
+          <div class="columna-footer">
+            <h1 class="titulo-footer">Horario de atención</h1>
+
+            <div class="contacto-footer">
+              <a
+                class="bi bi-clock"
+                href="https://maps.app.goo.gl/C9k7hQXihKUYHDuR8"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <p>Lunes a Domingo 7:30 am - 4:00 pm</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <h1 class="titulo-footer">Nuestras Redes Sociales</h1>
+
+        <div
+          class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center"
+        >
+          <a
+            href="https://tiktok.com/@restaurantefrijolverde"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="bi bi-tiktok"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/frijolverde2013"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/frijolverderest/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a
+            href="https://wa.me/573013290099/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="bi bi-whatsapp"></i>
+          </a>
+          <a href="tel:+573013290099" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-telephone"></i>
+          </a>
+        </div>
+
+        <div class="derechos-de-autor">
+          <p>Todos los derechos reservados.<br />2024 &copy; Frijol Verde.</p>
+        </div>
+      </footer>
+      <div class="desarrollador">
+        <p>
+          Product Brand: Work in Progress, Page developed by James Soscue &copy;
+        </p>
+      </div>
+    </body>
+  </html>
 </html>

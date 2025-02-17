@@ -83,8 +83,8 @@
 }
 
 .d-grid {
-  display: flex;
-  flex-direction: row;
+  display: flex!important;
+  flex-direction: row!important;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -92,7 +92,6 @@
   padding-bottom: 1px;
   position: relative;
   bottom: 15px;
-  max-width: 98% !important;
 }
 
 /* Estilos CSS personalizados para los botones */
@@ -104,8 +103,14 @@
   margin: 10px;
   font-family: "Comic Sans MS", cursive, sans-serif;
   font-style: bold;
+  font-size: 1.5rem;
   text-align: center;
+  
+  /* Evita que el texto se divida en varias líneas */
+  white-space: nowrap;
+  display: inline-block;
 }
+
 
 .btn.btn-primary:hover {
   background-color: #b5e62f;
@@ -275,6 +280,13 @@
           rgba(0, 0, 0, 0.959)
         );
       }
-
+      
+      .btn.btn-primary {
+      font-size: 1rem;
+      }
+      .d-grid{
+        max-width: 100%;
+        min-width: 100%;
+      }
 
 }

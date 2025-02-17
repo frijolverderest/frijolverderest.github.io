@@ -51,6 +51,8 @@
     margin-bottom: 0%;
     margin-left: 2vw;
     white-space: nowrap;
+    text-decoration: none!important;
+
 }
 
 .columna-footer h1 {
@@ -71,6 +73,8 @@
     justify-content: center;
     align-items: center;
     margin-right: 2vw;
+    text-decoration: none!important;
+
 
 }
 
@@ -79,6 +83,8 @@
     flex-direction: row;
     justify-content: center;
     color: #ffffff;
+    text-decoration: none!important;
+
 }
 
 .contacto-footer a:hover {
@@ -137,6 +143,7 @@
     align-items: left;
     justify-content: left;
     text-align: left;
+    min-width: 100%;
 }
 
 .linea-vertical {
@@ -169,11 +176,11 @@
     }
 
     .columna-footer p {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     .columna-footer h1 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .columna-footer a {
@@ -196,7 +203,9 @@
     .iconos-redes-sociales i {
         font-size: 2vh;
     }
-
+    .titulo-footer {
+        font-size: 1.25rem;
+    }
 
 }
 
